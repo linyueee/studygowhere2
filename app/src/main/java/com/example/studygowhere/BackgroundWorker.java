@@ -1,6 +1,7 @@
 package com.example.studygowhere;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 
 import androidx.appcompat.app.AlertDialog;
@@ -16,12 +17,15 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-
+import android.widget.Toast;
+import android.os.Bundle;
 
 public class BackgroundWorker extends AsyncTask<String, Void, String>
     {
         Context context;
         AlertDialog alertDialog;
+        boolean loggedin;
+        static String Un;
         BackgroundWorker (Context ctx)
         {
             context = ctx;
@@ -35,6 +39,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
             {
                 try{
                     String user_name = params[1];
+                    Un = user_name;
                     String pw = params[2];
                     URL url = new URL(login_url);
                     HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
@@ -70,6 +75,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
             {
                 try{
                     String name = params[1];
+                    Un = name;
                     String password = params[2];
                     String email = params[3];
                     String mobile = params[4];
@@ -112,13 +118,24 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
         @Override
         protected void onPreExecute() {
             alertDialog = new AlertDialog.Builder(context).create();
-            alertDialog.setTitle("Login Status");
+            alertDialog.setTitle("LoginActivity Status");
         }
 
         @Override
         protected void onPostExecute(String result) {
             alertDialog.setMessage(result);
             alertDialog.show();
+            if(result.equals("Welcome"))
+            {
+                context.startActivity(new Intent(context, ProfileActivity.class));
+            }
+            if(result.equals("Register successful"))
+            {
+                context.startActivity(new Intent(context, LoginActivity.class));
+
+            }
+
+
         }
 
         @Override
@@ -127,3 +144,5 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
         }
 
     }
+
+

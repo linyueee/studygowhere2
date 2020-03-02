@@ -1,40 +1,23 @@
 package com.example.studygowhere;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
-import java.io.InputStream;
-
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLEncoder;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
+import static android.os.AsyncTask.Status.FINISHED;
 
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     EditText etUsername, etPassword;
-;
+
 
     Button btnLogin, btnRegister;
+    static boolean LoggedIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,22 +30,29 @@ public class Login extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Login.this, Register.class);
+                Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(i);
             }
         });
 
+
     }
 
 
-    public void OnLogin(View view)
-    {
+    public void OnLogin(View view) throws InterruptedException {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
         String type = "login";
         BackgroundWorker bgw = new BackgroundWorker(this);
         bgw.execute(type, username, password);
 
+
+    }
+
+    public static void IsLoggedIn(String v)
+    {
+        if(v.equals("Welcome"))
+            LoggedIn = true;
     }
 
 

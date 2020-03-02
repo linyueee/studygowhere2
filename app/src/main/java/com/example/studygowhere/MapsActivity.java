@@ -29,6 +29,11 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.geojson.GeoJsonLayer;
+
+import org.json.JSONException;
+
+import java.io.IOException;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -42,7 +47,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btnAcc;
+    Button btnAcc, btnsgw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,14 +63,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         btnAcc = (Button) findViewById(R.id.user_icon);
+        btnsgw = (Button) findViewById(R.id.sgw);
         btnAcc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MapsActivity.this, Login.class);
+                Intent i = new Intent(MapsActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
-
     }
 
 
@@ -85,6 +90,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         {
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
+        }
+        try{
+            GeoJsonLayer layer = new GeoJsonLayer(mMap, R.raw.libraries, this);
+            layer.addLayerToMap();
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
     }
