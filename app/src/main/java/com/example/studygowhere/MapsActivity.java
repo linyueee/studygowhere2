@@ -92,9 +92,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         try{
-            GeoJsonLayer layer = new GeoJsonLayer(mMap, R.raw.libraries, this);
-            layer.addLayerToMap();
-
+            GeoJsonLayer librarieslayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
+            librarieslayer.addLayerToMap();
+            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
+            ccLayer.addLayerToMap();
+            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
+            schoolsLayer.addLayerToMap();
 
         } catch (JSONException e) {
             e.printStackTrace();
