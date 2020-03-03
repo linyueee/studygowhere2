@@ -29,7 +29,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ProfileActivity.this, MapsActivity.class);
+                Intent i = new Intent(ProfileActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });

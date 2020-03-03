@@ -35,6 +35,8 @@ import org.json.JSONException;
 
 import java.io.IOException;
 
+import static com.example.studygowhere.BackgroundWorker.Un;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
@@ -64,13 +66,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         btnAcc = (Button) findViewById(R.id.user_icon);
         btnsgw = (Button) findViewById(R.id.sgw);
-        btnAcc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MapsActivity.this, LoginActivity.class);
-                startActivity(i);
-            }
-        });
+        if(Un != null) {
+            btnAcc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(MapsActivity.this, ProfileActivity.class);
+                    startActivity(i);
+                }
+            });
+        }
+        else{
+            btnAcc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(MapsActivity.this, LoginActivity.class);
+                    startActivity(i);
+                }
+            });
+        }
     }
 
 
