@@ -10,9 +10,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Fengshan CC",
-        "Address": "Blk 187B Bedok North Street 4 #01-52",
-        "Postal Code": "462187"
+        "Name": "kml_1",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>187B</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>52</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>462187</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok North Street 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/fengshan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Fengshan CC (Till 3Q 2020)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2E0C7575E249FB4D</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -26,9 +25,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Zhenghua CC",
-        "Address": "1 Segar Road",
-        "Postal Code": "677738"
+        "Name": "kml_2",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>677738</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Segar Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/zhenghua-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Zhenghua CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>EF0DB118ADF02E75</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -42,9 +40,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Mountbatten CC",
-        "Address": "14 Kampong Arang Road #01-45",
-        "Postal Code": "431014"
+        "Name": "kml_3",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>14</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>431014</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Kampong Arang Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/mountbatten-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Mountbatten CC (Till further notice)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9818C0D815B0878E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20191119150818</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>45</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -58,9 +55,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Yishun Link CC",
-        "Address": "413 Yishun Ring Road #01-1187",
-        "Postal Code": "760413"
+        "Name": "kml_4",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>413</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>760413</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Yishun Ring Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Yishun Link CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>A0932F615ECF208B</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20191119150818</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1187</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -74,9 +70,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "imPAct@Hong Lim Green",
-        "Address": "20 Upper Pickering Street, Hong Lim Park",
-        "Postal Code": "58284"
+        "Name": "kml_5",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>20</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>Hong Lim Park</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>58284</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Upper Pickering Street</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>imPAct@Hong Lim Green</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>AD6A8E55FE9FEDF7</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20191119150818</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -90,9 +85,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Fuchun CC",
-        "Address": "1 Woodlands Street 31 #01-02",
-        "Postal Code": "738581"
+        "Name": "kml_6",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>738581</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Woodlands Street 31</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/fuchun-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Fuchun CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9AC8A3383AC84DDA</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190603112619</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>2</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -106,9 +100,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Pek Kio CC",
-        "Address": "21 Gloucester Road #01-01",
-        "Postal Code": "219458"
+        "Name": "kml_7",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>21</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>219458</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Gloucester Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/pek-kio-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Pek Kio CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E185B3EFD21DDA09</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190603112619</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -122,9 +115,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Marsiling CC",
-        "Address": "100 Admiralty Road",
-        "Postal Code": "739980"
+        "Name": "kml_8",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>100</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>739980</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Admiralty Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/marsiling-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Marsiling CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>27CDFAB90F5763DD</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -138,9 +130,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Mountbatten CC",
-        "Address": "35 Jalan Satu",
-        "Postal Code": "399479"
+        "Name": "kml_9",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>35</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>399479</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jalan Satu</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/mountbatten-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Mountbatten CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9A25173772F072EE</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -154,9 +145,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Nanyang CC",
-        "Address": "60 Jurong West Street 91",
-        "Postal Code": "649040"
+        "Name": "kml_10",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>60</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>649040</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Street 91</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/nanyang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Nanyang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B6F5488A70D3D55B</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -170,9 +160,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Nee Soon East CC",
-        "Address": "1 Yishun Avenue 9",
-        "Postal Code": "768893"
+        "Name": "kml_11",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>768893</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Yishun Avenue 9</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/nee-soon-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Nee Soon East CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>AC342EBBFB4D2228</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -186,9 +175,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Nee Soon South CC",
-        "Address": "30 Yishun Street 81",
-        "Postal Code": "768455"
+        "Name": "kml_12",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>30</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>768455</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Yishun Street 81</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/nee-soon-south-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Nee Soon South CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>82894824BE63E4A5</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -202,9 +190,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Pasir Ris East CC",
-        "Address": "1 Pasir Ris Drive 4 #01-08",
-        "Postal Code": "519457"
+        "Name": "kml_13",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>519457</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Pasir Ris Drive 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/pasir-ris-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Pasir Ris East CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>7A4676FAA0D6522A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>8</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -218,9 +205,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Pasir Ris Elias CC",
-        "Address": "93 Pasir Ris Drive 3",
-        "Postal Code": "519498"
+        "Name": "kml_14",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>93</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>519498</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Pasir Ris Drive 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/pasir-ris-elias-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Pasir Ris Elias CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E33897E81ADD7BB4</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -234,9 +220,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Paya Lebar Kovan CC",
-        "Address": "207 Hougang Street 21",
-        "Postal Code": "530207"
+        "Name": "kml_15",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>207</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>530207</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Street 21</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/paya-lebar-kovan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Paya Lebar Kovan CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>A9D41AFCEBC6D785</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -250,9 +235,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Potong Pasir CC",
-        "Address": "6 Potong Pasir Avenue 2",
-        "Postal Code": "358361"
+        "Name": "kml_16",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>6</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>358361</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Potong Pasir Avenue 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/potong-pasir-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Potong Pasir CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>CACBDF199E1794E9</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -266,9 +250,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Punggol 21 CC",
-        "Address": "80 Punggol Field #01-01",
-        "Postal Code": "828815"
+        "Name": "kml_17",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>80</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>828815</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Punggol Field</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/punggol-21-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Punggol 21 CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>276AC22B3220ED32</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -282,9 +265,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Punggol CC",
-        "Address": "3 Hougang Avenue 6",
-        "Postal Code": "538808"
+        "Name": "kml_18",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>3</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>538808</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Avenue 6</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/punggol-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Punggol CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>8A19CBF432004F7B</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -298,9 +280,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Punggol Park CC",
-        "Address": "458 Hougang Avenue 10 #01-405",
-        "Postal Code": "530458"
+        "Name": "kml_19",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>458</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>530458</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Avenue 10</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/punggol-park-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Punggol Park CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>D9AF7CAF20D8E706</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>405</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -314,9 +295,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Punggol Vista CC",
-        "Address": "602 Punggol Central #01-02",
-        "Postal Code": "830602"
+        "Name": "kml_20",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>602</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>820602</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Punggol Central</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/punggol-vista-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Punggol Vista CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2B5C6C93CB6CF458</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>2</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -330,9 +310,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Punggol West CC",
-        "Address": "259C Punggol Field #01-47",
-        "Postal Code": "823259"
+        "Name": "kml_21",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>259C</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>823259</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Punggol Field</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Punggol West CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2E8A2B0DBB5BD044</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>47</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -346,9 +325,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Queenstown CC",
-        "Address": "365 Commonwealth Avenue ",
-        "Postal Code": "149732"
+        "Name": "kml_22",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>365</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>149732</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Commonwealth Avenue</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/queenstown-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Queenstown CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B647988A6B0900B0</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -362,9 +340,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kebun Baru CC",
-        "Address": "216 Ang Mo Kio Avenue 4",
-        "Postal Code": "569897"
+        "Name": "kml_23",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>216</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>569897</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ang Mo Kio Avenue 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kebun-baru-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kebun Baru CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2752FB78DCB7109C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -378,9 +355,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kim Seng CC",
-        "Address": "570 Havelock Road",
-        "Postal Code": "169640"
+        "Name": "kml_24",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>570</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>169640</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Havelock Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kim-seng-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kim Seng CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>36C68237A473B1EA</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -394,9 +370,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kreta Ayer CC",
-        "Address": "28A Kreta Ayer Road",
-        "Postal Code": "088995"
+        "Name": "kml_25",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>28A</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>88995</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Kreta Ayer Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kreta-ayer-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kreta Ayer CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>A3B9130EC76AA81A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -410,9 +385,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Leng Kee CC",
-        "Address": "400 Lengkok Bahru",
-        "Postal Code": "159049"
+        "Name": "kml_26",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>400</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>159049</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Lengkok Bahru</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/leng-kee-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Leng Kee CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>D82C68DCC4FDE23B</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -426,9 +400,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "MacPherson CC",
-        "Address": "400 Paya Lebar Way",
-        "Postal Code": "379131"
+        "Name": "kml_27",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>400</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>379131</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Paya Lebar Way</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/macpherson-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>MacPherson CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9455CC4AC8CC264E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -442,9 +415,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Yuhua CC",
-        "Address": "90 Boon Lay Way",
-        "Postal Code": "609958"
+        "Name": "kml_28",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>90</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>609958</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Boon Lay Way</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/yuhua-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Yuhua CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>6D45D9D5E8D60226</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -458,9 +430,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Siglap CC",
-        "Address": "151 Bedok South Road",
-        "Postal Code": "460151"
+        "Name": "kml_29",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>151</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>460151</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok South Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Siglap CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>36AE61E3643686D0</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -474,9 +445,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Senja-Cashew CC",
-        "Address": "101 Bukit Panjang Road, Opp. Bukit Panjang Plaza",
-        "Postal Code": "679910"
+        "Name": "kml_30",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>101</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>Opposite Bukit Panjang Plaza</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>679910</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bukit Panjang Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/senja-cashew-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Senja-Cashew CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>BE8046935009DF59</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -490,9 +460,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Siglap CC",
-        "Address": "300 Bedok South Avenue 3",
-        "Postal Code": "469299"
+        "Name": "kml_31",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>300</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>469299</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok South Avenue 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/siglap-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Siglap CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>EF29759AD1E65BEE</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -506,9 +475,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Gek Poh Ville CC",
-        "Address": "1 Jurong West Street 74",
-        "Postal Code": "649149"
+        "Name": "kml_32",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>649149</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Street 74</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/gek-poh-ville-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Gek Poh Ville CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>664E82291A321A34</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -522,9 +490,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Geylang West CC",
-        "Address": "1205 Upper Boon Keng Road",
-        "Postal Code": "387311"
+        "Name": "kml_33",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1205</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>387311</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Upper Boon Keng Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/geylang-west-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Geylang West CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>866A2FF99F4153A7</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -538,9 +505,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Henderson CC",
-        "Address": "500 Bukit Merah View",
-        "Postal Code": "159682"
+        "Name": "kml_34",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>500</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>159682</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bukit Merah View</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/henderson-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Henderson CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>CBAB9EF41C1DBC39</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -554,9 +520,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Hillview CC",
-        "Address": "1 Hillview Rise #01-01",
-        "Postal Code": "667970"
+        "Name": "kml_35",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>667970</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hillview Rise</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/hillview-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Hillview CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>4D37843D72325C7E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -570,9 +535,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Hong Kah North CC",
-        "Address": "30 Bukit Batok Street 31",
-        "Postal Code": "659440"
+        "Name": "kml_36",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>30</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>659440</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bukit Batok Street 31</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/hong-kah-north-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Hong Kah North CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>44A339571CC726A2</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -586,9 +550,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Hougang CC",
-        "Address": "35 Hougang Avenue 3",
-        "Postal Code": "538840"
+        "Name": "kml_37",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>35</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>538840</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Avenue 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/hougang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Hougang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B1DBF1389E87E6B5</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -602,9 +565,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Toa Payoh South CC",
-        "Address": "1999 Lorong 8 Toa Payoh",
-        "Postal Code": "319258"
+        "Name": "kml_38",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1999</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>319258</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Lorong 8 Toa Payoh</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/toa-payoh-south-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Toa Payoh South CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>178CA4A31C350E45</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -618,9 +580,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Ulu Pandan CC",
-        "Address": "170 Ghim Moh Road #01-01, Ulu Pandan Community Building",
-        "Postal Code": "279621"
+        "Name": "kml_39",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>170</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>Ulu Pandan Community Building</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>279621</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ghim Moh Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/ulu-pandan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Ulu Pandan CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F7D39D4FDE5770E4</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -634,9 +595,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "West Coast CC",
-        "Address": "2 Clementi West Street 2",
-        "Postal Code": "129605"
+        "Name": "kml_40",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>129605</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Clementi West Street 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/west-coast-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>West Coast CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>5DF752726BD6C22A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -650,9 +610,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Whampoa CC",
-        "Address": "300 Whampoa Drive",
-        "Postal Code": "327737"
+        "Name": "kml_41",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>300</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>327737</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Whampoa Drive</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/whampoa-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Whampoa CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>66947A1A86FCC0AC</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -666,9 +625,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Woodgrove CC",
-        "Address": "353 Woodlands Ave 1 #01-753",
-        "Postal Code": "730353"
+        "Name": "kml_42",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>353</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>730353</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Woodlands Ave 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/woodgrove-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Woodgrove CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>D36C8B9C069DCD21</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>753</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -682,9 +640,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Jurong Spring CC",
-        "Address": "8 Jurong West Street 52",
-        "Postal Code": "649296"
+        "Name": "kml_43",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>8</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>649296</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Street 52</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/jurong-spring-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Jurong Spring CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2D8ECAF881D81ED1</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -698,9 +655,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kaki Bukit CC",
-        "Address": "670 Bedok North Street 3",
-        "Postal Code": "469627"
+        "Name": "kml_44",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>670</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>469627</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok North Street 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kaki-bukit-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kaki Bukit CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>4FC2FCFFD16583F6</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -714,9 +670,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kallang CC",
-        "Address": "45 Boon Keng Road",
-        "Postal Code": "339771"
+        "Name": "kml_45",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>45</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>339771</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Boon Keng Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kallang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kallang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2B16AB135D979780</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -730,9 +685,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kampong Glam CC",
-        "Address": "385 Beach Road",
-        "Postal Code": "199581"
+        "Name": "kml_46",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>385</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>199581</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Beach Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kampong-glam-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kampong Glam CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>BB761485C277755E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -746,9 +700,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kampong Kembangan CC",
-        "Address": "5 Lengkong Tiga",
-        "Postal Code": "417408"
+        "Name": "kml_47",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>5</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>417408</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Lengkong Tiga</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kampong-kembangan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kampong Kembangan CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>60E6551142851D3C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -762,9 +715,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kampong Ubi CC",
-        "Address": "10 Jalan Ubi",
-        "Postal Code": "409075"
+        "Name": "kml_48",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>10</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>409075</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jalan Ubi</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kampong-ubi-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kampong Ubi CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>DC9F1FCBF93425D1</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -778,9 +730,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Katong CC",
-        "Address": "51 Kampong Arang Road",
-        "Postal Code": "438178"
+        "Name": "kml_49",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>51</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>438178</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Kampong Arang Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/katong-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Katong CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>FEF3356946C7F14D</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -794,9 +745,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Keat Hong CC",
-        "Address": "2 Choa Chu Kang Loop",
-        "Postal Code": "689687"
+        "Name": "kml_50",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>689687</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Choa Chu Kang Loop</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/keat-hong-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Keat Hong CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>238C3F29E68E0E8E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -810,9 +760,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bukit Panjang CC",
-        "Address": "8 Pending Road",
-        "Postal Code": "678295"
+        "Name": "kml_51",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>8</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>678295</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Pending Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bukit-panjang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bukit Panjang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>68DCE010D57E45D6</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -826,9 +775,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bukit Timah CC",
-        "Address": "20 Toh Yi Drive",
-        "Postal Code": "596569"
+        "Name": "kml_52",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>20</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>596569</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Toh Yi Drive</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bukit-timah-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bukit Timah CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>443EC19B6B3EE2CD</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -842,9 +790,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Cairnhill CC",
-        "Address": "1 Anthony Road",
-        "Postal Code": "229944"
+        "Name": "kml_53",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>229944</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Anthony Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/cairnhill-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Cairnhill CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>4AA7BC731FB44A68</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -858,9 +805,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Canberra CC",
-        "Address": "2 Sembawang Crescent",
-        "Postal Code": "757632"
+        "Name": "kml_54",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>757632</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Sembawang Crescent</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/canberra-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Canberra CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E83B5D1A727B5F15</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -874,9 +820,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Changi Simei CC",
-        "Address": "10 Simei Street 2",
-        "Postal Code": "529915"
+        "Name": "kml_55",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>10</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>529915</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Simei Street 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/changi-simei-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Changi Simei CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>1AB4A5D9B2BFF171</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -890,9 +835,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Cheng San CC",
-        "Address": "6 Ang Mo Kio Street 53",
-        "Postal Code": "569205"
+        "Name": "kml_56",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>6</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>569205</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ang Mo Kio Street 53</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/cheng-san-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Cheng San CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>39458CBA393A8A77</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -906,9 +850,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Chong Pang CC",
-        "Address": "21 Yishun Ring Road",
-        "Postal Code": "768677"
+        "Name": "kml_57",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>21</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>768677</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Yishun Ring Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/chong-pang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Chong Pang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>60A8EEFF2449850E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -922,9 +865,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Chua Chu Kang CC",
-        "Address": "35 Teck Whye Avenue",
-        "Postal Code": "688892"
+        "Name": "kml_58",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>35</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>688892</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Teck Whye Avenue</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/chua-chu-kang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Chua Chu Kang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>48BFE5445F81622C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -938,9 +880,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Ci Yuan CC",
-        "Address": "51 Hougang Avenue 9 #01-01",
-        "Postal Code": "538776"
+        "Name": "kml_59",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>51</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>538776</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Avenue 9</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/ci-yuan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Ci Yuan CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>765242D9268C75C8</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -954,9 +895,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Clementi CC",
-        "Address": "220 Clementi Avenue 4",
-        "Postal Code": "129880"
+        "Name": "kml_60",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>220</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>129880</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Clementi Avenue 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/clementi-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Clementi CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>94D669DC01D62EFB</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -970,9 +910,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Dover CC",
-        "Address": "1 Dover Road #01-300",
-        "Postal Code": "130001"
+        "Name": "kml_61",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>130001</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Dover Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/dover-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Dover CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>BF90A6261F75789D</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>300</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -986,9 +925,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Eunos CC",
-        "Address": "180 Bedok Reservoir Road",
-        "Postal Code": "479220"
+        "Name": "kml_62",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>180</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>479220</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok Reservoir Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/eunos-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Eunos CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E824C5B54804D0AA</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1002,9 +940,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Fengshan CC (U/C)",
-        "Address": "20 Bedok North Street 2",
-        "Postal Code": "469644"
+        "Name": "kml_63",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>20</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>469644</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok North Street 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/fengshan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Fengshan CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>29B402AC74DCC80A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1018,9 +955,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Siglap South CC",
-        "Address": "6 Palm Road",
-        "Postal Code": "456441"
+        "Name": "kml_64",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>6</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>456441</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Palm Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/siglap-south-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Siglap South CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B9FC13001C213875</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1034,9 +970,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Taman Jurong CC",
-        "Address": "1 Yung Sheng Road",
-        "Postal Code": "618495"
+        "Name": "kml_65",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>618495</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Yung Sheng Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/taman-jurong-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Taman Jurong CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>FF50516F9506C660</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1050,9 +985,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines Central CC",
-        "Address": "1 Tampines Walk #04-04",
-        "Postal Code": "528523"
+        "Name": "kml_66",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>528523</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Walk</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-central-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines Central CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>C57C470A51994838</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>4</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1066,9 +1000,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines Changkat CC",
-        "Address": "13 Tampines Street 11 #01-05",
-        "Postal Code": "529453"
+        "Name": "kml_67",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>13</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>529453</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Street 11</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-changkat-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines Changkat CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>5C41E93EAE0DA24A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>5</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1082,9 +1015,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Hwi Yoh CC",
-        "Address": "535 Serangoon North Avenue",
-        "Postal Code": "4550535"
+        "Name": "kml_68",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>535</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>550535</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Serangoon North Avenue 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/hwi-yoh-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Hwi Yoh CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9AD8CFC8B0A170F5</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>179</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1098,9 +1030,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Jalan Besar CC",
-        "Address": "69 Jellicoe Road",
-        "Postal Code": "208737"
+        "Name": "kml_69",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>69</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>208737</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jellicoe Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/jalan-besar-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Jalan Besar CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F3B68C02ECF8F439</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1114,9 +1045,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Joo Chiat CC",
-        "Address": "405 Joo Chiat Road",
-        "Postal Code": "427633"
+        "Name": "kml_70",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>405</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>427633</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Joo Chiat Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/joo-chiat-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Joo Chiat CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>0B8AD1E2E9580347</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1130,9 +1060,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Jurong Green CC",
-        "Address": "6 Jurong West Avenue 1",
-        "Postal Code": "649520"
+        "Name": "kml_71",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>6</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>649520</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Avenue 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/jurong-green-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Jurong Green CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>1C082F2520DC234F</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1146,9 +1075,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Jurong Spring CC (Till 3Q 2020)",
-        "Address": "535 Jurong West Street 52 #01-485",
-        "Postal Code": "640535"
+        "Name": "kml_72",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>535</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>640535</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Street 52</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/jurong-spring-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Jurong Spring CC (Till 3Q 2020)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E8C198C63D390D46</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>485</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1162,9 +1090,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "ACE The Place CC",
-        "Address": "120 Woodlands Avenue 1",
-        "Postal Code": "739069"
+        "Name": "kml_73",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>120</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>739069</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Woodlands Avenue 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/ace-the-place-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>ACE The Place CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>ED70A438913A484C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1178,9 +1105,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Aljunied CC",
-        "Address": "110 Hougang Avenue 1 #01-1048",
-        "Postal Code": "530110"
+        "Name": "kml_74",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>110</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>530110</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Hougang Avenue 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/aljunied-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Aljunied CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>4B64AE4221EEAA94</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1048</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1194,9 +1120,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Anchorvale CC",
-        "Address": "59 Anchorvale Road",
-        "Postal Code": "544965"
+        "Name": "kml_75",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>59</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>544965</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Anchorvale Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/anchorvale-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Anchorvale CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>1DD8DC4D60EE3F9A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1210,9 +1135,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Ang Mo Kio CC",
-        "Address": "795 Ang Mo Kio Avenue 1",
-        "Postal Code": "569976"
+        "Name": "kml_76",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>795</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>569976</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ang Mo Kio Avenue 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/ang-mo-kio-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Ang Mo Kio CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>DBABED77C37A5E5E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1226,9 +1150,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Ayer Rajah CC",
-        "Address": "150 Pandan Gardens",
-        "Postal Code": "609335"
+        "Name": "kml_77",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>150</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>609335</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Pandan Gardens</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/ayer-rajah-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Ayer Rajah CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F95CD26FE1500937</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1242,9 +1165,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bedok CC",
-        "Address": "850 New Upper Changi Road",
-        "Postal Code": "467352"
+        "Name": "kml_78",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>850</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>467352</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>New Upper Changi Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bedok-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bedok CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>FEFA68213DF62BFE</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1258,9 +1180,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bishan CC",
-        "Address": "51 Bishan Street 13",
-        "Postal Code": "579799"
+        "Name": "kml_79",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>51</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>579799</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bishan Street 13</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bishan-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bishan CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>C270CDA2DF1C97FA</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1274,9 +1195,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bishan North CC",
-        "Address": "233 Bishan Street 22 #01-126",
-        "Postal Code": "570233"
+        "Name": "kml_80",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>233</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>570233</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bishan Street 22</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bishan-north-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bishan North CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>A24580C4B5B3D16A</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>126</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1290,9 +1210,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bishan North CC (U/C)",
-        "Address": "191 Sin Ming Avenue",
-        "Postal Code": "575738"
+        "Name": "kml_81",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>191</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>575738</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Sin Ming Avenue</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bishan-north-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bishan North CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>0DCB6BF1E5540188</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1306,9 +1225,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Boon Lay CC",
-        "Address": "10 Boon Lay Place",
-        "Postal Code": "649882"
+        "Name": "kml_82",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>10</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>649882</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Boon Lay Place</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/boon-lay-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Boon Lay CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>1CEA67E597F5FD46</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1322,9 +1240,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Braddell Heights CC",
-        "Address": "50 Serangoon Avenue 2 #01-01",
-        "Postal Code": "556129"
+        "Name": "kml_83",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>50</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>556129</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Serangoon Avenue 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/braddell-heights-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Braddell Heights CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>3228BC288A469F2B</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1338,9 +1255,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bukit Batok CC",
-        "Address": "21 Bukit Batok Central",
-        "Postal Code": "659959"
+        "Name": "kml_84",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>21</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>659959</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bukit Batok Central</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bukit-batok-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bukit Batok CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9BB55356F5E548A4</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1354,9 +1270,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bukit Batok East CC",
-        "Address": "23 Bukit Batok East Avenue 4",
-        "Postal Code": "659841"
+        "Name": "kml_85",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>23</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>659841</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bukit Batok East Avenue 4</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bukit-batok-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bukit Batok East CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F5CA1F9C27987E86</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1370,9 +1285,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bukit Merah CC",
-        "Address": "4000 Jalan Bukit Merah ",
-        "Postal Code": "159465"
+        "Name": "kml_86",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>4000</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>159465</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jalan Bukit Merah</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/bukit-merah-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bukit Merah CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>EF45D09D4AD8CDC9</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1386,9 +1300,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Rivervale CC (U/C)",
-        "Address": "",
-        "Postal Code": ""
+        "Name": "kml_87",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>35698.38284</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>40782.05711</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Rivervale CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9B6D6E76C9403B33</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190628165516</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1402,9 +1315,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Fernvale CC (U/C)",
-        "Address": "",
-        "Postal Code": ""
+        "Name": "kml_88",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>32878.56203</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>41508.35754</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Fernvale CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>CC7F81758127D878</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190628165516</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1418,9 +1330,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bidadari CC (U/C)",
-        "Address": "",
-        "Postal Code": ""
+        "Name": "kml_89",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td></td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td></td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>32279.85002</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>35663.32365</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Bidadari CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>D900EF921EED10C5</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190628165516</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1434,9 +1345,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Marine Parade CC",
-        "Address": "278 Marine Parade Road",
-        "Postal Code": "449282"
+        "Name": "kml_90",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>278</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>449282</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Marine Parade Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/marine-parade-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Marine Parade CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2E133690CC5BDB10</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1450,9 +1360,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines East CC (U/C)",
-        "Address": "10 Tampines Street 23",
-        "Postal Code": "529341"
+        "Name": "kml_91",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>10</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>529341</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Street 23</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines East CC (U/C)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>C7C8B4E168C7FACC</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1466,9 +1375,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines East CC (Till 4Q 2019)",
-        "Address": "209 Tampines Street 21 #01-1339",
-        "Postal Code": "520209"
+        "Name": "kml_92",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>209</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>520209</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Street 21</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines East CC (Till 4Q 2019)</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>ACCAE1ADD9453D02</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1339</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1482,9 +1390,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines North CC",
-        "Address": "2 Tampines Street 41",
-        "Postal Code": "529204"
+        "Name": "kml_93",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>529204</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Street 41</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-north-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines North CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>8E4D9717D6BD95F5</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1498,9 +1405,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tampines West CC",
-        "Address": "5 Tampines Avenue 3",
-        "Postal Code": "529705"
+        "Name": "kml_94",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>5</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>529705</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Tampines Avenue 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tampines-west-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tampines West CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>AB698123C1AA38BC</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1514,9 +1420,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tanglin CC",
-        "Address": "245 Whitley Road",
-        "Postal Code": "297829"
+        "Name": "kml_95",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>245</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>297829</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Whitley Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tanglin-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tanglin CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F48761B12DB8D28F</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1530,9 +1435,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tanjong Pagar CC",
-        "Address": "101 Cantonment Road",
-        "Postal Code": "089774"
+        "Name": "kml_96",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>101</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>89774</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Cantonment Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tanjong-pagar-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tanjong Pagar CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>F73A2A5EE2283573</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1546,9 +1450,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Teck Ghee CC",
-        "Address": "861 Ang Mo Kio Avenue 10",
-        "Postal Code": "569734"
+        "Name": "kml_97",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>861</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>569734</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ang Mo Kio Avenue 10</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/teck-ghee-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Teck Ghee CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B1746F6A64230673</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1562,9 +1465,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Telok Blangah CC",
-        "Address": "450 Telok Blangah Street 31",
-        "Postal Code": "108943"
+        "Name": "kml_98",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>450</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>108943</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Telok Blangah Street 31</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/telok-blangah-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Telok Blangah CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>9DD2B604F360C2EE</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1578,9 +1480,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "The Frontier CC",
-        "Address": "60 Jurong West Central 3 #01-01",
-        "Postal Code": "648346"
+        "Name": "kml_99",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>60</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>648346</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Jurong West Central 3</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/the-frontier-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>The Frontier CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>79E1120C188CB25E</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1594,9 +1495,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "The Serangoon CC",
-        "Address": "10 Serangoon North Avenue 2",
-        "Postal Code": "555877"
+        "Name": "kml_100",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>10</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>555877</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Serangoon North Avenue 2</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/the-serangoon-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>The Serangoon CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>7D2FFBBBB56F0564</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1610,9 +1510,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Thomson CC",
-        "Address": "194 Upper Thomson Road",
-        "Postal Code": "574339"
+        "Name": "kml_101",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>194</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>574339</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Upper Thomson Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/thomson-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Thomson CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>31CE4A6D56389B49</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1626,9 +1525,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tiong Bahru CC",
-        "Address": "67A Eu Chin Street",
-        "Postal Code": "169715"
+        "Name": "kml_102",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>67A</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>169715</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Eu Chin Street</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/tiong-bahru-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Tiong Bahru CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>6772C5E8FD8D356C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1642,9 +1540,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Toa Payoh Central CC",
-        "Address": "93 Toa Payoh Central",
-        "Postal Code": "319194"
+        "Name": "kml_103",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>93</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>319194</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Toa Payoh Central</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/toa-payoh-central-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Toa Payoh Central CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B025DA1AF70A21D4</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1658,9 +1555,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Toa Payoh East CC",
-        "Address": "160 Lorong 6 Toa Payoh",
-        "Postal Code": "319380"
+        "Name": "kml_104",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>160</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>319380</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Lorong 6 Toa Payoh</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/toa-payoh-east-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Toa Payoh East CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>5F159FB00C04FB77</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1674,9 +1570,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kampong Chai Chee CC",
-        "Address": "11 Bedok North Street 1",
-        "Postal Code": "469662"
+        "Name": "kml_105",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>11</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>469662</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Bedok North Street 1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kampong-chai-chee-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kampong Chai Chee CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>E6D5FB69E8F5D77D</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20191106160618</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1690,9 +1585,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Toa Payoh West CC",
-        "Address": "200 Lorong 2 Toa Payoh",
-        "Postal Code": "319642"
+        "Name": "kml_106",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>200</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>319642</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Lorong 2 Toa Payoh</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/toa-payoh-west-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Toa Payoh West CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>5F638116630A6CF4</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20191106160618</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1706,9 +1600,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Woodlands CC",
-        "Address": "1 Woodlands Street 81",
-        "Postal Code": "738526"
+        "Name": "kml_107",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>738526</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Woodlands Street 81</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/woodlands-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Woodlands CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>7ADDE12E6F3F8AD9</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1722,9 +1615,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Woodlands Galaxy CC ",
-        "Address": "31 Woodlands Avenue 6",
-        "Postal Code": "738991"
+        "Name": "kml_108",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>31</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>738991</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Woodlands Avenue 6</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/woodlands-galaxy-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Woodlands Galaxy CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>DB9E72A7FBDDFB97</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1738,9 +1630,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Yew Tee CC",
-        "Address": "20 Choa Chu Kang Street 52 ",
-        "Postal Code": "689286"
+        "Name": "kml_109",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>20</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>Yew Tee Community Building</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>689286</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Choa Chu Kang Street 52</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/yew-tee-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Yew Tee CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2817F4C544BC5B72</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1754,9 +1645,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Buona Vista CC ",
-        "Address": "36 Holland Drive",
-        "Postal Code": "270036"
+        "Name": "kml_110",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>36</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>270036</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Holland Drive</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/buona-vista-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Buona Vista CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>99D530F9B5DB2D62</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190925171119</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1770,9 +1660,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Geylang Serai CC",
-        "Address": "1 Engku Aman Turn",
-        "Postal Code": "408528"
+        "Name": "kml_111",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>408528</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Engku Aman Turn</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/geylang-serai-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Geylang Serai CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>FD8C3EA48E0435C8</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190925171119</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1786,9 +1675,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Kolam Ayer CC",
-        "Address": "1 Geylang Bahru Lane",
-        "Postal Code": "339631"
+        "Name": "kml_112",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>339631</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Geylang Bahru Lane</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/kolam-ayer-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Kolam Ayer CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>0E1F139B0A423127</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190925171119</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1802,9 +1690,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Nee Soon Central CC",
-        "Address": "1 Northpoint Drive",
-        "Postal Code": "768019"
+        "Name": "kml_113",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>1</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>768019</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Northpoint Drive</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/nee-soon-central-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Nee Soon Central CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>BD725D17D8A2B1CF</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190925171119</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>201</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1818,9 +1705,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Yio Chu Kang CC",
-        "Address": "50 Ang Mo Kio Street 61",
-        "Postal Code": "569163"
+        "Name": "kml_114",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>50</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>569163</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Ang Mo Kio Street 61</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/yio-chu-kang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Yio Chu Kang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>2CBC381536E979FB</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1834,9 +1720,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Radin Mas CC",
-        "Address": "51 Telok Blangah Crescent",
-        "Postal Code": "98917"
+        "Name": "kml_115",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>51</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>98917</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Telok Blangah Crescent</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/radin-mas-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Radin Mas CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>95CFCA955C6F89D1</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1850,9 +1735,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Rivervale CC",
-        "Address": "193 Rivervale Drive",
-        "Postal Code": "540193"
+        "Name": "kml_116",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>193</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>540193</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Rivervale Drive</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Centre</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/rivervale-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Rivervale CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>4E105876D4CC3594</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>787</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1866,9 +1750,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sembawang CC",
-        "Address": "2125 Sembawang Road",
-        "Postal Code": "758528"
+        "Name": "kml_117",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2125</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>758528</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Sembawang Road</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/sembawang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Sembawang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td></td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>B5BE5769F23904C7</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td></td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",
@@ -1882,9 +1765,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sengkang CC",
-        "Address": "2 Sengkang Square",
-        "Postal Code": "545025"
+        "Name": "kml_118",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSBLOCKHOUSENUMBER</th> <td>2</td> </tr><tr bgcolor=\"\"> <th>ADDRESSBUILDINGNAME</th> <td>Sengkang Community Hub</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSPOSTALCODE</th> <td>545025</td> </tr><tr bgcolor=\"\"> <th>ADDRESSSTREETNAME</th> <td>Sengkang Square</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSTYPE</th> <td>A</td> </tr><tr bgcolor=\"\"> <th>DESCRIPTION</th> <td>Community Club</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>HYPERLINK</th> <td>https://www.onepa.sg/cc/sengkang-cc</td> </tr><tr bgcolor=\"\"> <th>LANDXADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>LANDYADDRESSPOINT</th> <td>0</td> </tr><tr bgcolor=\"\"> <th>NAME</th> <td>Sengkang CC</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>PHOTOURL</th> <td></td> </tr><tr bgcolor=\"\"> <th>ADDRESSFLOORNUMBER</th> <td>1</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>INC_CRC</th> <td>EEB6F7D18DB29C5C</td> </tr><tr bgcolor=\"\"> <th>FMEL_UPD_D</th> <td>20190624164320</td> </tr><tr bgcolor=\"#E3E3F3\"> <th>ADDRESSUNITNUMBER</th> <td>1</td> </tr></table></center>"
       },
       "geometry": {
         "type": "Point",

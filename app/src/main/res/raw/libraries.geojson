@@ -30,7 +30,7 @@
         "Name": "Library@Orchard",
         "Address": "277 Orchard Road #03-12, Orchard Gateway",
         "Postal Code": "238858",
-        "Photo URL": "",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Orchard/OCPL_main.jpg",
       },
       "geometry": {
         "type": "Point",
@@ -47,7 +47,7 @@
         "Name": "Geylang East Public Library",
         "Address": "50 Geylang East Ave 1",
         "Postal Code": "389777",
-        "Photo URL": "",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Geylang/MAIN-GEPL-cropped.jpg",
       },
       "geometry": {
         "type": "Point",
@@ -64,7 +64,7 @@
         "Name": "Jurong West Public Library",
         "Address": "60 Jurong West Central 3 #01-03",
         "Postal Code": "648346",
-        "Photo URL": "",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/JurongWest/MAIN-JWPL-cropped.jpg",
       },
       "geometry": {
         "type": "Point",
