@@ -1,0 +1,2482 @@
+{
+  "type": "FeatureCollection",
+  "name": "starbucks",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Marina Square II",
+        "Street Address": "6 Raffles Boulevard, #03-217/218 Marina Square",
+        "City": "Singapore",
+        "Postcode": "39594",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Suntec City Mall level 1",
+        "Street Address": "3 Temasek Boulevard, #01-433 Suntec City Mall",
+        "City": "Singapore",
+        "Postcode": "38983",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Hillv2",
+        "Street Address": "6 Hillview Rise , #01-05 HillV2",
+        "City": "Singapore",
+        "Postcode": "667980",
+        "Phone Number": "",
+        "Longitude": 103.76,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Tiong Bahru Plaza",
+        "Street Address": "302 Tiong Buhru Road, #01-111B",
+        "City": "Singapore",
+        "Postcode": "168732",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Delfi Orchard",
+        "Street Address": "402 Orchard Road, #01-01",
+        "City": "Singapore",
+        "Postcode": "238876",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "NUS Yong Loo Lin School of Medicine",
+        "Street Address": "10 Medical Drive #01-40, Yong Loo Lin School of Medicine",
+        "City": "Singapore",
+        "Postcode": "",
+        "Phone Number": "",
+        "Longitude": 103.78,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Liat Towers",
+        "Street Address": "541 Orchard Rd, #01-10A",
+        "City": "Singapore",
+        "Postcode": "238881",
+        "Phone Number": "736 2665",
+        "Longitude": 103.83,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Singapore Land Tower",
+        "Street Address": "50, Raffles Place, #01-02B",
+        "City": "Singapore",
+        "Postcode": "48623",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "City House",
+        "Street Address": "36 Robinson Road, #01-02 City House,",
+        "City": "Singapore",
+        "Postcode": "68877",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "J Cube",
+        "Street Address": "2 Jurong East Central 1, #02-19",
+        "City": "Singapore",
+        "Postcode": "609731",
+        "Phone Number": "",
+        "Longitude": 103.74,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Waterway Point",
+        "Street Address": "83 Punggol Central, #01-67 Waterway Point",
+        "City": "Singapore",
+        "Postcode": "828761",
+        "Phone Number": "",
+        "Longitude": 103.9,
+        "Latitude": 1.41
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9,
+          1.41
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Wheelock Place B1",
+        "Street Address": "501, Orchard Road #B1-01",
+        "City": "Singapore",
+        "Postcode": "238880",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Mount Elizabeth, Novena",
+        "Street Address": "38, Irrawaddy Road #01-14",
+        "City": "Singapore",
+        "Postcode": "329563",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "ION Orchard - B3-73a/b",
+        "Street Address": "2 Orchard Turn, #B3-59",
+        "City": "Singapore",
+        "Postcode": "238801",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "AXA Tower",
+        "Street Address": "8 Shenton Way, #B1-12/13 AXA Tower",
+        "City": "Singapore",
+        "Postcode": "68811",
+        "Phone Number": "224 9175",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Tanglin Mall",
+        "Street Address": "163 Tanglin Road",
+        "City": "Singapore",
+        "Postcode": "247933",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Millenia Walk",
+        "Street Address": "9 Raffles Boulevard",
+        "City": "Singapore",
+        "Postcode": "39596",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "ONE KM",
+        "Street Address": "11 Tanjong Katong #01-17/18/19",
+        "City": "Singapore",
+        "Postcode": "437137",
+        "Phone Number": "",
+        "Longitude": 103.89,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Orchard Gateway",
+        "Street Address": "277 Orchard Road, B2-05",
+        "City": "Singapore",
+        "Postcode": "238858",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi City Point",
+        "Street Address": "Changi South Ave 1, #01-68",
+        "City": "Singapore",
+        "Postcode": "486038",
+        "Phone Number": "",
+        "Longitude": 103.96,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.96,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "University Town- NUS",
+        "Street Address": "8 College Avenue West, #B1-01 Education Resource Centre",
+        "City": "Singapore",
+        "Postcode": "138608",
+        "Phone Number": "",
+        "Longitude": 103.77,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.77,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Gateway West",
+        "Street Address": "150 Beach Road, #01-01A",
+        "City": "Singapore",
+        "Postcode": "189720",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "City Link Mall",
+        "Street Address": "1 Raffles Link",
+        "City": "Singapore",
+        "Postcode": "39393",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Rochester Park",
+        "Street Address": "37 Rochester Drive",
+        "City": "Singapore",
+        "Postcode": "138640",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Toa Payoh HDB Hub",
+        "Street Address": "Blk 490, Lor 6 toa Payoh,#01-14",
+        "City": "Singapore",
+        "Postcode": "310490",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Centerpoint SC - Main Atruim",
+        "Street Address": "176 Orchard Road",
+        "City": "Singapore",
+        "Postcode": "238843",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Capital Towers",
+        "Street Address": "168 Robinson Road, #01-01/02 Capital Tower",
+        "City": "Singapore",
+        "Postcode": "68912",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "313 somerset",
+        "Street Address": "313 Sommerset Road, #02-38/39 & 50",
+        "City": "Singapore",
+        "Postcode": "238895",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Raffles City Singapore",
+        "Street Address": "252 North Bridge Rd, #01-46/46A/48",
+        "City": "Singapore",
+        "Postcode": "179103",
+        "Phone Number": "333 3083",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "The Central",
+        "Street Address": "6 Eu Tong Sen Street,#01-29/30/31",
+        "City": "Singapore",
+        "Postcode": "59817",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Clementi Mall",
+        "Street Address": "3155, Commonwealth Avenue West, #03-K1/K3",
+        "City": "Singapore",
+        "Postcode": "129588",
+        "Phone Number": "",
+        "Longitude": 103.76,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "One Kent Ridge",
+        "Street Address": "1 Lower Kent Ridge Road,#03-05, The Concourse - Office Tower",
+        "City": "Singapore",
+        "Postcode": "119082",
+        "Phone Number": "",
+        "Longitude": 103.78,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "The Concourse - Office Lobby Lvl 1",
+        "Street Address": "300 Beach Road, Level 1",
+        "City": "Singapore",
+        "Postcode": "199555",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Novena Square - Office Tower",
+        "Street Address": "238 Thompson Road, #02-04, 05 & #02-K1",
+        "City": "Singapore",
+        "Postcode": "307683",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Shaw Towers",
+        "Street Address": "100 Beach Rd, #01-57/60 Shaw Leisure Gallery",
+        "City": "Singapore",
+        "Postcode": "189702",
+        "Phone Number": "392 9327",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "One Fullerton-Unit #01-05",
+        "Street Address": "1 Fullerton Road, #01-04 One Fullerton",
+        "City": "Singapore",
+        "Postcode": "49213",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "The Paragon",
+        "Street Address": "290 Orchard Rd #B1-34 Paragon, Basement 1",
+        "City": "Singapore",
+        "Postcode": "238859",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Marina Bay Link Mall",
+        "Street Address": "8A Marina Boulevard, #B2-38-39, Valley Point",
+        "City": "Singapore",
+        "Postcode": "18984",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Valley Point",
+        "Street Address": "491 River Valley Road, ##01-16, Valley Point Shopping Centre,",
+        "City": "Singapore",
+        "Postcode": "248371",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Singapore General Hospital blk 4",
+        "Street Address": "1 hospital drive blk 4",
+        "City": "singapore",
+        "Postcode": "169608",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Suntec City Mall 2",
+        "Street Address": "3 Temasek Boulevard, #02-613/614, Suntec City Mall",
+        "City": "Singapore",
+        "Postcode": "38983",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Pacific Plaza - Main Entrance",
+        "Street Address": "9 Scotts Road, Open Area #1",
+        "City": "Singapore",
+        "Postcode": "228210",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "United Square",
+        "Street Address": "101 Thomson Road, #01-01,",
+        "City": "Singapore",
+        "Postcode": "307591",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Ocean Financial Centre",
+        "Street Address": "10 Collyer Quay, #B1-07 Ocean Financial Centre",
+        "City": "Singapore",
+        "Postcode": "49315",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bugis Junction",
+        "Street Address": "230 Victoria Street #01-15 Seiyu Dept St",
+        "City": "Singapore",
+        "Postcode": "188024",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "EFG Building",
+        "Street Address": "25 North Bridge Road",
+        "City": "Singapore",
+        "Postcode": "179104",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "United Square Temp Store",
+        "Street Address": "101 Thomson Road",
+        "City": "Singapore",
+        "Postcode": "307591",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "FarEast Square",
+        "Street Address": "40 Pekin Street #01-01",
+        "City": "Singapore",
+        "Postcode": "48770",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Resort World Sentosa",
+        "Street Address": "8 Sentosa Gateway, #01-202",
+        "City": "Singapore",
+        "Postcode": "98138",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Samsung @ MBC",
+        "Street Address": "30 Pasir Panjang Road #17-31/32",
+        "City": "Singapore",
+        "Postcode": "117440",
+        "Phone Number": "",
+        "Longitude": 103.8,
+        "Latitude": 1.27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8,
+          1.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "MBS",
+        "Street Address": "10 Bayfront Ave #B2-56",
+        "City": "Singapore",
+        "Postcode": "18956",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "OCBC Centre East",
+        "Street Address": "63 Chulia Street, #01-01A/01B OCBC Centre East",
+        "City": "Singapore",
+        "Postcode": "49514",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Wilkie Edge - Level 1",
+        "Street Address": "8 Wilkie Road, #01-19/20 Level 1 Wilkie Edge",
+        "City": "Singapore",
+        "Postcode": "228095",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "DBS Level 13",
+        "Street Address": "12 Marina Boulevard #13-35, Marina Bay Financial Centre Tower 3, L13",
+        "City": "Singapore",
+        "Postcode": "18981",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Houang Mall",
+        "Street Address": "90 Hougang Avenue 10, #02-11,19",
+        "City": "Singapore",
+        "Postcode": "538766",
+        "Phone Number": "",
+        "Longitude": 103.89,
+        "Latitude": 1.37
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89,
+          1.37
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "78 Shenton Way",
+        "Street Address": "78 Shenton Way, #01-02",
+        "City": "Singapore",
+        "Postcode": "79120",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Metropolis",
+        "Street Address": "9 North Buona Vista Drive, #01-13/14",
+        "City": "Singapore",
+        "Postcode": "138588",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Cathay",
+        "Street Address": "2 Handy Road, The Cathay #01-05",
+        "City": "Singapore",
+        "Postcode": "229233",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Starbucks at USS(RWS)",
+        "Street Address": "30 SENTOSA GATEWAY, #01-309",
+        "City": "Singapore",
+        "Postcode": "98138",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.25
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bugis Plus",
+        "Street Address": "201 Victoria Street, #002-12/13",
+        "City": "Singapore",
+        "Postcode": "188067",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Liang Court - G/F #01-11 - Reloc",
+        "Street Address": "177 River Valley Road, Ground Floor - Space #01-11",
+        "City": "Singapore",
+        "Postcode": "179030",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Wisma Atria",
+        "Street Address": "435 Orchard Road, #03-35 to #03-40 Wisma Atria",
+        "City": "Singapore",
+        "Postcode": "238877",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Science Park II",
+        "Street Address": "45 Science Park, unit 4",
+        "City": "Singapore",
+        "Postcode": "117545",
+        "Phone Number": "",
+        "Longitude": 103.78,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "The Waterboat House",
+        "Street Address": "3 Fullerton,#02-01/02/03",
+        "City": "Singapore",
+        "Postcode": "49215",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "JEM",
+        "Street Address": "50 Jurong Gateway Road, #01-02",
+        "City": "Singapore",
+        "Postcode": "608549",
+        "Phone Number": "",
+        "Longitude": 103.74,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Raffles Place Exchange",
+        "Street Address": "5 Raffles Place, #B1-55/56",
+        "City": "Singapore",
+        "Postcode": "48618",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Manulife Centre",
+        "Street Address": "51, Bras Basah Road, #01-02B Manulife Centre",
+        "City": "Singapore",
+        "Postcode": "",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "100AM",
+        "Street Address": "100 Tras Street, #01-05, 100 AM,",
+        "City": "Singapore",
+        "Postcode": "79027",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bishan CC",
+        "Street Address": "51 Bishan Street 13, #01-02, Bishan Community Club",
+        "City": "Singapore",
+        "Postcode": "579799",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Fusionpolistemp store",
+        "Street Address": "2 Fusionpolis Way #01-04",
+        "City": "Singapore",
+        "Postcode": "138634",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Suntec City - Level 2",
+        "Street Address": "3 Temasek Blvd, #02-393/394",
+        "City": "Singapore",
+        "Postcode": "38983",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Hong Leong Building",
+        "Street Address": "16 Raffles Quay,#01-01",
+        "City": "Singapore",
+        "Postcode": "48581",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Plaza Singapura",
+        "Street Address": "68 Orchard Road, 01-34B",
+        "City": "Singapore",
+        "Postcode": "248371",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "20 Anson",
+        "Street Address": "20 Anson Road, #01-01",
+        "City": "Singapore",
+        "Postcode": "79912",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Raffles Hospital",
+        "Street Address": "585 North Bridge Road,, #01-08, Raffles Hospital",
+        "City": "Singapore",
+        "Postcode": "188770",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi AP Terminal 3 Basement 2",
+        "Street Address": "65 Airport Boulevard, #B2-34, Basement L2 North, Terminal 3",
+        "City": "Singapore",
+        "Postcode": "819663",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "NEX",
+        "Street Address": "23 Serangoon Central, #02-K01/02",
+        "City": "Singapore",
+        "Postcode": "556083",
+        "Phone Number": "",
+        "Longitude": 103.87,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.87,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "City Square Mall Singapore",
+        "Street Address": "180 Kitchener Road, #01-38",
+        "City": "Singapore",
+        "Postcode": "208539",
+        "Phone Number": "",
+        "Longitude": 103.86,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "3 Jalan Jamal",
+        "Street Address": "3 Jalan Jamal",
+        "City": "Singapore",
+        "Postcode": "457802",
+        "Phone Number": "",
+        "Longitude": 103.93,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.93,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Orchard Cinelesisure",
+        "Street Address": "8  Grange Road, #01-k1, Cathay Cineleisure Orchard",
+        "City": "Singapore",
+        "Postcode": "239695",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "The Seletar Mall",
+        "Street Address": "33 SengKang West Ave #01-15/16, level 1",
+        "City": "Singapore",
+        "Postcode": "767653",
+        "Phone Number": "",
+        "Longitude": 103.88,
+        "Latitude": 1.39
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88,
+          1.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Asia Square Tower 2",
+        "Street Address": "8 Marina View, #02-21",
+        "City": "Singapore",
+        "Postcode": "18960",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "SB Tampines Mall",
+        "Street Address": "4 Tampines Central 5 #01-50 Tampines Mall",
+        "City": "Singapore",
+        "Postcode": "529510",
+        "Phone Number": "",
+        "Longitude": 103.94,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.94,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Parkway Parade - Relocation",
+        "Street Address": "80 Marine Parade Road, #01-10B & 10C",
+        "City": "Singapore",
+        "Postcode": "449269",
+        "Phone Number": "",
+        "Longitude": 103.91,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi General Hospital",
+        "Street Address": "2 Simei Street 3, Level 1 Main Atrium",
+        "City": "Singapore",
+        "Postcode": "529889",
+        "Phone Number": "",
+        "Longitude": 103.95,
+        "Latitude": 1.34
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95,
+          1.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Compass One",
+        "Street Address": "1 sengkang Sq #01-04",
+        "City": "Singapore",
+        "Postcode": "545078",
+        "Phone Number": "",
+        "Longitude": 103.9,
+        "Latitude": 1.39
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9,
+          1.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "SIN-T2 Dept/Check-In Hall South L2",
+        "Street Address": "65 Airport Boulevard, Departure Hall Level 2, Changi International Airport",
+        "City": "Singapore",
+        "Postcode": "81964",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "SIN - T1 Arrival Hall Central-Lvl 1",
+        "Street Address": "65 Airport Boulevard, Terminal 1, Arrival Hall, #011-003A",
+        "City": "Singapore",
+        "Postcode": "819642",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "SIM - clementi centre",
+        "Street Address": "535A CLEMENTI ROAD,blk C,C01-04",
+        "City": "Singapore",
+        "Postcode": "599490",
+        "Phone Number": "",
+        "Longitude": 103.78,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Woodlands Civic Centre",
+        "Street Address": "900 South Woodlands Drive, #02-09",
+        "City": "Singapore",
+        "Postcode": "730900",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.44
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Northpoint City",
+        "Street Address": "930 Yishun Ave 2 #01-07/08",
+        "City": "Singapore",
+        "Postcode": "769098",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.43
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.43
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Woodland Exchange",
+        "Street Address": "30 Woodlands Avenue 2,#01-7/8/15",
+        "City": "Singapore",
+        "Postcode": "738343",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.44
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Thomson Plaza",
+        "Street Address": "301 Upper Thomson Road",
+        "City": "Singapore",
+        "Postcode": "574408",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Sun Plaza LV 1",
+        "Street Address": "30 Sembawang, #01-22",
+        "City": "Singapore",
+        "Postcode": "757713",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.45
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Tampines West CC",
+        "Street Address": "5 Tampines West Avenue 3",
+        "City": "Singapore",
+        "Postcode": "529705",
+        "Phone Number": "",
+        "Longitude": 103.94,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.94,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bedok Point",
+        "Street Address": "799 New Upper Changi Road, #01-09, #01-K2 / K3 / K4",
+        "City": "Singapore",
+        "Postcode": "467351",
+        "Phone Number": "",
+        "Longitude": 103.93,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.93,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Eastpoint Mall L1",
+        "Street Address": "3 Simei Street 6, #01-K4/5",
+        "City": "Singapore",
+        "Postcode": "528833",
+        "Phone Number": "",
+        "Longitude": 103.95,
+        "Latitude": 1.34
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95,
+          1.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bedok Mall",
+        "Street Address": "New Upper Changi Road, #01-93/94",
+        "City": "Singapore",
+        "Postcode": "467351",
+        "Phone Number": "",
+        "Longitude": 103.93,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.93,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "UE Square",
+        "Street Address": "83 Clemenceau Avenue #01-31",
+        "City": "Singapore",
+        "Postcode": "239918",
+        "Phone Number": "",
+        "Longitude": 103.84,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Our Tampines Hub",
+        "Street Address": "51 Tampines Ave 4 #01-104",
+        "City": "Singapore",
+        "Postcode": "529684",
+        "Phone Number": "",
+        "Longitude": 103.94,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.94,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Kallang Leisure Park",
+        "Street Address": "5 Stadium Walk, #01-09 - Kallang District",
+        "City": "Singapore",
+        "Postcode": "397693",
+        "Phone Number": "",
+        "Longitude": 103.88,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Kallang Wave Mall",
+        "Street Address": "1 Stadium Place, #01-56",
+        "City": "Singapore",
+        "Postcode": "397628",
+        "Phone Number": "",
+        "Longitude": 103.87,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.87,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "White Sands",
+        "Street Address": "1 Pasir Ris Central Street 3, #01-21/22/23",
+        "City": "Singapore",
+        "Postcode": "518457",
+        "Phone Number": "",
+        "Longitude": 103.95,
+        "Latitude": 1.37
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95,
+          1.37
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi T1 Transit Lounge East",
+        "Street Address": "80 Airport Boulevard, Terminal 1, Transit Lounge East Level 2,#021-022",
+        "City": "Singapore",
+        "Postcode": "819642",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Down Town East",
+        "Street Address": "1 Pasir Ris Close #02-332",
+        "City": "Singapore",
+        "Postcode": "519599",
+        "Phone Number": "",
+        "Longitude": 103.96,
+        "Latitude": 1.38
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.96,
+          1.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "One George Street",
+        "Street Address": "95 South Bridge Road #01-k2",
+        "City": "singapore",
+        "Postcode": "58717",
+        "Phone Number": "",
+        "Longitude": 103.85,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi Airport T2 Transit Hall",
+        "Street Address": "Departure / Transit Lounge North, Level 2, Unit No. 026-095-06, Terminal 2",
+        "City": "Singapore",
+        "Postcode": "819643",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Changi Terminal 1 Transit",
+        "Street Address": "80 Airport Boulevard #02-K10, Departure Transit Lounge West Terminal 1",
+        "City": "Singapore",
+        "Postcode": "819642",
+        "Phone Number": "",
+        "Longitude": 103.99,
+        "Latitude": 1.36
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99,
+          1.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Parkland Green",
+        "Street Address": "902, East Coast Parkway, #01-17",
+        "City": "Singapore",
+        "Postcode": "449875",
+        "Phone Number": "",
+        "Longitude": 103.91,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Sentosa, Cable Car Arrival Plaza",
+        "Street Address": "42 Imbiah Rd, #01-K1",
+        "City": "Sentosa Island",
+        "Postcode": "99704",
+        "Phone Number": "",
+        "Longitude": 103.81,
+        "Latitude": 1.26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.81,
+          1.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Vivo City 2 - 1 st Floor",
+        "Street Address": "1 Harbourfront Walk, #01-168/169/170",
+        "City": "Singapore",
+        "Postcode": "98585",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Biopolis",
+        "Street Address": "70 Biopolis street,, #01-03",
+        "City": "Singapore",
+        "Postcode": "138547",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Anchor Point",
+        "Street Address": "370 Alexandra Road, #01-05/06",
+        "City": "Singapore",
+        "Postcode": "159953",
+        "Phone Number": "",
+        "Longitude": 103.8,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Cintech 4",
+        "Street Address": "Science Park Drive",
+        "City": "Singapore",
+        "Postcode": "",
+        "Phone Number": "",
+        "Longitude": 103.79,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Vivo City - 2nd Floor",
+        "Street Address": "1 Harbourfront Walk, #02-60/61",
+        "City": "Singapore",
+        "Postcode": "98585",
+        "Phone Number": "6271 5634",
+        "Longitude": 103.82,
+        "Latitude": 1.26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "West Coast Plaza",
+        "Street Address": "154 West Coast Road #01-01",
+        "City": "Singapore",
+        "Postcode": "127371",
+        "Phone Number": "",
+        "Longitude": 103.77,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.77,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Jurong Point - Level 3",
+        "Street Address": "1 Jurong West Central 2, # 3-52/52A",
+        "City": "Singapore",
+        "Postcode": "648886",
+        "Phone Number": "",
+        "Longitude": 103.71,
+        "Latitude": 1.34
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.71,
+          1.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "West Gate",
+        "Street Address": "Jurong Gateway, #01-04",
+        "City": "Singapore",
+        "Postcode": "",
+        "Phone Number": "",
+        "Longitude": 103.74,
+        "Latitude": 1.33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74,
+          1.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "NTU NorthSpine",
+        "Street Address": "76 Nanyang Drive N2.1#01-06",
+        "City": "Singapore",
+        "Postcode": "637331",
+        "Phone Number": "",
+        "Longitude": 103.68,
+        "Latitude": 1.35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.68,
+          1.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Bukit Panjang Plaza",
+        "Street Address": "Bukit Panjang Plaza, 1 Jelebu Road, #2 09/09A",
+        "City": "Singapore",
+        "Postcode": "677743",
+        "Phone Number": "",
+        "Longitude": 103.76,
+        "Latitude": 1.38
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76,
+          1.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Ng Teng Fong Hospital",
+        "Street Address": "1 Jurong East street 21, #02-08",
+        "City": "Singapore",
+        "Postcode": "609606",
+        "Phone Number": "",
+        "Longitude": 103.74,
+        "Latitude": 1.34
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74,
+          1.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "587 Bukit Timah Road",
+        "Street Address": "587 Bukit Timah Road, Part of #01-03 (provisional no.)",
+        "City": "Singapore",
+        "Postcode": "269707",
+        "Phone Number": "",
+        "Longitude": 103.81,
+        "Latitude": 1.32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.81,
+          1.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Oasis  Sakra",
+        "Street Address": "3 Sakra Road #01-02",
+        "City": "Singapore",
+        "Postcode": "627878",
+        "Phone Number": "",
+        "Longitude": 103.71,
+        "Latitude": 1.27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.71,
+          1.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Keat Hong CC",
+        "Street Address": "2 Choa Chu Kang loop, #01-04",
+        "City": "Singapore",
+        "Postcode": "689687",
+        "Phone Number": "",
+        "Longitude": 103.74,
+        "Latitude": 1.38
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74,
+          1.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Singapore Polytechnic - Dover",
+        "Street Address": "500 Dover Road, FC5, Foodcourt 5 #01-510C",
+        "City": "Singapore",
+        "Postcode": "139651",
+        "Phone Number": "",
+        "Longitude": 103.78,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Yusof Ishak House - NUS",
+        "Street Address": "31, Lower Kent Ridge Road",
+        "City": "Singapore",
+        "Postcode": "119078",
+        "Phone Number": "",
+        "Longitude": 103.77,
+        "Latitude": 1.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.77,
+          1.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Mapletree Business City",
+        "Street Address": "10, 20, 30 Pasir Panjang Road",
+        "City": "Singapore",
+        "Postcode": "111713",
+        "Phone Number": "",
+        "Longitude": 103.8,
+        "Latitude": 1.27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8,
+          1.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Great World CIty",
+        "Street Address": "1 Kim Seng Promenade, 02-21A/C & 02-20B/E",
+        "City": "Singapore",
+        "Postcode": "237994",
+        "Phone Number": "",
+        "Longitude": 103.83,
+        "Latitude": 1.29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83,
+          1.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "Holland Village",
+        "Street Address": "255 Holland Avenue",
+        "City": "Singapore",
+        "Postcode": "278983",
+        "Phone Number": "463 9320",
+        "Longitude": 103.8,
+        "Latitude": 1.31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8,
+          1.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Store Name": "HarbourFront Centre",
+        "Street Address": "1 Maritime Square, #01-75/76",
+        "City": "Singapore",
+        "Postcode": "99253",
+        "Phone Number": "",
+        "Longitude": 103.82,
+        "Latitude": 1.26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82,
+          1.26
+        ]
+      }
+    }
+  ]
+}
