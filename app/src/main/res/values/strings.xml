@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">studygowhere</string>
+    <string name="app_name">StudyGoWhere</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
