@@ -10,13 +10,11 @@
     {
       "type": "Feature",
       "properties": {
-       "Name": "Serangoon Public Library",
-       "Address": "Serangoon Central",
-       "BuildingName": "NEX",
-       "PostalCode": "556083",
-       "Website": "http:\\/\\/www.nlb.gov.sg\\/VisitUs\\/BranchDetails\\/tabid\\/140\\/bid\\/342\\/Default.aspx?branch=Serangoon+Public+Library",
-       "Photo": "https://i.postimg.cc/mgCgxNms/serangoonlib.jpg"
-        },
+        "Name": "Serangoon Public Library",
+        "Address": "23 Serangoon Central #04-82/83, Nex",
+        "Postal Code": "556083",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Serangoon/MAIN-SRPL-cropped.jpg"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -27,33 +25,29 @@
       }
     },
     {
-          "type": "Feature",
-          "properties": {
-            "Name": "library@orchard",
-            "Address": "Orchard Road",
-            "BuildingName": "Orchard Gateway",
-            "PostalCode": "238858",
-            "Website": "http:\\/\\/www.nlb.gov.sg\\/VisitUs\\/BranchDetails\\/tabid\\/140\\/bid\\/337\\/Default.aspx?branch=library%40orchard",
-            "Photo": "https://i.postimg.cc/cHsHBgMN/orchardlib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.839669047112,
-              1.30040819039694,
-              0
-            ]
-          }
-     },
+      "type": "Feature",
+      "properties": {
+        "Name": "Library@Orchard",
+        "Address": "277 Orchard Road #03-12, Orchard Gateway",
+        "Postal Code": "238858",
+        "Photo URL": "",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.839669047112,
+          1.30040819039694,
+          0
+        ]
+      }
+    },
     {
       "type": "Feature",
       "properties": {
         "Name": "Geylang East Public Library",
-        "Address": "Geylang East Ave 1",
-        "BuildingName": "",
-        "PostalCode": "389777",
-        "Website": "http:\\/\\/www.nlb.gov.sg\\/VisitUs\\/BranchDetails\\/tabid\\/140\\/bid\\/328\\/Default.aspx?branch=Geylang+East+Public+Library",
-        "Photo": "https://i.postimg.cc/cCRFyzt3/geylanglib.jpg"
+        "Address": "50 Geylang East Ave 1",
+        "Postal Code": "389777",
+        "Photo URL": "",
       },
       "geometry": {
         "type": "Point",
@@ -63,17 +57,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Jurong West Public Library",
-        "Address": "Jurong West Central 3",
-        "BuildingName": "",
-        "PostalCode": "648346",
-        "Website": "http:\\/\\/www.nlb.gov.sg\\/VisitUs\\/BranchDetails\\/tabid\\/140\\/bid\\/302\\/Default.aspx?branch=Jurong+West+Public+Library",
-        "Photo": "https://i.postimg.cc/XJhR7tvD/jwlib.jpg"
+        "Address": "60 Jurong West Central 3 #01-03",
+        "Postal Code": "648346",
+        "Photo URL": "",
       },
       "geometry": {
         "type": "Point",
@@ -83,20 +74,15 @@
           0
         ]
       }
-
     },
-
-
     {
       "type": "Feature",
       "properties": {
         "Name": "Bukit Batok Public Library",
-         "Address": "Bukit Batok Central Link",
-         "BuildingName": "West Mall",
-         "PostalCode": "658713",
-         "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/286\/Default.aspx?branch=Bukit+Batok+Public+Library",
-         "Photo": "https://i.postimg.cc/9FD6KmL5/bblib.jpg"
-	},
+        "Address": "1 Bukit Batok Central Link #03-01, West Mall",
+        "Postal Code": "658713",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/BukitBatok/MAIN-BBPL-cropped.jpg",
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -105,218 +91,184 @@
           0
         ]
       }
-
     },
-     {
-          "type": "Feature",
-          "properties": {
-            "Name": "Sengkang Public Library",
-             "Address": "Sengkang Square",
-             "BuildingName": "Compass One",
-             "PostalCode": "545078",
-             "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/341\/Default.aspx?branch=Sengkang+Public+Library",
-             "Photo": "https://i.postimg.cc/x1wntJQ4/sengkanglib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.894688239041,
-              1.39132876236971,
-              0
-            ]
-          }
-
-     },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Marine Parade Public Library",
-            "Address": "Marine Parade Road",
-            "BuildingName": "Marine Parade",
-            "PostalCode": "449282",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/324\/Default.aspx?branch=Marine+Parade+Public+Library",
-            "Photo": "https://i.postimg.cc/zBWLxZ4n/marineparadelib.png"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.909581446984,
-              1.30466966872275,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Pasir Ris Public Library",
-            "Address": "Pasir Ris Central St 3",
-            "BuildingName": "White Sands",
-            "PostalCode": "518457",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/325\/Default.aspx?branch=Pasir+Ris+Public+Library",
-            "Photo": "https://i.postimg.cc/XqdwByV6/pasirrislib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.949439880186,
-              1.37235750960519,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "library@chinatown",
-            "Address": "North Bridge Road",
-            "BuildingName": "Chinatown Point",
-            "PostalCode": "59413",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/322\/Default.aspx?branch=library%40chinatown",
-            "Photo": "https://i.postimg.cc/0yqJK3wF/chinatownlib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.844942912669,
-              1.28526073700342,
-              0
-            ]
-          }
-
-        },
-
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "library@esplanade",
-            "Address": "Raffles Avenue",
-            "BuildingName": "",
-            "PostalCode": "39802",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/336\/Default.aspx?branch=library%40esplanade<\/td",
-            "Photo": "https://i.postimg.cc/SQv6RDVb/esplanadelib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.855770250108,
-              1.28941165551051,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Chua Chu Kang Public Library",
-            "Address": "Choa Chu Kang Avenue 4",
-            "BuildingName": "Lot One",
-            "PostalCode": "689812",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/295\/Default.aspx?branch=Choa+Chu+Kang+Public+Library",
-            "Photo": "https://i.postimg.cc/5NsZXcTN/ccklib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.745039269848,
-              1.38495919705382,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-           "Name": "Bukit Panjang Public Library",
-            "Address": "Jelebu Road",
-            "BuildingName": "Bukit Panjang Plaza",
-            "PostalCode": "677743",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/292\/Default.aspx?branch=Bukit+Panjang+Public+Library",
-            "Photo": "https://i.postimg.cc/C5gVsjsh/bukitpanjanglib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.764350064878,
-              1.37993637366735,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Cheng San Public Library",
-            "Address": "Hougang Avenue 10",
-            "BuildingName": "Hougang Mall",
-            "PostalCode": "538766",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/288\/Default.aspx?branch=Cheng+San+Public+Library",
-            "Photo": "https://i.postimg.cc/Y9JSKGNZ/chengsanlib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.893775348884,
-              1.3725726449182,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Clementi Public Library",
-            "Address": "Commonwealth Avenue West",
-            "BuildingName": "The Clementi Mall",
-            "PostalCode": "129588",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/296\/Default.aspx?branch=Clementi+Public+Library",
-            "Photo": "https://i.postimg.cc/pT12Q91y/climentilib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.764305614552,
-              1.31506201647581,
-              0
-            ]
-          }
-
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "Name": "Ang Mo Kio Public Library",
-            "Address": "Ang Mo Kio Avenue 6",
-            "BuildingName": "",
-            "PostalCode": "569842",
-            "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/332\/Default.aspx?branch=Ang+Mo+Kio+Public+Library",
-            "Photo": "https://i.postimg.cc/K8VrWQk5/amklib.jpg"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              103.845580674824,
-              1.37479006912036,
-              0
-            ]
-          }
-
-        },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sengkang Public Library",
+        "Address": "1 Sengkang Square #03-28, Compass One",
+        "Postal Code": "545078",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Senkang/SKPL%20Main.JPG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.894688239041,
+          1.39132876236971,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Marine Parade Public Library",
+        "Address": "278 Marine Parade Road #01-01, Marine Parade Community Building",
+        "Postal Code": "449282",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/MarineParade/MAIN-MPPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.909581446984,
+          1.30466966872275,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Pasir Ris Public Library",
+        "Address": "1 Pasir Ris Central Street 3 #04-01, White Sands",
+        "Postal Code": "518457",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/PasirRis/MAIN-PRPL-small.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.949439880186,
+          1.37235750960519,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Library@Chinatown",
+        "Address": "133 North Bridge Road #04-12, Chinatown Point",
+        "Postal Code": "059413",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Chinatown/MAIN-CNPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.844942912669,
+          1.28526073700342,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Library@Esplanade",
+        "Address": "8 Raffles Avenue #03-01",
+        "Postal Code": "039802",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/esplanade/MAIN-EPPL.JPG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.855770250108,
+          1.28941165551051,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Chua Chu Kang Public Library",
+        "Address": "21 Choa Chu Kang Avenue 4 #04-01, Lot One",
+        "Postal Code": "689812",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/ChoaChuKang/MAIN-CCKPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.745039269848,
+          1.38495919705382,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bukit Panjang Public Library",
+        "Address": "1 Jelebu Road #04-16/17, Bukit Panjang Plaza",
+        "Postal Code": "677743",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/BukitPanjang/BPPL_main_Img_resized.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.764350064878,
+          1.37993637366735,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cheng San Public Library",
+        "Address": "90 Hougang Avenue 10 #03-11, Hougang Mall",
+        "Postal Code": "538766",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/ChengSan/MAIN-CSPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.893775348884,
+          1.3725726449182,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Clementi Public Library",
+        "Address": "3155 Commonwealth Avenue West #03-13/15, The Clementi Mall",
+        "Postal Code": "129588",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Clementi/MAIN-CMPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.764305614552,
+          1.31506201647581,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ang Mo Kio Public Library",
+        "Address": "4300 Ang Mo Kio Avenue 6",
+        "Postal Code": "569842",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/AngMoKio/MAIN-PICTURE-of-AMPL-cropped.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.845580674824,
+          1.37479006912036,
+          0
+        ]
+      }
+    },
     {
       "type": "Feature",
       "properties": {
         "Name": "Yishun Public Library",
-        "Address": "Yishun Ave 2",
-        "BuildingName": "Northpoint City (North Wing)",
-        "PostalCode": "769098",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/320\/Default.aspx?branch=Yishun+Public+Library",
-        "Photo": "https://i.postimg.cc/Dz8pJ8sx/yishunlib.jpg"
+        "Address": "930 Yishun Ave 2 #04-01, Northpoint City (North Wing)",
+        "Postal Code": "7679098",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Yishun/MAIN-YIPL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -326,18 +278,14 @@
           0
         ]
       }
-
     },
-
     {
       "type": "Feature",
       "properties": {
         "Name": "Bishan Public Library",
-        "Address": "Bishan Place",
-        "BuildingName": "",
-        "PostalCode": "579841",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/312\/Default.aspx?branch=Bishan+Public+Library",
-        "Photo": "https://i.postimg.cc/vm32D5cg/bishanlib.jpg"
+        "Address": "5 Bishan Place #01-01",
+        "Postal Code": "579841",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Bishan/MAIN-BIPL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -347,17 +295,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Bedok Public Library",
-        "Address": "Bedok North St. 1",
-        "BuildingName": "",
-        "PostalCode": "469662",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/330\/Default.aspx?branch=Bedok+Public+Library",
-        "Photo": "https://i.postimg.cc/bvhf10ym/bedoklib.jpg"
+        "Address": "11 Bedok North Street 1 #02-03",
+        "Postal Code": "469662",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Bedok/MAIN-BEPL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -367,17 +312,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Central Public Library",
-        "Address": "Victoria Street (Basement 1)",
-        "BuildingName": "",
-        "PostalCode": "188064",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/289\/Default.aspx?branch=Central+Public+Library",
-        "Photo": "https://i.postimg.cc/kgZBCpyB/centrallib.jpg"
+        "Address": "100 Victoria Street (Basement 1)",
+        "Postal Code": "188064",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Central/MAIN-CTPL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -387,17 +329,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Harbour Front Public Library",
-        "Address": "Harbourfront Walk",
-        "BuildingName": "VivoCity",
-        "PostalCode": "98585",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/362\/Default.aspx?branch=library%40harbourfront",
-        "Photo": "https://i.postimg.cc/N092rc06/harbourfrontlib.jpg"
+        "Address": "1 Harbourfront Walk #03-05, VivoCity",
+        "Postal Code": "098585",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/harbourfront/main_library_harbourfront.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -407,17 +346,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Toa Payoh Public Library",
-        "Address": "Toa Payoh Central",
-        "BuildingName": "",
-        "PostalCode": "319191",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/319\/Default.aspx?branch=Toa+Payoh+Public+Library",
-        "Photo": "https://i.postimg.cc/02PSXFtv/toapayohlib.jpg"
+        "Address": "6 Toa Payoh Central",
+        "Postal Code": "319191",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/ToaPayoh/MAIN-TPPL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -427,17 +363,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Jurong Regional Library",
-        "Address": "Jurong East Central 1",
-        "BuildingName": "",
-        "PostalCode": "609732",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/338\/Default.aspx?branch=Jurong+Regional+Library",
-        "Photo": "https://i.postimg.cc/52pSmb1D/jurongregional.jpg"
+        "Address": "21 Jurong East Central 1",
+        "Postal Code": "609732",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/JurongReg/MAIN-JRL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -447,17 +380,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "National Library Building",
-        "Address": "Victoria Street",
-        "BuildingName": "",
-        "PostalCode": "188064",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/329\/Default.aspx?branch=National+Library+%2f+Lee+Kong+Chian+Reference+Library",
-        "Photo": "https://i.postimg.cc/NMFTDHbH/nationallib.jpg"
+        "Address": "100 Victoria Street",
+        "Postal Code": "188064",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/IMG/Managers/NL%20Visit%20Us%20Photo.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -467,17 +397,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Queenstown Public Library",
-        "Address": "Margaret Drive",
-        "BuildingName": "",
-        "PostalCode": "149297",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/309\/Default.aspx?branch=Queenstown+Public+Library",
-        "Photo": "https://i.postimg.cc/9FMS98Gm/queenstownlib.jpg"
+        "Address": "53 Margaret Drive",
+        "Postal Code": "149297",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/QueensTown/Main-QUPL_Cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -487,17 +414,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
         "Name": "Woodlands Regional Library",
-        "Address": "South Woodlands Drive",
-        "BuildingName": "",
-        "PostalCode": "730900",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/310\/Default.aspx?branch=Woodlands+Regional+Library",
-        "Photo": "https://i.postimg.cc/qgVkNPz7/woodlandsregional.jpg"
+        "Address": "900 South Woodlands Drive #01-03",
+        "Postal Code": "730900",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/WoodlandsReg/MAIN-WRL-cropped.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -507,17 +431,14 @@
           0
         ]
       }
-
     },
- {
+    {
       "type": "Feature",
       "properties": {
         "Name": "Tampines Regional Library",
-        "Address": "Tampines Walk",
-        "BuildingName": "Our Tampines Hub",
-        "PostalCode": "528523",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/335\/Default.aspx?branch=Tampines+Regional+Library",
-        "Photo": "https://i.postimg.cc/Gp7dF8HV/Tampinesregional.jpg"
+        "Address": "1 Tampines Walk #02-01, Our Tampines Hub",
+        "Postal Code": "528523",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/TampinesReg/Main_Entrance.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -527,17 +448,14 @@
           0
         ]
       }
-
     },
     {
       "type": "Feature",
       "properties": {
-         "Name": "Sembawang Public Library",
-        "Address": "Sembawang Drive",
-        "BuildingName": "Sun Plaza",
-        "PostalCode": "757713",
-        "Website": "http:\/\/www.nlb.gov.sg\/VisitUs\/BranchDetails\/tabid\/140\/bid\/331\/Default.aspx?branch=Sembawang+Public+Library",
-        "Photo": "https://i.postimg.cc/Wz1CpX2H/SBPL-entrance.png"
+        "Name": "Sembawang Public Library",
+        "Address": "30 Sembawang Drive #05-01, Sun Plaza",
+        "Postal Code": "757713",
+        "Photo URL": "http://www.nlb.gov.sg/Portals/0/library/gallery/Sembawang/SBPL_entrance.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -547,8 +465,6 @@
           0
         ]
       }
-
     }
-
   ]
 }
