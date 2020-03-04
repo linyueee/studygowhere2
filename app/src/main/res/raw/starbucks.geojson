@@ -2334,14 +2334,14 @@
         "City": "Singapore",
         "Postcode": "627878",
         "Phone Number": "",
-        "Longitude": 103.71,
-        "Latitude": 1.27
+        "Longitude": 103.704415,
+        "Latitude": 1.267486
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.71,
-          1.27
+          103.704415,
+          1.267486
         ]
       }
     },
