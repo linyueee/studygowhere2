@@ -113,6 +113,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             schoolsLayer.addLayerToMap();
             GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
             starbucksLayer.addLayerToMap();
+            GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
+            mcdonaldsLayer.addLayerToMap();
+
 
         } catch (JSONException e) {
             e.printStackTrace();
