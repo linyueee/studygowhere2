@@ -29,13 +29,18 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
+import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
-import static com.example.studygowhere.BackgroundWorker.Un;
+import static com.example.studygowhere.LoginActivity.getUn;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -50,6 +55,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
     Button btnAcc, btnsgw;
+    static public List<Object> studyAreaList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         btnAcc = (Button) findViewById(R.id.user_icon);
         btnsgw = (Button) findViewById(R.id.sgw);
-        if(Un != null) {
+        if(getUn() != null) {
             btnAcc.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -84,6 +91,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
         }
+        btnsgw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MapsActivity.this, SGWActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
 
@@ -105,18 +119,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         try{
-            GeoJsonLayer librarieslayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
-            librarieslayer.addLayerToMap();
+            GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
+            librariesLayer.addLayerToMap();
             GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
             ccLayer.addLayerToMap();
-            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
-            schoolsLayer.addLayerToMap();
-
+/*            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
+            schoolsLayer.addLayerToMap();*/
+            if(!addLibObjectFlag) {
+                Librarydatahandler ldh = new Librarydatahandler();
+                ldh.addObject(librariesLayer);
+                addLibObjectFlag = true;
+            }
+            if(!addccObjectFlag) {
+                Ccdatahandler ldh = new Ccdatahandler();
+                ldh.addObject(ccLayer);
+                addccObjectFlag = true;
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 
@@ -217,4 +241,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
 }

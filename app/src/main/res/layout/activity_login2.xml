@@ -57,6 +57,14 @@
         android:layout_height="wrap_content"
         android:text="No Account Yet? Register"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         />
+
+    <Button
+        android:id="@+id/btnToMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back to map" />
 </LinearLayout>
