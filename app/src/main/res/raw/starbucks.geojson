@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Marina Square II",
-        "Street Address": "6 Raffles Boulevard, #03-217/218 Marina Square",
+        "Address": "6 Raffles Boulevard, #03-217/218 Marina Square",
         "City": "Singapore",
         "Postcode": "39594",
         "Phone Number": "",
@@ -31,7 +31,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Suntec City Mall level 1",
-        "Street Address": "3 Temasek Boulevard, #01-433 Suntec City Mall",
+        "Address": "3 Temasek Boulevard, #01-433 Suntec City Mall",
         "City": "Singapore",
         "Postcode": "38983",
         "Phone Number": "",
@@ -50,7 +50,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Hillv2",
-        "Street Address": "6 Hillview Rise , #01-05 HillV2",
+        "Address": "6 Hillview Rise , #01-05 HillV2",
         "City": "Singapore",
         "Postcode": "667980",
         "Phone Number": "",
@@ -69,7 +69,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Tiong Bahru Plaza",
-        "Street Address": "302 Tiong Buhru Road, #01-111B",
+        "Address": "302 Tiong Buhru Road, #01-111B",
         "City": "Singapore",
         "Postcode": "168732",
         "Phone Number": "",
@@ -88,7 +88,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Delfi Orchard",
-        "Street Address": "402 Orchard Road, #01-01",
+        "Address": "402 Orchard Road, #01-01",
         "City": "Singapore",
         "Postcode": "238876",
         "Phone Number": "",
@@ -107,7 +107,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks NUS Yong Loo Lin School of Medicine",
-        "Street Address": "10 Medical Drive #01-40, Yong Loo Lin School of Medicine",
+        "Address": "10 Medical Drive #01-40, Yong Loo Lin School of Medicine",
         "City": "Singapore",
         "Postcode": "",
         "Phone Number": "",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Liat Towers",
-        "Street Address": "541 Orchard Rd, #01-10A",
+        "Address": "541 Orchard Rd, #01-10A",
         "City": "Singapore",
         "Postcode": "238881",
         "Phone Number": "736 2665",
@@ -145,7 +145,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Singapore Land Tower",
-        "Street Address": "50, Raffles Place, #01-02B",
+        "Address": "50, Raffles Place, #01-02B",
         "City": "Singapore",
         "Postcode": "48623",
         "Phone Number": "",
@@ -164,7 +164,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks City House",
-        "Street Address": "36 Robinson Road, #01-02 City House,",
+        "Address": "36 Robinson Road, #01-02 City House,",
         "City": "Singapore",
         "Postcode": "68877",
         "Phone Number": "",
@@ -183,7 +183,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks J Cube",
-        "Street Address": "2 Jurong East Central 1, #02-19",
+        "Address": "2 Jurong East Central 1, #02-19",
         "City": "Singapore",
         "Postcode": "609731",
         "Phone Number": "",
@@ -202,7 +202,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Waterway Point",
-        "Street Address": "83 Punggol Central, #01-67 Waterway Point",
+        "Address": "83 Punggol Central, #01-67 Waterway Point",
         "City": "Singapore",
         "Postcode": "828761",
         "Phone Number": "",
@@ -221,7 +221,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Wheelock Place B1",
-        "Street Address": "501, Orchard Road #B1-01",
+        "Address": "501, Orchard Road #B1-01",
         "City": "Singapore",
         "Postcode": "238880",
         "Phone Number": "",
@@ -240,7 +240,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Mount Elizabeth, Novena",
-        "Street Address": "38, Irrawaddy Road #01-14",
+        "Address": "38, Irrawaddy Road #01-14",
         "City": "Singapore",
         "Postcode": "329563",
         "Phone Number": "",
@@ -259,7 +259,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks ION Orchard - B3-73a/b",
-        "Street Address": "2 Orchard Turn, #B3-59",
+        "Address": "2 Orchard Turn, #B3-59",
         "City": "Singapore",
         "Postcode": "238801",
         "Phone Number": "",
@@ -278,7 +278,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks AXA Tower",
-        "Street Address": "8 Shenton Way, #B1-12/13 AXA Tower",
+        "Address": "8 Shenton Way, #B1-12/13 AXA Tower",
         "City": "Singapore",
         "Postcode": "68811",
         "Phone Number": "224 9175",
@@ -297,7 +297,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Tanglin Mall",
-        "Street Address": "163 Tanglin Road",
+        "Address": "163 Tanglin Road",
         "City": "Singapore",
         "Postcode": "247933",
         "Phone Number": "",
@@ -316,7 +316,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Millenia Walk",
-        "Street Address": "9 Raffles Boulevard",
+        "Address": "9 Raffles Boulevard",
         "City": "Singapore",
         "Postcode": "39596",
         "Phone Number": "",
@@ -335,7 +335,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks ONE KM",
-        "Street Address": "11 Tanjong Katong #01-17/18/19",
+        "Address": "11 Tanjong Katong #01-17/18/19",
         "City": "Singapore",
         "Postcode": "437137",
         "Phone Number": "",
@@ -354,7 +354,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Orchard Gateway",
-        "Street Address": "277 Orchard Road, B2-05",
+        "Address": "277 Orchard Road, B2-05",
         "City": "Singapore",
         "Postcode": "238858",
         "Phone Number": "",
@@ -373,7 +373,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi City Point",
-        "Street Address": "Changi South Ave 1, #01-68",
+        "Address": "Changi South Ave 1, #01-68",
         "City": "Singapore",
         "Postcode": "486038",
         "Phone Number": "",
@@ -392,7 +392,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks University Town- NUS",
-        "Street Address": "8 College Avenue West, #B1-01 Education Resource Centre",
+        "Address": "8 College Avenue West, #B1-01 Education Resource Centre",
         "City": "Singapore",
         "Postcode": "138608",
         "Phone Number": "",
@@ -411,7 +411,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Gateway West",
-        "Street Address": "150 Beach Road, #01-01A",
+        "Address": "150 Beach Road, #01-01A",
         "City": "Singapore",
         "Postcode": "189720",
         "Phone Number": "",
@@ -430,7 +430,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks City Link Mall",
-        "Street Address": "1 Raffles Link",
+        "Address": "1 Raffles Link",
         "City": "Singapore",
         "Postcode": "39393",
         "Phone Number": "",
@@ -449,7 +449,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Rochester Park",
-        "Street Address": "37 Rochester Drive",
+        "Address": "37 Rochester Drive",
         "City": "Singapore",
         "Postcode": "138640",
         "Phone Number": "",
@@ -468,7 +468,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Toa Payoh HDB Hub",
-        "Street Address": "Blk 490, Lor 6 toa Payoh,#01-14",
+        "Address": "Blk 490, Lor 6 toa Payoh,#01-14",
         "City": "Singapore",
         "Postcode": "310490",
         "Phone Number": "",
@@ -487,7 +487,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Centerpoint SC - Main Atruim",
-        "Street Address": "176 Orchard Road",
+        "Address": "176 Orchard Road",
         "City": "Singapore",
         "Postcode": "238843",
         "Phone Number": "",
@@ -506,7 +506,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Capital Towers",
-        "Street Address": "168 Robinson Road, #01-01/02 Capital Tower",
+        "Address": "168 Robinson Road, #01-01/02 Capital Tower",
         "City": "Singapore",
         "Postcode": "68912",
         "Phone Number": "",
@@ -525,7 +525,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 313 somerset",
-        "Street Address": "313 Sommerset Road, #02-38/39 & 50",
+        "Address": "313 Sommerset Road, #02-38/39 & 50",
         "City": "Singapore",
         "Postcode": "238895",
         "Phone Number": "",
@@ -544,7 +544,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Raffles City Singapore",
-        "Street Address": "252 North Bridge Rd, #01-46/46A/48",
+        "Address": "252 North Bridge Rd, #01-46/46A/48",
         "City": "Singapore",
         "Postcode": "179103",
         "Phone Number": "333 3083",
@@ -563,7 +563,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks The Central",
-        "Street Address": "6 Eu Tong Sen Street,#01-29/30/31",
+        "Address": "6 Eu Tong Sen Street,#01-29/30/31",
         "City": "Singapore",
         "Postcode": "59817",
         "Phone Number": "",
@@ -582,7 +582,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Clementi Mall",
-        "Street Address": "3155, Commonwealth Avenue West, #03-K1/K3",
+        "Address": "3155, Commonwealth Avenue West, #03-K1/K3",
         "City": "Singapore",
         "Postcode": "129588",
         "Phone Number": "",
@@ -601,7 +601,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks One Kent Ridge",
-        "Street Address": "1 Lower Kent Ridge Road,#03-05, The Concourse - Office Tower",
+        "Address": "1 Lower Kent Ridge Road,#03-05, The Concourse - Office Tower",
         "City": "Singapore",
         "Postcode": "119082",
         "Phone Number": "",
@@ -620,7 +620,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks The Concourse - Office Lobby Lvl 1",
-        "Street Address": "300 Beach Road, Level 1",
+        "Address": "300 Beach Road, Level 1",
         "City": "Singapore",
         "Postcode": "199555",
         "Phone Number": "",
@@ -639,7 +639,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Novena Square - Office Tower",
-        "Street Address": "238 Thompson Road, #02-04, 05 & #02-K1",
+        "Address": "238 Thompson Road, #02-04, 05 & #02-K1",
         "City": "Singapore",
         "Postcode": "307683",
         "Phone Number": "",
@@ -658,7 +658,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Shaw Towers",
-        "Street Address": "100 Beach Rd, #01-57/60 Shaw Leisure Gallery",
+        "Address": "100 Beach Rd, #01-57/60 Shaw Leisure Gallery",
         "City": "Singapore",
         "Postcode": "189702",
         "Phone Number": "392 9327",
@@ -677,7 +677,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks One Fullerton-Unit #01-05",
-        "Street Address": "1 Fullerton Road, #01-04 One Fullerton",
+        "Address": "1 Fullerton Road, #01-04 One Fullerton",
         "City": "Singapore",
         "Postcode": "49213",
         "Phone Number": "",
@@ -696,7 +696,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks The Paragon",
-        "Street Address": "290 Orchard Rd #B1-34 Paragon, Basement 1",
+        "Address": "290 Orchard Rd #B1-34 Paragon, Basement 1",
         "City": "Singapore",
         "Postcode": "238859",
         "Phone Number": "",
@@ -715,7 +715,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Marina Bay Link Mall",
-        "Street Address": "8A Marina Boulevard, #B2-38-39, Valley Point",
+        "Address": "8A Marina Boulevard, #B2-38-39, Valley Point",
         "City": "Singapore",
         "Postcode": "18984",
         "Phone Number": "",
@@ -734,7 +734,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Valley Point",
-        "Street Address": "491 River Valley Road, ##01-16, Valley Point Shopping Centre,",
+        "Address": "491 River Valley Road, ##01-16, Valley Point Shopping Centre,",
         "City": "Singapore",
         "Postcode": "248371",
         "Phone Number": "",
@@ -753,7 +753,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Singapore General Hospital blk 4",
-        "Street Address": "1 hospital drive blk 4",
+        "Address": "1 hospital drive blk 4",
         "City": "singapore",
         "Postcode": "169608",
         "Phone Number": "",
@@ -772,7 +772,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Suntec City Mall 2",
-        "Street Address": "3 Temasek Boulevard, #02-613/614, Suntec City Mall",
+        "Address": "3 Temasek Boulevard, #02-613/614, Suntec City Mall",
         "City": "Singapore",
         "Postcode": "38983",
         "Phone Number": "",
@@ -791,7 +791,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Pacific Plaza - Main Entrance",
-        "Street Address": "9 Scotts Road, Open Area #1",
+        "Address": "9 Scotts Road, Open Area #1",
         "City": "Singapore",
         "Postcode": "228210",
         "Phone Number": "",
@@ -810,7 +810,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks United Square",
-        "Street Address": "101 Thomson Road, #01-01,",
+        "Address": "101 Thomson Road, #01-01,",
         "City": "Singapore",
         "Postcode": "307591",
         "Phone Number": "",
@@ -829,7 +829,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Ocean Financial Centre",
-        "Street Address": "10 Collyer Quay, #B1-07 Ocean Financial Centre",
+        "Address": "10 Collyer Quay, #B1-07 Ocean Financial Centre",
         "City": "Singapore",
         "Postcode": "49315",
         "Phone Number": "",
@@ -848,7 +848,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bugis Junction",
-        "Street Address": "230 Victoria Street #01-15 Seiyu Dept St",
+        "Address": "230 Victoria Street #01-15 Seiyu Dept St",
         "City": "Singapore",
         "Postcode": "188024",
         "Phone Number": "",
@@ -867,7 +867,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks EFG Building",
-        "Street Address": "25 North Bridge Road",
+        "Address": "25 North Bridge Road",
         "City": "Singapore",
         "Postcode": "179104",
         "Phone Number": "",
@@ -886,7 +886,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks United Square Temp Store",
-        "Street Address": "101 Thomson Road",
+        "Address": "101 Thomson Road",
         "City": "Singapore",
         "Postcode": "307591",
         "Phone Number": "",
@@ -905,7 +905,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks FarEast Square",
-        "Street Address": "40 Pekin Street #01-01",
+        "Address": "40 Pekin Street #01-01",
         "City": "Singapore",
         "Postcode": "48770",
         "Phone Number": "",
@@ -924,7 +924,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Resort World Sentosa",
-        "Street Address": "8 Sentosa Gateway, #01-202",
+        "Address": "8 Sentosa Gateway, #01-202",
         "City": "Singapore",
         "Postcode": "98138",
         "Phone Number": "",
@@ -943,7 +943,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Samsung @ MBC",
-        "Street Address": "30 Pasir Panjang Road #17-31/32",
+        "Address": "30 Pasir Panjang Road #17-31/32",
         "City": "Singapore",
         "Postcode": "117440",
         "Phone Number": "",
@@ -962,7 +962,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks MBS",
-        "Street Address": "10 Bayfront Ave #B2-56",
+        "Address": "10 Bayfront Ave #B2-56",
         "City": "Singapore",
         "Postcode": "18956",
         "Phone Number": "",
@@ -981,7 +981,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks OCBC Centre East",
-        "Street Address": "63 Chulia Street, #01-01A/01B OCBC Centre East",
+        "Address": "63 Chulia Street, #01-01A/01B OCBC Centre East",
         "City": "Singapore",
         "Postcode": "49514",
         "Phone Number": "",
@@ -1000,7 +1000,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Wilkie Edge - Level 1",
-        "Street Address": "8 Wilkie Road, #01-19/20 Level 1 Wilkie Edge",
+        "Address": "8 Wilkie Road, #01-19/20 Level 1 Wilkie Edge",
         "City": "Singapore",
         "Postcode": "228095",
         "Phone Number": "",
@@ -1019,7 +1019,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks DBS Level 13",
-        "Street Address": "12 Marina Boulevard #13-35, Marina Bay Financial Centre Tower 3, L13",
+        "Address": "12 Marina Boulevard #13-35, Marina Bay Financial Centre Tower 3, L13",
         "City": "Singapore",
         "Postcode": "18981",
         "Phone Number": "",
@@ -1038,7 +1038,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Houang Mall",
-        "Street Address": "90 Hougang Avenue 10, #02-11,19",
+        "Address": "90 Hougang Avenue 10, #02-11,19",
         "City": "Singapore",
         "Postcode": "538766",
         "Phone Number": "",
@@ -1057,7 +1057,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 78 Shenton Way",
-        "Street Address": "78 Shenton Way, #01-02",
+        "Address": "78 Shenton Way, #01-02",
         "City": "Singapore",
         "Postcode": "79120",
         "Phone Number": "",
@@ -1076,7 +1076,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Metropolis",
-        "Street Address": "9 North Buona Vista Drive, #01-13/14",
+        "Address": "9 North Buona Vista Drive, #01-13/14",
         "City": "Singapore",
         "Postcode": "138588",
         "Phone Number": "",
@@ -1095,7 +1095,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Cathay",
-        "Street Address": "2 Handy Road, The Cathay #01-05",
+        "Address": "2 Handy Road, The Cathay #01-05",
         "City": "Singapore",
         "Postcode": "229233",
         "Phone Number": "",
@@ -1114,7 +1114,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Starbucks at USS(RWS)",
-        "Street Address": "30 SENTOSA GATEWAY, #01-309",
+        "Address": "30 SENTOSA GATEWAY, #01-309",
         "City": "Singapore",
         "Postcode": "98138",
         "Phone Number": "",
@@ -1133,7 +1133,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bugis Plus",
-        "Street Address": "201 Victoria Street, #002-12/13",
+        "Address": "201 Victoria Street, #002-12/13",
         "City": "Singapore",
         "Postcode": "188067",
         "Phone Number": "",
@@ -1152,7 +1152,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Liang Court - G/F #01-11 - Reloc",
-        "Street Address": "177 River Valley Road, Ground Floor - Space #01-11",
+        "Address": "177 River Valley Road, Ground Floor - Space #01-11",
         "City": "Singapore",
         "Postcode": "179030",
         "Phone Number": "",
@@ -1171,7 +1171,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Wisma Atria",
-        "Street Address": "435 Orchard Road, #03-35 to #03-40 Wisma Atria",
+        "Address": "435 Orchard Road, #03-35 to #03-40 Wisma Atria",
         "City": "Singapore",
         "Postcode": "238877",
         "Phone Number": "",
@@ -1190,7 +1190,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Science Park II",
-        "Street Address": "45 Science Park, unit 4",
+        "Address": "45 Science Park, unit 4",
         "City": "Singapore",
         "Postcode": "117545",
         "Phone Number": "",
@@ -1209,7 +1209,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks The Waterboat House",
-        "Street Address": "3 Fullerton,#02-01/02/03",
+        "Address": "3 Fullerton,#02-01/02/03",
         "City": "Singapore",
         "Postcode": "49215",
         "Phone Number": "",
@@ -1228,7 +1228,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks JEM",
-        "Street Address": "50 Jurong Gateway Road, #01-02",
+        "Address": "50 Jurong Gateway Road, #01-02",
         "City": "Singapore",
         "Postcode": "608549",
         "Phone Number": "",
@@ -1247,7 +1247,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Raffles Place Exchange",
-        "Street Address": "5 Raffles Place, #B1-55/56",
+        "Address": "5 Raffles Place, #B1-55/56",
         "City": "Singapore",
         "Postcode": "48618",
         "Phone Number": "",
@@ -1266,7 +1266,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Manulife Centre",
-        "Street Address": "51, Bras Basah Road, #01-02B Manulife Centre",
+        "Address": "51, Bras Basah Road, #01-02B Manulife Centre",
         "City": "Singapore",
         "Postcode": "",
         "Phone Number": "",
@@ -1285,7 +1285,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 100AM",
-        "Street Address": "100 Tras Street, #01-05, 100 AM,",
+        "Address": "100 Tras Street, #01-05, 100 AM,",
         "City": "Singapore",
         "Postcode": "79027",
         "Phone Number": "",
@@ -1304,7 +1304,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bishan CC",
-        "Street Address": "51 Bishan Street 13, #01-02, Bishan Community Club",
+        "Address": "51 Bishan Street 13, #01-02, Bishan Community Club",
         "City": "Singapore",
         "Postcode": "579799",
         "Phone Number": "",
@@ -1323,7 +1323,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Fusionpolistemp store",
-        "Street Address": "2 Fusionpolis Way #01-04",
+        "Address": "2 Fusionpolis Way #01-04",
         "City": "Singapore",
         "Postcode": "138634",
         "Phone Number": "",
@@ -1342,7 +1342,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Suntec City - Level 2",
-        "Street Address": "3 Temasek Blvd, #02-393/394",
+        "Address": "3 Temasek Blvd, #02-393/394",
         "City": "Singapore",
         "Postcode": "38983",
         "Phone Number": "",
@@ -1361,7 +1361,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Hong Leong Building",
-        "Street Address": "16 Raffles Quay,#01-01",
+        "Address": "16 Raffles Quay,#01-01",
         "City": "Singapore",
         "Postcode": "48581",
         "Phone Number": "",
@@ -1380,7 +1380,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Plaza Singapura",
-        "Street Address": "68 Orchard Road, 01-34B",
+        "Address": "68 Orchard Road, 01-34B",
         "City": "Singapore",
         "Postcode": "248371",
         "Phone Number": "",
@@ -1399,7 +1399,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 20 Anson",
-        "Street Address": "20 Anson Road, #01-01",
+        "Address": "20 Anson Road, #01-01",
         "City": "Singapore",
         "Postcode": "79912",
         "Phone Number": "",
@@ -1418,7 +1418,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Raffles Hospital",
-        "Street Address": "585 North Bridge Road,, #01-08, Raffles Hospital",
+        "Address": "585 North Bridge Road,, #01-08, Raffles Hospital",
         "City": "Singapore",
         "Postcode": "188770",
         "Phone Number": "",
@@ -1437,7 +1437,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi AP Terminal 3 Basement 2",
-        "Street Address": "65 Airport Boulevard, #B2-34, Basement L2 North, Terminal 3",
+        "Address": "65 Airport Boulevard, #B2-34, Basement L2 North, Terminal 3",
         "City": "Singapore",
         "Postcode": "819663",
         "Phone Number": "",
@@ -1456,7 +1456,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks NEX",
-        "Street Address": "23 Serangoon Central, #02-K01/02",
+        "Address": "23 Serangoon Central, #02-K01/02",
         "City": "Singapore",
         "Postcode": "556083",
         "Phone Number": "",
@@ -1475,7 +1475,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks City Square Mall Singapore",
-        "Street Address": "180 Kitchener Road, #01-38",
+        "Address": "180 Kitchener Road, #01-38",
         "City": "Singapore",
         "Postcode": "208539",
         "Phone Number": "",
@@ -1494,7 +1494,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 3 Jalan Jamal",
-        "Street Address": "3 Jalan Jamal",
+        "Address": "3 Jalan Jamal",
         "City": "Singapore",
         "Postcode": "457802",
         "Phone Number": "",
@@ -1513,7 +1513,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Orchard Cinelesisure",
-        "Street Address": "8  Grange Road, #01-k1, Cathay Cineleisure Orchard",
+        "Address": "8  Grange Road, #01-k1, Cathay Cineleisure Orchard",
         "City": "Singapore",
         "Postcode": "239695",
         "Phone Number": "",
@@ -1532,7 +1532,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks The Seletar Mall",
-        "Street Address": "33 SengKang West Ave #01-15/16, level 1",
+        "Address": "33 SengKang West Ave #01-15/16, level 1",
         "City": "Singapore",
         "Postcode": "767653",
         "Phone Number": "",
@@ -1551,7 +1551,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Asia Square Tower 2",
-        "Street Address": "8 Marina View, #02-21",
+        "Address": "8 Marina View, #02-21",
         "City": "Singapore",
         "Postcode": "18960",
         "Phone Number": "",
@@ -1570,7 +1570,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks SB Tampines Mall",
-        "Street Address": "4 Tampines Central 5 #01-50 Tampines Mall",
+        "Address": "4 Tampines Central 5 #01-50 Tampines Mall",
         "City": "Singapore",
         "Postcode": "529510",
         "Phone Number": "",
@@ -1589,7 +1589,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Parkway Parade - Relocation",
-        "Street Address": "80 Marine Parade Road, #01-10B & 10C",
+        "Address": "80 Marine Parade Road, #01-10B & 10C",
         "City": "Singapore",
         "Postcode": "449269",
         "Phone Number": "",
@@ -1608,7 +1608,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi General Hospital",
-        "Street Address": "2 Simei Street 3, Level 1 Main Atrium",
+        "Address": "2 Simei Street 3, Level 1 Main Atrium",
         "City": "Singapore",
         "Postcode": "529889",
         "Phone Number": "",
@@ -1627,7 +1627,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Compass One",
-        "Street Address": "1 sengkang Sq #01-04",
+        "Address": "1 sengkang Sq #01-04",
         "City": "Singapore",
         "Postcode": "545078",
         "Phone Number": "",
@@ -1646,7 +1646,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks SIN-T2 Dept/Check-In Hall South L2",
-        "Street Address": "65 Airport Boulevard, Departure Hall Level 2, Changi International Airport",
+        "Address": "65 Airport Boulevard, Departure Hall Level 2, Changi International Airport",
         "City": "Singapore",
         "Postcode": "81964",
         "Phone Number": "",
@@ -1665,7 +1665,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks SIN - T1 Arrival Hall Central-Lvl 1",
-        "Street Address": "65 Airport Boulevard, Terminal 1, Arrival Hall, #011-003A",
+        "Address": "65 Airport Boulevard, Terminal 1, Arrival Hall, #011-003A",
         "City": "Singapore",
         "Postcode": "819642",
         "Phone Number": "",
@@ -1684,7 +1684,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks SIM - clementi centre",
-        "Street Address": "535A CLEMENTI ROAD,blk C,C01-04",
+        "Address": "535A CLEMENTI ROAD,blk C,C01-04",
         "City": "Singapore",
         "Postcode": "599490",
         "Phone Number": "",
@@ -1703,7 +1703,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Woodlands Civic Centre",
-        "Street Address": "900 South Woodlands Drive, #02-09",
+        "Address": "900 South Woodlands Drive, #02-09",
         "City": "Singapore",
         "Postcode": "730900",
         "Phone Number": "",
@@ -1722,7 +1722,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Northpoint City",
-        "Street Address": "930 Yishun Ave 2 #01-07/08",
+        "Address": "930 Yishun Ave 2 #01-07/08",
         "City": "Singapore",
         "Postcode": "769098",
         "Phone Number": "",
@@ -1741,7 +1741,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Woodland Exchange",
-        "Street Address": "30 Woodlands Avenue 2,#01-7/8/15",
+        "Address": "30 Woodlands Avenue 2,#01-7/8/15",
         "City": "Singapore",
         "Postcode": "738343",
         "Phone Number": "",
@@ -1760,7 +1760,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Thomson Plaza",
-        "Street Address": "301 Upper Thomson Road",
+        "Address": "301 Upper Thomson Road",
         "City": "Singapore",
         "Postcode": "574408",
         "Phone Number": "",
@@ -1779,7 +1779,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Sun Plaza LV 1",
-        "Street Address": "30 Sembawang, #01-22",
+        "Address": "30 Sembawang, #01-22",
         "City": "Singapore",
         "Postcode": "757713",
         "Phone Number": "",
@@ -1798,7 +1798,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Tampines West CC",
-        "Street Address": "5 Tampines West Avenue 3",
+        "Address": "5 Tampines West Avenue 3",
         "City": "Singapore",
         "Postcode": "529705",
         "Phone Number": "",
@@ -1817,7 +1817,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bedok Point",
-        "Street Address": "799 New Upper Changi Road, #01-09, #01-K2 / K3 / K4",
+        "Address": "799 New Upper Changi Road, #01-09, #01-K2 / K3 / K4",
         "City": "Singapore",
         "Postcode": "467351",
         "Phone Number": "",
@@ -1836,7 +1836,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Eastpoint Mall L1",
-        "Street Address": "3 Simei Street 6, #01-K4/5",
+        "Address": "3 Simei Street 6, #01-K4/5",
         "City": "Singapore",
         "Postcode": "528833",
         "Phone Number": "",
@@ -1855,7 +1855,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bedok Mall",
-        "Street Address": "New Upper Changi Road, #01-93/94",
+        "Address": "New Upper Changi Road, #01-93/94",
         "City": "Singapore",
         "Postcode": "467351",
         "Phone Number": "",
@@ -1874,7 +1874,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks UE Square",
-        "Street Address": "83 Clemenceau Avenue #01-31",
+        "Address": "83 Clemenceau Avenue #01-31",
         "City": "Singapore",
         "Postcode": "239918",
         "Phone Number": "",
@@ -1893,7 +1893,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Our Tampines Hub",
-        "Street Address": "51 Tampines Ave 4 #01-104",
+        "Address": "51 Tampines Ave 4 #01-104",
         "City": "Singapore",
         "Postcode": "529684",
         "Phone Number": "",
@@ -1912,7 +1912,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Kallang Leisure Park",
-        "Street Address": "5 Stadium Walk, #01-09 - Kallang District",
+        "Address": "5 Stadium Walk, #01-09 - Kallang District",
         "City": "Singapore",
         "Postcode": "397693",
         "Phone Number": "",
@@ -1931,7 +1931,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Kallang Wave Mall",
-        "Street Address": "1 Stadium Place, #01-56",
+        "Address": "1 Stadium Place, #01-56",
         "City": "Singapore",
         "Postcode": "397628",
         "Phone Number": "",
@@ -1950,7 +1950,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks White Sands",
-        "Street Address": "1 Pasir Ris Central Street 3, #01-21/22/23",
+        "Address": "1 Pasir Ris Central Street 3, #01-21/22/23",
         "City": "Singapore",
         "Postcode": "518457",
         "Phone Number": "",
@@ -1969,7 +1969,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi T1 Transit Lounge East",
-        "Street Address": "80 Airport Boulevard, Terminal 1, Transit Lounge East Level 2,#021-022",
+        "Address": "80 Airport Boulevard, Terminal 1, Transit Lounge East Level 2,#021-022",
         "City": "Singapore",
         "Postcode": "819642",
         "Phone Number": "",
@@ -1988,7 +1988,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Down Town East",
-        "Street Address": "1 Pasir Ris Close #02-332",
+        "Address": "1 Pasir Ris Close #02-332",
         "City": "Singapore",
         "Postcode": "519599",
         "Phone Number": "",
@@ -2007,7 +2007,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks One George Street",
-        "Street Address": "95 South Bridge Road #01-k2",
+        "Address": "95 South Bridge Road #01-k2",
         "City": "singapore",
         "Postcode": "58717",
         "Phone Number": "",
@@ -2026,7 +2026,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi Airport T2 Transit Hall",
-        "Street Address": "Departure / Transit Lounge North, Level 2, Unit No. 026-095-06, Terminal 2",
+        "Address": "Departure / Transit Lounge North, Level 2, Unit No. 026-095-06, Terminal 2",
         "City": "Singapore",
         "Postcode": "819643",
         "Phone Number": "",
@@ -2045,7 +2045,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Changi Terminal 1 Transit",
-        "Street Address": "80 Airport Boulevard #02-K10, Departure Transit Lounge West Terminal 1",
+        "Address": "80 Airport Boulevard #02-K10, Departure Transit Lounge West Terminal 1",
         "City": "Singapore",
         "Postcode": "819642",
         "Phone Number": "",
@@ -2064,7 +2064,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Parkland Green",
-        "Street Address": "902, East Coast Parkway, #01-17",
+        "Address": "902, East Coast Parkway, #01-17",
         "City": "Singapore",
         "Postcode": "449875",
         "Phone Number": "",
@@ -2083,7 +2083,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Sentosa, Cable Car Arrival Plaza",
-        "Street Address": "42 Imbiah Rd, #01-K1",
+        "Address": "42 Imbiah Rd, #01-K1",
         "City": "Sentosa Island",
         "Postcode": "99704",
         "Phone Number": "",
@@ -2102,7 +2102,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Vivo City 2 - 1 st Floor",
-        "Street Address": "1 Harbourfront Walk, #01-168/169/170",
+        "Address": "1 Harbourfront Walk, #01-168/169/170",
         "City": "Singapore",
         "Postcode": "98585",
         "Phone Number": "",
@@ -2121,7 +2121,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Biopolis",
-        "Street Address": "70 Biopolis street,, #01-03",
+        "Address": "70 Biopolis street,, #01-03",
         "City": "Singapore",
         "Postcode": "138547",
         "Phone Number": "",
@@ -2140,7 +2140,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Anchor Point",
-        "Street Address": "370 Alexandra Road, #01-05/06",
+        "Address": "370 Alexandra Road, #01-05/06",
         "City": "Singapore",
         "Postcode": "159953",
         "Phone Number": "",
@@ -2159,7 +2159,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Cintech 4",
-        "Street Address": "Science Park Drive",
+        "Address": "Science Park Drive",
         "City": "Singapore",
         "Postcode": "",
         "Phone Number": "",
@@ -2178,7 +2178,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Vivo City - 2nd Floor",
-        "Street Address": "1 Harbourfront Walk, #02-60/61",
+        "Address": "1 Harbourfront Walk, #02-60/61",
         "City": "Singapore",
         "Postcode": "98585",
         "Phone Number": "6271 5634",
@@ -2197,7 +2197,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks West Coast Plaza",
-        "Street Address": "154 West Coast Road #01-01",
+        "Address": "154 West Coast Road #01-01",
         "City": "Singapore",
         "Postcode": "127371",
         "Phone Number": "",
@@ -2216,7 +2216,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Jurong Point - Level 3",
-        "Street Address": "1 Jurong West Central 2, # 3-52/52A",
+        "Address": "1 Jurong West Central 2, # 3-52/52A",
         "City": "Singapore",
         "Postcode": "648886",
         "Phone Number": "",
@@ -2235,7 +2235,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks West Gate",
-        "Street Address": "Jurong Gateway, #01-04",
+        "Address": "Jurong Gateway, #01-04",
         "City": "Singapore",
         "Postcode": "",
         "Phone Number": "",
@@ -2254,7 +2254,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks NTU NorthSpine",
-        "Street Address": "76 Nanyang Drive N2.1#01-06",
+        "Address": "76 Nanyang Drive N2.1#01-06",
         "City": "Singapore",
         "Postcode": "637331",
         "Phone Number": "",
@@ -2273,7 +2273,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Bukit Panjang Plaza",
-        "Street Address": "Bukit Panjang Plaza, 1 Jelebu Road, #2 09/09A",
+        "Address": "Bukit Panjang Plaza, 1 Jelebu Road, #2 09/09A",
         "City": "Singapore",
         "Postcode": "677743",
         "Phone Number": "",
@@ -2292,7 +2292,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Ng Teng Fong Hospital",
-        "Street Address": "1 Jurong East street 21, #02-08",
+        "Address": "1 Jurong East street 21, #02-08",
         "City": "Singapore",
         "Postcode": "609606",
         "Phone Number": "",
@@ -2311,7 +2311,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks 587 Bukit Timah Road",
-        "Street Address": "587 Bukit Timah Road, Part of #01-03 (provisional no.)",
+        "Address": "587 Bukit Timah Road, Part of #01-03 (provisional no.)",
         "City": "Singapore",
         "Postcode": "269707",
         "Phone Number": "",
@@ -2330,7 +2330,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Oasis  Sakra",
-        "Street Address": "3 Sakra Road #01-02",
+        "Address": "3 Sakra Road #01-02",
         "City": "Singapore",
         "Postcode": "627878",
         "Phone Number": "",
@@ -2349,7 +2349,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Keat Hong CC",
-        "Street Address": "2 Choa Chu Kang loop, #01-04",
+        "Address": "2 Choa Chu Kang loop, #01-04",
         "City": "Singapore",
         "Postcode": "689687",
         "Phone Number": "",
@@ -2368,7 +2368,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Singapore Polytechnic - Dover",
-        "Street Address": "500 Dover Road, FC5, Foodcourt 5 #01-510C",
+        "Address": "500 Dover Road, FC5, Foodcourt 5 #01-510C",
         "City": "Singapore",
         "Postcode": "139651",
         "Phone Number": "",
@@ -2387,7 +2387,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Yusof Ishak House - NUS",
-        "Street Address": "31, Lower Kent Ridge Road",
+        "Address": "31, Lower Kent Ridge Road",
         "City": "Singapore",
         "Postcode": "119078",
         "Phone Number": "",
@@ -2406,7 +2406,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Mapletree Business City",
-        "Street Address": "10, 20, 30 Pasir Panjang Road",
+        "Address": "10, 20, 30 Pasir Panjang Road",
         "City": "Singapore",
         "Postcode": "111713",
         "Phone Number": "",
@@ -2425,7 +2425,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Great World CIty",
-        "Street Address": "1 Kim Seng Promenade, 02-21A/C & 02-20B/E",
+        "Address": "1 Kim Seng Promenade, 02-21A/C & 02-20B/E",
         "City": "Singapore",
         "Postcode": "237994",
         "Phone Number": "",
@@ -2444,7 +2444,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks Holland Village",
-        "Street Address": "255 Holland Avenue",
+        "Address": "255 Holland Avenue",
         "City": "Singapore",
         "Postcode": "278983",
         "Phone Number": "463 9320",
@@ -2463,7 +2463,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Starbucks HarbourFront Centre",
-        "Street Address": "1 Maritime Square, #01-75/76",
+        "Address": "1 Maritime Square, #01-75/76",
         "City": "Singapore",
         "Postcode": "99253",
         "Phone Number": "",
