@@ -2,6 +2,8 @@ package com.example.studygowhere;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.example.studygowhere.LoginActivity.setUn;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +12,6 @@ import android.widget.EditText;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText name, password, email, mobile;
-    String str_name, str_password, str_email, str_mobile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         String str_mobile = mobile.getText().toString();
 
         String type = "register";
+        setUn(str_name);
         BackgroundWorker bgw = new BackgroundWorker(this);
         bgw.execute(type, str_name, str_password, str_email, str_mobile);
     }

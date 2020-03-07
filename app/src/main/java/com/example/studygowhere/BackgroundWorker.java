@@ -24,8 +24,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
     {
         Context context;
         AlertDialog alertDialog;
-        boolean loggedin;
-        static String Un;
+
         BackgroundWorker (Context ctx)
         {
             context = ctx;
@@ -39,7 +38,6 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
             {
                 try{
                     String user_name = params[1];
-                    Un = user_name;
                     String pw = params[2];
                     URL url = new URL(login_url);
                     HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
@@ -75,7 +73,6 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>
             {
                 try{
                     String name = params[1];
-                    Un = name;
                     String password = params[2];
                     String email = params[3];
                     String mobile = params[4];
