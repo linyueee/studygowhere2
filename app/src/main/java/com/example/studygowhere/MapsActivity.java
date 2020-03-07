@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -29,11 +30,14 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
+import com.google.maps.android.geojson.GeoJsonPoint;
 
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import static com.example.studygowhere.BackgroundWorker.Un;
 
@@ -86,6 +90,35 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+/*    public float[] distanceAway(LatLng position1, LatLng position2){
+        //calculates distance away from user location
+        // The computed distance is stored in results[0].
+        //If results has length 2 or greater, the initial bearing is stored in results[1].
+        //If results has length 3 or greater, the final bearing is stored in results[2].
+        float[] results = new float[1];
+        Location.distanceBetween(position1.latitude, position1.longitude,
+                position2.latitude, position2.longitude, results);
+        return results;
+    }*/
+
+    public void infoWindow(GeoJsonLayer layer){
+        for (GeoJsonFeature feature : layer.getFeatures()) {
+            //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
+            GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
+            point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + point.getCoordinates());
+
+            //placing coordinates into a LatLng variable
+            LatLng latLng = point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());
+
+            // creating a marker with a infowindow
+            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
+                    .snippet("distance")
+                    .title(feature.getProperty("Name")));
+            marker.showInfoWindow();
+        }
+    }
 
     /**
      * Manipulates the map once available.
@@ -96,6 +129,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -105,17 +139,29 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         try{
-            GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
-            librariesLayer.addLayerToMap();
-            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
-            ccLayer.addLayerToMap();
-            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
-            schoolsLayer.addLayerToMap();
-            GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
-            starbucksLayer.addLayerToMap();
-            GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
-            mcdonaldsLayer.addLayerToMap();
 
+            GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
+            //librariesLayer.addLayerToMap();
+            infoWindow(librariesLayer);
+
+            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
+            //ccLayer.addLayerToMap();
+            infoWindow(ccLayer);
+
+            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
+            //schoolsLayer.addLayerToMap();
+            infoWindow(schoolsLayer);
+
+            GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
+            //mcdonaldsLayer.addLayerToMap();
+            infoWindow(mcdonaldsLayer);
+
+
+            GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
+            //starbucksLayer.addLayerToMap();
+            infoWindow(starbucksLayer);
+
+            // phone app will start up with a infowindow near africa at the south atlantic ocean
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -124,7 +170,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
     }
-
 
     public boolean checkUserLocationPermission()
     {
