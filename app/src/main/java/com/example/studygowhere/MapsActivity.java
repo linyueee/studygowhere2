@@ -37,9 +37,17 @@ import com.google.maps.android.geojson.GeoJsonPoint;
 import org.json.JSONException;
 
 import java.io.IOException;
-import java.util.Arrays;
 
-import static com.example.studygowhere.BackgroundWorker.Un;
+import java.util.ArrayList;
+import java.util.List;
+import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
+import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
+
+
+import static com.example.studygowhere.LoginActivity.getUn;
+import static com.example.studygowhere.Mcdonaldsdatahandler.addmacObjectFlag;
+import static com.example.studygowhere.SchoolDatahandler.addschoolObjectFlag;
+import static com.example.studygowhere.Starbucksdatahandler.addsbObjectFlag;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -54,6 +62,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
     Button btnAcc, btnsgw;
+    static public List<Object> studyAreaList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +80,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         btnAcc = (Button) findViewById(R.id.user_icon);
         btnsgw = (Button) findViewById(R.id.sgw);
-        if(Un != null) {
+        if(getUn() != null) {
             btnAcc.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -88,6 +98,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
         }
+        btnsgw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MapsActivity.this, SGWActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
 /*    public float[] distanceAway(LatLng position1, LatLng position2){
@@ -156,10 +173,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //mcdonaldsLayer.addLayerToMap();
             infoWindow(mcdonaldsLayer);
 
-
             GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
             //starbucksLayer.addLayerToMap();
             infoWindow(starbucksLayer);
+
+            if(!addLibObjectFlag) {
+                Librarydatahandler ldh = new Librarydatahandler();
+                ldh.addObject(librariesLayer);
+                addLibObjectFlag = true;
+            }
+            if(!addccObjectFlag) {
+                Ccdatahandler ccdh = new Ccdatahandler();
+                ccdh.addObject(ccLayer);
+                addccObjectFlag = true;
+            }
+            if(!addschoolObjectFlag) {
+                SchoolDatahandler sdh = new SchoolDatahandler();
+                sdh.addObject(schoolsLayer);
+                addschoolObjectFlag = true;
+            }
+            if(!addmacObjectFlag) {
+                Mcdonaldsdatahandler macdh = new Mcdonaldsdatahandler();
+                macdh.addObject(mcdonaldsLayer);
+                addmacObjectFlag = true;
+            }
+
+            if(!addsbObjectFlag) {
+                Starbucksdatahandler sbdh = new Starbucksdatahandler();
+                sbdh.addObject(starbucksLayer);
+                addsbObjectFlag = true;
+            }
+
+
+
 
             // phone app will start up with a infowindow near africa at the south atlantic ocean
 
@@ -168,6 +214,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 
@@ -267,4 +314,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
 }
