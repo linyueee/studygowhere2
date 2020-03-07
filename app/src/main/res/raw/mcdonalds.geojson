@@ -1,0 +1,660 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Ang Mo Kio Park",
+        "Address": "10 Ang Mo Kio Street 12",
+        "PostalCode": "567740"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.844793,
+          1.372467,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Bedok North",
+        "Address": "539 Bedok North Street 3 #01-643",
+        "PostalCode": "460539"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.92577,
+          1.332111,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Bedok Reservoir",
+        "Address": "632 Bedok Reservoir Road #01-850",
+        "PostalCode": "470632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.913734,
+          1.332232,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Boat Quay",
+        "Address": "1 South Canal Road",
+        "PostalCode": "048508"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84977,
+          1.285795,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Bugis Village",
+        "Address": "151/152 Rochor Road",
+        "PostalCode": "188426"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8551,
+          1.29125,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Bukit Batok",
+        "Address": "632 Bukit Batok Central #01-138/#01-140 / #01-142",
+        "PostalCode": "650632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.75018,
+          1.349632,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Bukit Gombak",
+        "Address": "374 Bukit Batok Street 31 #01-198 & #01-202",
+        "PostalCode": "650374"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.750656,
+          1.357631,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Causeway Point",
+        "Address": "1 Woodlands Square #01-35 Causeway Point",
+        "PostalCode": "738099"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78652,
+          1.436471,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Changi Airport T2 Transit Lounge",
+        "Address": "60 Airport Boulevard #36-070 Departure/ Transit Lounge Central Terminal 2, Changi Airport",
+        "PostalCode": "819643"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.98952,
+          1.355459,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Changi Airport T3",
+        "Address": "Arrival Meeting Hall South #01-03 Terminal 3, Changi Airport",
+        "PostalCode": "819663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9864,
+          1.355327,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Chua Chu Kang CC",
+        "Address": "35 Teck Whye Avenue #01-01 Chua Chu Kang Community Club",
+        "PostalCode": "688892"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7521,
+          1.381322,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Clementi Mall",
+        "Address": "3155 Commonwealth Ave West #01-06/07/08/09 &02-06/07/08 The Clementi Mall",
+        "PostalCode": "129588"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76462,
+          1.315502,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Elias Community Centre",
+        "Address": "93 Pasir Ris Drive 3 #01-02 Pasir Ris Elias Community Centre",
+        "PostalCode": "519498"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.94269,
+          1.378501,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Fajar",
+        "Address": "445 Fajar Road #01-520",
+        "PostalCode": "670445"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.770454,
+          1.38389,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Farrer Road",
+        "Address": "10 Jalan Serene #01-01 Serene Centre",
+        "PostalCode": "258748"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.81354,
+          1.322509,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Forum Galleria",
+        "Address": "583 Orchard Road #B1-25, #B1-33 to #B1-35 Forum The Shopping Mall",
+        "PostalCode": "238884"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8288,
+          1.306271,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Geylang East Central",
+        "Address": "113 Aljunied Ave 2 #01-01",
+        "PostalCode": "380113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88578,
+          1.320429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Hougang",
+        "Address": "208 Hougang Street 21 #01-217",
+        "PostalCode": "530208"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88634,
+          1.358565,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Hougang 8",
+        "Address": "684 Hougang Avenue 8 #01-999",
+        "PostalCode": "530684"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88685,
+          1.374079,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Jurong Green CC",
+        "Address": "6A Jurong West Avenue 1",
+        "PostalCode": "649520"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.725525,
+          1.350527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Kallang",
+        "Address": "200 Stadium Boulevard",
+        "PostalCode": "397801"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.881931,
+          1.305321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Lucky China Town Point",
+        "Address": "211 New Bridge Road, Lucky Chinatown #01-10 to #01-14",
+        "PostalCode": "059432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.843315,
+          1.283682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Northpoint",
+        "Address": "930 Yishun Avenue 2 #01-12/13 Northpoint City North Wing",
+        "PostalCode": "769098"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83567,
+          1.429874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Pasir Ris Sports Complex",
+        "Address": "120 Pasir Ris Central #01-12 Pasir Ris Sports and Recreation Centre",
+        "PostalCode": "519640"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95204,
+          1.374185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Pioneer Mall",
+        "Address": "638 Jurong West Street 61 #01-01/02 Pioneer Mall",
+        "PostalCode": "640638"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.69694,
+          1.341597,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s PSA",
+        "Address": "460 Alexandra Road #01-25 PSA Building",
+        "PostalCode": "119963"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.80158,
+          1.274568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Queensway",
+        "Address": "#01-580 Ridout Tea Garden",
+        "PostalCode": "149066"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.80211,
+          1.304176,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Resorts World Sentosa",
+        "Address": "8 Sentosa Gateway, #B1-211, 212, 213, 214, Resorts World Sentosa",
+        "PostalCode": "098138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82013,
+          1.257415,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s SAFRA Yishun",
+        "Address": "60 Yishun Avenue 4 #01-11",
+        "PostalCode": "769027"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.840996,
+          1.423333,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Sengkang Rivervale Plaza",
+        "Address": "118 Rivervale Drive #01-32",
+        "PostalCode": "540118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.901505,
+          1.385409,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Sengkang Sports Complex",
+        "Address": "57 Anchorvale Road #02-03 Sengkang Sport & Recreation Centre",
+        "PostalCode": "544964"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.88727,
+          1.396791,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Serangoon Avenue 3",
+        "Address": "267 Serangoon Ave 3 #01-37",
+        "PostalCode": "550267"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.87087,
+          1.353079,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s SpringLeaf Tower",
+        "Address": "3 Anson Road #01-03 Springleaf Tower",
+        "PostalCode": "079909"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84592,
+          1.274835,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Sun Plaza",
+        "Address": "30,Sembawang Drive #01-16 /17",
+        "PostalCode": "757713"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.819916,
+          1.448305,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Tampines",
+        "Address": "513 Tampines Central 1 #01-150",
+        "PostalCode": "521512"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.943474,
+          1.353455,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Tampines Neighborhood 3",
+        "Address": "5 Tampines Street 32 #01-01",
+        "PostalCode": "529284"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.959625,
+          1.354002,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Tampines West CC",
+        "Address": "5 Tampines Avenue 3 #01-01",
+        "PostalCode": "529705"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.93588,
+          1.348696,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Toa Payoh Central",
+        "Address": "600 Toa Payoh #01-02 (formerly known as 600 Lor 4 Toa Payoh #01-02)",
+        "PostalCode": "319515"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85098,
+          1.334075,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Toa Payoh Lorong 1",
+        "Address": "109 Toa Payoh Lorong 1 #01-318",
+        "PostalCode": "310109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84611,
+          1.341209,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s West Coast Park",
+        "Address": "71 West Coast Highway",
+        "PostalCode": "126844"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76338,
+          1.297681,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McDonald’s Yishun",
+        "Address": "369 Sembawang Road #01-01",
+        "PostalCode": "758382"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82607,
+          1.426926,
+          0
+        ]
+      }
+    }
+  ]
+}
