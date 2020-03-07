@@ -9,4 +9,5 @@ public interface Datahandler {
     List<Object> studyAreaList = new ArrayList<>();
 
     void addObject(GeoJsonLayer layer);
+
 }

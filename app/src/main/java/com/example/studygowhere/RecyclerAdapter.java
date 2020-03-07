@@ -73,7 +73,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         if(sa.getAddress() != null) {
             ivh.address.setText(sa.getAddress());
         }
-        Picasso.get().load(sa.getImageurl()).placeholder(R.drawable.ic_launcher_background).into(ivh.saImage);
+        if(((StudyArea) studyArea.get(position)).getImageurl() != null) {
+            Picasso.get().load(sa.getImageurl()).placeholder(R.drawable.ic_launcher_background).into(ivh.saImage);
+        }
 
         ivh.relative.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +83,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 Intent selected = new Intent(context, DetailActivity.class);
                 selected.putExtra("Name", ((StudyArea) studyArea.get(position)).getName());
 
-                selected.putExtra("Address", ((StudyArea) studyArea.get(position)).getAddress());
+                if(((StudyArea) studyArea.get(position)).getAddress() != null)
+                {
+                    selected.putExtra("Address", ((StudyArea) studyArea.get(position)).getAddress());
+                }
+
                 if(((StudyArea) studyArea.get(position)).getImageurl() != null) {
                     selected.putExtra("Image", ((StudyArea) studyArea.get(position)).getImageurl());
                 }

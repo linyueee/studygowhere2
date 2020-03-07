@@ -3,14 +3,14 @@ package com.example.studygowhere;
 import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 
-public class Ccdatahandler implements Datahandler {
-    static boolean addccObjectFlag = false;
+public class Mcdonaldsdatahandler implements Datahandler {
+    static boolean addmacObjectFlag = false;
 
     public void addObject(GeoJsonLayer layer) {
         for(GeoJsonFeature feature:layer.getFeatures())
         {
             StudyArea sa = new StudyArea();
-            sa.setType("CC");
+            sa.setType("Mcdonalds");
             if(feature.getProperty("Name") != null)
             {
                 String name = feature.getProperty("Name");
@@ -22,7 +22,8 @@ public class Ccdatahandler implements Datahandler {
 
                 sa.setAddress(feature.getProperty("Address"));
             }
-            sa.setImageurl("https://i.postimg.cc/cH8pDmgb/cc.png");
+            sa.setImageurl("https://i.postimg.cc/cJmk936S/mac.png");
+
             studyAreaList.add(sa);
         }
     }

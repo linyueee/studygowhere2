@@ -45,6 +45,9 @@ import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
 
 import static com.example.studygowhere.LoginActivity.getUn;
+import static com.example.studygowhere.Mcdonaldsdatahandler.addmacObjectFlag;
+import static com.example.studygowhere.SchoolDatahandler.addschoolObjectFlag;
+import static com.example.studygowhere.Starbucksdatahandler.addsbObjectFlag;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -155,22 +158,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         try{
 
             GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
-            librariesLayer.addLayerToMap();
-            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
-            ccLayer.addLayerToMap();
-/*            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
-            schoolsLayer.addLayerToMap();*/
-            if(!addLibObjectFlag) {
-                Librarydatahandler ldh = new Librarydatahandler();
-                ldh.addObject(librariesLayer);
-                addLibObjectFlag = true;
-            }
-            if(!addccObjectFlag) {
-                Ccdatahandler ldh = new Ccdatahandler();
-                ldh.addObject(ccLayer);
-                addccObjectFlag = true;
-            }
+            //librariesLayer.addLayerToMap();
+            infoWindow(librariesLayer);
 
+            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
+            //ccLayer.addLayerToMap();
+            infoWindow(ccLayer);
 
             GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
             //schoolsLayer.addLayerToMap();
@@ -180,10 +173,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //mcdonaldsLayer.addLayerToMap();
             infoWindow(mcdonaldsLayer);
 
-
             GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
             //starbucksLayer.addLayerToMap();
             infoWindow(starbucksLayer);
+
+            if(!addLibObjectFlag) {
+                Librarydatahandler ldh = new Librarydatahandler();
+                ldh.addObject(librariesLayer);
+                addLibObjectFlag = true;
+            }
+            if(!addccObjectFlag) {
+                Ccdatahandler ccdh = new Ccdatahandler();
+                ccdh.addObject(ccLayer);
+                addccObjectFlag = true;
+            }
+            if(!addschoolObjectFlag) {
+                SchoolDatahandler sdh = new SchoolDatahandler();
+                sdh.addObject(schoolsLayer);
+                addschoolObjectFlag = true;
+            }
+            if(!addmacObjectFlag) {
+                Mcdonaldsdatahandler macdh = new Mcdonaldsdatahandler();
+                macdh.addObject(mcdonaldsLayer);
+                addmacObjectFlag = true;
+            }
+
+            if(!addsbObjectFlag) {
+                Starbucksdatahandler sbdh = new Starbucksdatahandler();
+                sbdh.addObject(starbucksLayer);
+                addsbObjectFlag = true;
+            }
+
+
+
 
             // phone app will start up with a infowindow near africa at the south atlantic ocean
 
