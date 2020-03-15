@@ -1,7 +1,9 @@
 package com.example.studygowhere;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
+import com.google.maps.android.geojson.GeoJsonPoint;
 
 public class SchoolDatahandler implements Datahandler {
 
@@ -29,6 +31,14 @@ public class SchoolDatahandler implements Datahandler {
                 sa.setAddress(feature.getProperty("Address"));
             }
             schoolList.add(sa);
+
+            if(feature.getGeometry()!= null)
+            {
+                GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
+                LatLng latLng = point.getCoordinates();
+                sa.setLatLng(latLng);
+            }
+
             studyAreaList.add(sa);
         }
     }

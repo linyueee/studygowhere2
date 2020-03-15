@@ -10,27 +10,49 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.GoogleMap;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+
+import java.io.IOException;
 
 import static com.example.studygowhere.LoginActivity.getUn;
 
 public class DetailActivity extends AppCompatActivity {
+
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         TextView detailName;
         ImageView image;
-        Button btnaddBookmark;
+        Button btnaddBookmark, btnviewonmap;
         detailName = (TextView) findViewById(R.id.tvDetailName);
         image = (ImageView) findViewById(R.id.imageView2);
         btnaddBookmark = (Button) findViewById(R.id.addBookmark);
+        btnviewonmap = (Button) findViewById(R.id.viewOnMap);
         detailName.setText(intent.getStringExtra("Name"));
         Picasso.get().load(intent.getStringExtra("Image")).placeholder(R.drawable.ic_launcher_background).into(image);
 
+        btnviewonmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DetailActivity.this, MapsActivity.class);
+                try {
+                    MapsActivity.viewOnMap(intent);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                startActivity(i);
+            }
+        });
     }
 
         public void AddBM(View view)
@@ -47,4 +69,17 @@ public class DetailActivity extends AppCompatActivity {
                 bmw.execute(getUn(),intent.getStringExtra("Name"));
             }
         }
+
+/*    public void viewOnMap(View view) throws IOException, JSONException {
+        Intent intent = getIntent();
+        Log.i("GeoJsonClick", "Feature clicked: " + intent.getStringExtra("Name"));
+        //Log.i("GeoJsonClick", "Feature clicked: " + intent.getStringExtra("type"));
+        //StudyArea studyArea = new StudyArea();
+        //studyArea.setName(intent.getStringExtra("Name"));
+
+        String name = intent.getStringExtra("Name");
+        // for the list of study areas, get the place
+        // get the coordinates of the place
+        // place the marker on map.
+    }*/
 }

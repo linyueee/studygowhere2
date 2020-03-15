@@ -27,4 +27,14 @@
         android:layout_marginHorizontal="20dp"
         android:text="Add to My Bookmark"
         android:onClick="AddBM"/>
+
+    <Button
+        android:id="@+id/viewOnMap"
+        android:layout_below="@+id/addBookmark"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:text="View On Map"
+        android:onClick="viewOnMap"/>
+
 </RelativeLayout>

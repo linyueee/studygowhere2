@@ -1,7 +1,9 @@
 package com.example.studygowhere;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
+import com.google.maps.android.geojson.GeoJsonPoint;
 
 public class Starbucksdatahandler implements Datahandler {
     static boolean addsbObjectFlag = false;
@@ -22,6 +24,13 @@ public class Starbucksdatahandler implements Datahandler {
 
                 sa.setAddress(feature.getProperty("Address"));
             }
+            if(feature.getGeometry()!= null)
+            {
+                GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
+                LatLng latLng = point.getCoordinates();
+                sa.setLatLng(latLng);
+            }
+
             sa.setImageurl("https://i.postimg.cc/SKT3Q84G/starbucks-logo.png");
             cafeList.add(sa);
             studyAreaList.add(sa);
