@@ -10,6 +10,7 @@ public class StudyArea {
     private String website;
     private String type;
 
+
     public StudyArea(String name, String imageurl, String address, int zipcode, String website, String type) {
         this.name = name;
         this.imageurl = imageurl;

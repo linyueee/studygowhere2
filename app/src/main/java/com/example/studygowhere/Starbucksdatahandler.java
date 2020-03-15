@@ -23,6 +23,7 @@ public class Starbucksdatahandler implements Datahandler {
                 sa.setAddress(feature.getProperty("Address"));
             }
             sa.setImageurl("https://i.postimg.cc/SKT3Q84G/starbucks-logo.png");
+            cafeList.add(sa);
             studyAreaList.add(sa);
         }
     }

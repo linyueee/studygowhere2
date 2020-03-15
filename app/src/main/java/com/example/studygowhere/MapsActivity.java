@@ -61,8 +61,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btnAcc, btnsgw;
-    static public List<Object> studyAreaList = new ArrayList<>();
+    Button btnAcc, btnsgw, btnschlayer, btncclayer, btnliblayer, btncafelayer;
+
 
 
     @Override
@@ -80,6 +80,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         btnAcc = (Button) findViewById(R.id.user_icon);
         btnsgw = (Button) findViewById(R.id.sgw);
+        btncafelayer = (Button) findViewById(R.id.btnreslayer);
+        btncclayer = (Button) findViewById(R.id.btncclayer);
+        btnschlayer = (Button) findViewById(R.id.btnschoollayer);
+        btnliblayer = (Button) findViewById(R.id.btnliblayer);
         if(getUn() != null) {
             btnAcc.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -157,25 +161,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         try{
 
-            GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
+            final GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
             //librariesLayer.addLayerToMap();
-            infoWindow(librariesLayer);
 
-            GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
+
+            final GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
             //ccLayer.addLayerToMap();
-            infoWindow(ccLayer);
 
-            GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
+            final GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
             //schoolsLayer.addLayerToMap();
-            infoWindow(schoolsLayer);
 
-            GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
+            final GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
             //mcdonaldsLayer.addLayerToMap();
-            infoWindow(mcdonaldsLayer);
 
-            GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
+            final GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
             //starbucksLayer.addLayerToMap();
-            infoWindow(starbucksLayer);
 
             if(!addLibObjectFlag) {
                 Librarydatahandler ldh = new Librarydatahandler();
@@ -204,8 +204,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 addsbObjectFlag = true;
             }
 
+            btnliblayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMap.clear();
+                    infoWindow(librariesLayer);
+                }
+            });
 
+           btncclayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMap.clear();
+                    infoWindow(ccLayer);
+                }
+            });
+            btncafelayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMap.clear();
+                    infoWindow(mcdonaldsLayer);
+                    infoWindow(starbucksLayer);
 
+                }
+            });
+            btnschlayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMap.clear();
+                    infoWindow(schoolsLayer);
+                }
+            });
 
             // phone app will start up with a infowindow near africa at the south atlantic ocean
 

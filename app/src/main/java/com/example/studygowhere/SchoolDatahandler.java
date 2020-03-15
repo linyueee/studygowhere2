@@ -28,7 +28,7 @@ public class SchoolDatahandler implements Datahandler {
 
                 sa.setAddress(feature.getProperty("Address"));
             }
-
+            schoolList.add(sa);
             studyAreaList.add(sa);
         }
     }

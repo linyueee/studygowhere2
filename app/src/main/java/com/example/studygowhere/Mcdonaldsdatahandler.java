@@ -24,6 +24,7 @@ public class Mcdonaldsdatahandler implements Datahandler {
             }
             sa.setImageurl("https://i.postimg.cc/cJmk936S/mac.png");
 
+            cafeList.add(sa);
             studyAreaList.add(sa);
         }
     }

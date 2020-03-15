@@ -31,6 +31,8 @@
 
    </RelativeLayout>
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -46,12 +48,64 @@
             android:layout_marginRight="60dp"
             android:text="My Account"
             android:textSize="19sp" />
-           android:onClick="onClick"/>
+        android:onClick="onClick"/>
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnschoollayer"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:text="School"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:textSize = "15dp"
+            android:layout_marginBottom="55dp"
+            />
+
+        <Button
+            android:id="@+id/btncclayer"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:text="Community center"
+            android:layout_toRightOf="@+id/btnschoollayer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:textSize = "15dp"
+            android:layout_marginBottom="55dp"
+            />
+        <Button
+            android:id="@+id/btnliblayer"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:text="Library"
+            android:layout_alignBottom="@+id/btnschoollayer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:textSize = "15dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/btnreslayer"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:text="Cafe/Restaurant"
+            android:layout_toRightOf="@+id/btnliblayer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:textSize = "15dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

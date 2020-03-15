@@ -30,6 +30,7 @@ public class Librarydatahandler implements Datahandler {
 
                 sa.setAddress(feature.getProperty("Address"));
             }
+            libList.add(sa);
             studyAreaList.add(sa);
         }
     }

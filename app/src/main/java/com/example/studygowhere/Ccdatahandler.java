@@ -23,6 +23,7 @@ public class Ccdatahandler implements Datahandler {
                 sa.setAddress(feature.getProperty("Address"));
             }
             sa.setImageurl("https://i.postimg.cc/cH8pDmgb/cc.png");
+            ccList.add(sa);
             studyAreaList.add(sa);
         }
     }
