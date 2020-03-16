@@ -6,8 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".SGWActivity">
 
+   <Spinner
+       android:id="@+id/aSpinner"
+       android:layout_marginTop="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/Spinner_items"
+      />
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/recycler_view"
+       android:layout_marginTop="50dp"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        tools:listitem= "@layout/study_area_list"/>

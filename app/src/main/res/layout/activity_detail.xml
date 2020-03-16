@@ -37,4 +37,13 @@
         android:text="View On Map"
         android:onClick="viewOnMap"/>
 
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_below="@+id/viewOnMap"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:text="DELETE FROM MY BOOKMARK"
+        android:onClick="DeleteBM"/>
 </RelativeLayout>

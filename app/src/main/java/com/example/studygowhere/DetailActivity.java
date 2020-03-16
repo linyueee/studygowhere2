@@ -31,11 +31,12 @@ public class DetailActivity extends AppCompatActivity {
         final Intent intent = getIntent();
         TextView detailName;
         ImageView image;
-        Button btnaddBookmark, btnviewonmap;
+        Button btnaddBookmark, btnviewonmap, btndelete;
         detailName = (TextView) findViewById(R.id.tvDetailName);
         image = (ImageView) findViewById(R.id.imageView2);
         btnaddBookmark = (Button) findViewById(R.id.addBookmark);
         btnviewonmap = (Button) findViewById(R.id.viewOnMap);
+        btndelete = (Button) findViewById(R.id.btndelete);
         detailName.setText(intent.getStringExtra("Name"));
         Picasso.get().load(intent.getStringExtra("Image")).placeholder(R.drawable.ic_launcher_background).into(image);
 
@@ -65,8 +66,25 @@ public class DetailActivity extends AppCompatActivity {
             }
             else
             {
-                AddbookmarkWorker bmw = new AddbookmarkWorker(this);
-                bmw.execute(getUn(),intent.getStringExtra("Name"));
+                String type = "Add";
+                CustomisebookmarkWorker bmw = new CustomisebookmarkWorker(this);
+                bmw.execute(getUn(),intent.getStringExtra("Name"), type);
+            }
+        }
+
+        public void DeleteBM(View view)
+        {
+            Intent intent = getIntent();
+            if(getUn() == null)
+            {
+                Toast toast=Toast. makeText(getApplicationContext(),"Please log in first", Toast.LENGTH_LONG);
+                toast.show();
+            }
+            else
+            {
+                String type = "Delete";
+                CustomisebookmarkWorker dbm = new CustomisebookmarkWorker(this);
+                dbm.execute(getUn(),intent.getStringExtra("Name"), type);
             }
         }
 

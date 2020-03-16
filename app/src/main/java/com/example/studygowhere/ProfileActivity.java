@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -63,6 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         tvName.setText(getUn());
 
+
         Readbookmarkworker rbw = new Readbookmarkworker(this);
         rbw.execute(getUn());
 
@@ -106,7 +108,6 @@ public class ProfileActivity extends AppCompatActivity {
         rvbookmark.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(ProfileActivity.getContext());
         rvbookmark.setLayoutManager(layoutManager);
-
         mAdapter = new RecyclerAdapter(ProfileActivity.getContext(), BookmarkList);
         rvbookmark.setAdapter(mAdapter);
 

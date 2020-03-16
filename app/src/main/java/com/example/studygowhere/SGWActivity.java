@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -26,13 +29,13 @@ import java.util.List;
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
 import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
-public class SGWActivity extends AppCompatActivity  {
+public class SGWActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private RecyclerView mRecyclerView;
 //    private List<Object> studyAreaList = new ArrayList<>();
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-    private GoogleMap mMap;
+    Spinner dropdownspinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,44 +43,57 @@ public class SGWActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_sgw);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        dropdownspinner = (Spinner) findViewById(R.id.aSpinner);
 
+        dropdownspinner.setOnItemSelectedListener(this);
 
 
         mRecyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.studyAreaList);
-        mRecyclerView.setAdapter(mAdapter);
 
 
     }
 
-/*    public void onItemClick(int position)
-    {
-        Intent selected = new Intent(this, DetailActivity.class);
-        StudyArea sa = (StudyArea) Datahandler.studyAreaList.get(position);
-        selected.putExtra("Name", sa.getName());
-        this.startActivity(selected);
-    }*/
-
-
-/*    private void addobject(GeoJsonLayer layer)
-    {
-        for(GeoJsonFeature feature:layer.getFeatures())
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        if(parent.getSelectedItem().toString().equals("ALL"))
         {
-            if(feature.getProperty("Name") != null)
-            {
-                Toast toast=Toast. makeText(getApplicationContext(),feature.getProperty("Name"), Toast.LENGTH_SHORT);
-                toast.show();
-                String name = feature.getProperty("Name");
-                StudyArea sa = new StudyArea();
-                sa.setName(name);
-                studyAreaList.add(sa);
-            }
-
-
+            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.studyAreaList);
+            mRecyclerView.setAdapter(mAdapter);
         }
-    }*/
+
+        else if(parent.getSelectedItem().toString().equals("SCHOOLS"))
+        {
+            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.schoolList);
+            mRecyclerView.setAdapter(mAdapter);
+        }
+
+        else if(parent.getSelectedItem().toString().equals("LIBRARIES"))
+        {
+            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.libList);
+            mRecyclerView.setAdapter(mAdapter);
+        }
+
+        else if(parent.getSelectedItem().toString().equals("COMMUNITY CENTERS"))
+        {
+            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.ccList);
+            mRecyclerView.setAdapter(mAdapter);
+        }
+
+        else if(parent.getSelectedItem().toString().equals("CAFES/RESTAURANTS"))
+        {
+            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.cafeList);
+            mRecyclerView.setAdapter(mAdapter);
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
+
 
 }

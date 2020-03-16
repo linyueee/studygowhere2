@@ -91,6 +91,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btncclayer = (Button) findViewById(R.id.btncclayer);
         btnschlayer = (Button) findViewById(R.id.btnschoollayer);
         btnliblayer = (Button) findViewById(R.id.btnliblayer);
+
         if(getUn() != null) {
             btnAcc.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -274,7 +275,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 addsbObjectFlag = true;
             }
 
-            btnliblayer.setOnClickListener(new View.OnClickListener() {
+/*            btnliblayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -304,7 +305,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     mMap.clear();
                     infoWindow(schoolsLayer);
                 }
-            });
+            });*/
             for(int i = 0; i < Datahandler.studyAreaList.size(); i++){
                 StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
                 String name = studyArea.getName();

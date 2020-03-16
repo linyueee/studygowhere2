@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import static android.os.AsyncTask.Status.FINISHED;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -53,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         String password = etPassword.getText().toString();
         String type = "login";
         setUn(username);
-        BackgroundWorker bgw = new BackgroundWorker(this);
+        AccountWorker bgw = new AccountWorker(this);
         bgw.execute(type, username, password);
 
 

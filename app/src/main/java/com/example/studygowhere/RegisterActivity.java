@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static com.example.studygowhere.LoginActivity.setUn;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         String type = "register";
         setUn(str_name);
-        BackgroundWorker bgw = new BackgroundWorker(this);
+        AccountWorker bgw = new AccountWorker(this);
         bgw.execute(type, str_name, str_password, str_email, str_mobile);
     }
 }

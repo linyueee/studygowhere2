@@ -20,12 +20,12 @@ import java.net.URLEncoder;
 import android.widget.Toast;
 import android.os.Bundle;
 
-public class BackgroundWorker extends AsyncTask<String, Void, String>
+public class AccountWorker extends AsyncTask<String, Void, String>
     {
         Context context;
         AlertDialog alertDialog;
 
-        BackgroundWorker (Context ctx)
+        AccountWorker(Context ctx)
         {
             context = ctx;
         }
