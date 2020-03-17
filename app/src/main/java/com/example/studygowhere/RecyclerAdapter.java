@@ -41,7 +41,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mview;
-        TextView studyname;
+        TextView studyname, distance;
         ImageView saImage;
         RelativeLayout relative;
         TextView address;
@@ -52,7 +52,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             saImage = (ImageView) itemView.findViewById(R.id.image);
             relative = (RelativeLayout) itemView.findViewById(R.id.relativelo);
             address = (TextView) itemView.findViewById(R.id.tvaddress);
-
+            distance = (TextView) itemView.findViewById(R.id.tvdistance);
 
         }
     }
@@ -70,6 +70,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         ItemViewHolder ivh = (ItemViewHolder) holder;
         StudyArea sa = (StudyArea) studyArea.get(position);
         ivh.studyname.setText(sa.getName());
+        ivh.distance.setText(sa.getDistance());
         if(sa.getAddress() != null) {
             ivh.address.setText(sa.getAddress());
         }

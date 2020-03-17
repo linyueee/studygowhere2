@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
@@ -24,9 +25,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
+import static com.example.studygowhere.Datahandler.studyAreaList;
 import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
 public class SGWActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -60,7 +65,8 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if(parent.getSelectedItem().toString().equals("ALL"))
         {
-            mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.studyAreaList);
+            //studyAreaList.sort(new DistanceSorter());
+            mAdapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
             mRecyclerView.setAdapter(mAdapter);
         }
 

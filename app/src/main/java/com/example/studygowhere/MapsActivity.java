@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -66,10 +67,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-
     Button btnAcc, btnsgw, btnschlayer, btncclayer, btnliblayer, btncafelayer;
-
-
     static public Intent viewOnMapIntent;
 
     @Override
@@ -117,28 +115,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(i);
             }
         });
+
     }
 
-    private double distance(double lat1, double lon1, double lat2, double lon2) {
-        double theta = lon1 - lon2;
-        double dist = Math.sin(deg2rad(lat1))
-                * Math.sin(deg2rad(lat2))
-                + Math.cos(deg2rad(lat1))
-                * Math.cos(deg2rad(lat2))
-                * Math.cos(deg2rad(theta));
-        dist = Math.acos(dist);
-        dist = rad2deg(dist);
-        dist = dist * 60 * 1.1515;
-        return (dist);
-    }
 
-    private double deg2rad(double deg) {
-        return (deg * Math.PI / 180.0);
-    }
-
-    private double rad2deg(double rad) {
-        return (rad * 180.0 / Math.PI);
-    }
 
 /*    public float[] distanceAway(LatLng position1, LatLng position2){
         //calculates distance away from user location
@@ -188,7 +168,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 */
     }
 
-    public void infoWindow(LatLng latLng, String name, String distance){
+    public void infoWindow(LatLng latLng, String name, double distance){
 /*        for (GeoJsonFeature feature : layer.getFeatures()) {
             //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
             GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
@@ -200,8 +180,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
 
             // creating a marker with a infowindow
+        double inkm = distance/1000;
+        double round = Math.round(inkm * 100.0)/100.0;
             Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
-                    .snippet(distance + " km")
+                    .snippet(round + " km")
                     .title(name));
             marker.showInfoWindow();
     }
@@ -306,35 +288,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     infoWindow(schoolsLayer);
                 }
             });*/
-            for(int i = 0; i < Datahandler.studyAreaList.size(); i++){
-                StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
-                String name = studyArea.getName();
-                LatLng latLng = studyArea.getLatLng();
 
-/*                double distance;
-                distance = distance(latLng.latitude,latLng.longitude,userCurrentLatLng.latitude,userCurrentLatLng.longitude);
-                Log.i("distance conversion", "distance: " + distance);
-
-                String distanceStr = String.valueOf(distance);*/
-                infoWindow(latLng, name, "distance");
-            }
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");
-                Log.i("GeoJsonClick", "name clicked: " + nameClicked);
-                Log.i("TestClick", "" + Datahandler.studyAreaList.size());
+/*                Log.i("GeoJsonClick", "name clicked: " + nameClicked);
+                Log.i("TestClick", "" + Datahandler.studyAreaList.size());*/
                 for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
                     StudyArea temp = (StudyArea) Datahandler.studyAreaList.get(i);
                     String tempName = temp.getName();
                     //Log.i("GeoJsonClick", "Feature clicked: " + "hello");
                     //Log.i("GeoJsonClick", "looping through name: " + tempName);
                     if (tempName.equals(nameClicked)) {
-                        Log.i("GeoJsonClick", "LatLng"+temp.getLatLng());
+/*                        Log.i("GeoJsonClick", "LatLng"+temp.getLatLng());*/
                         LatLng clickedLatLng = temp.getLatLng();
-                        Log.i("GeoJsonClick", "clickedLatLng"+clickedLatLng);
+/*                        Log.i("GeoJsonClick", "clickedLatLng"+clickedLatLng);*/
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(clickedLatLng, 14));
                         //mMap.animateCamera(CameraUpdateFactory.zoomBy(14));
-                        Log.i("GeoJsonClick", "Success!");
+/*                        Log.i("GeoJsonClick", "Success!");*/
                     }
                 }
 
@@ -401,6 +372,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
     @Override
     public void onLocationChanged(Location location) {
+
+
         lastLocation = location;
         if(currentUserLocationMarker != null)
         {
@@ -418,6 +391,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
+
+/*        Log.i("GeoJsonClick", "Feature clicked: " + lastLocation.getLatitude());
+        Log.i("GeoJsonClick", "location " + location.getLatitude());*/
+        if(location != null) {
+            Log.i("GeoJsonClick", "meagain " + location.getLatitude());
+            for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
+                StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
+                String name = studyArea.getName();
+                LatLng salatLng = studyArea.getLatLng();
+                Location temp = new Location(LocationManager.GPS_PROVIDER);
+                temp.setLatitude(salatLng.latitude);
+                temp.setLongitude(salatLng.longitude);
+                float dis = location.distanceTo(temp);
+                infoWindow(salatLng, name, dis);
+                studyArea.setDistance(dis);
+            }
+        }
+
+
     }
 
 

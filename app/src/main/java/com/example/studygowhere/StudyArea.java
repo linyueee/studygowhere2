@@ -13,6 +13,7 @@ public class StudyArea {
     private String website;
     private String type;
     private LatLng latLng;
+    private String distance;
 
     public StudyArea(String name, String imageurl, String address, int zipcode, String website, String type) {}
 
@@ -86,5 +87,17 @@ public class StudyArea {
     public LatLng getLatLng() { return latLng; }
 
     public void setLatLng(LatLng latLng) { this.latLng = latLng; }
+
+    public String getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        double inkm = distance/1000;
+        double round = Math.round(inkm * 100.0)/100.0;
+        this.distance = Double.toString(round);
+    }
+
+
 
 }
