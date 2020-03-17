@@ -48,6 +48,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
+import static com.example.studygowhere.Datahandler.cafeList;
+import static com.example.studygowhere.Datahandler.ccList;
+import static com.example.studygowhere.Datahandler.libList;
+import static com.example.studygowhere.Datahandler.schoolList;
 import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
 
@@ -167,7 +171,30 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 */
     }
+    public void infoWindow(List<Object> list){
+/*        for (GeoJsonFeature feature : layer.getFeatures()) {
+            //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
+            GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
+            point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + point.getCoordinates());
 
+            //placing coordinates into a LatLng variable
+            LatLng latLng = point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
+
+        // creating a marker with a infowindow
+
+        for (int i = 0; i < list.size(); i++) {
+            StudyArea studyArea = (StudyArea) list.get(i);
+            String name = studyArea.getName();
+            LatLng latLng = studyArea.getLatLng();
+            String distance = studyArea.getDistance();
+            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
+                    .snippet(distance + " km")
+                    .title(name));
+            marker.showInfoWindow();
+        }
+    }
     public void infoWindow(LatLng latLng, String name, double distance){
 /*        for (GeoJsonFeature feature : layer.getFeatures()) {
             //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
@@ -257,11 +284,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 addsbObjectFlag = true;
             }
 
-/*            btnliblayer.setOnClickListener(new View.OnClickListener() {
+           btnliblayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(librariesLayer);
+                    infoWindow(libList);
                 }
             });
 
@@ -270,24 +297,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(ccLayer);
+                    infoWindow(ccList);
                 }
             });
 
-            btncafelayer.setOnClickListener(
+            btncafelayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(mcdonaldsLayer);
-                    infoWindow(starbucksLayer);
-
-
-            );
+                    infoWindow(cafeList);
+                }
+            });
             btnschlayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(schoolsLayer);
+                    infoWindow(schoolList);
                 }
-            });*/
+            });
 
 
             if(viewOnMapIntent!=null){
@@ -375,11 +402,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         lastLocation = location;
-        if(currentUserLocationMarker != null)
-        {
+        if (currentUserLocationMarker != null) {
             currentUserLocationMarker.remove();
         }
-        LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
+        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
         MarkerOptions markerOption = new MarkerOptions();
         markerOption.position(latLng);
         markerOption.title("user current location");
@@ -387,14 +413,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         currentUserLocationMarker = mMap.addMarker(markerOption);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomBy(14));
-        if(googleApiClient != null)
-        {
+        if (googleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
 
 /*        Log.i("GeoJsonClick", "Feature clicked: " + lastLocation.getLatitude());
         Log.i("GeoJsonClick", "location " + location.getLatitude());*/
-        if(location != null) {
+        if (location != null) {
             Log.i("GeoJsonClick", "meagain " + location.getLatitude());
             for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
                 StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
@@ -406,10 +431,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 float dis = location.distanceTo(temp);
                 infoWindow(salatLng, name, dis);
                 studyArea.setDistance(dis);
+
             }
+
+
         }
-
-
     }
 
 
