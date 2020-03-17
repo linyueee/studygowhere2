@@ -15,6 +15,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -188,7 +189,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 */
     }
 
-    public void infoWindow(LatLng latLng, String name, String distance){
+/*    public void infoWindow(LatLng latLng, String name, String distance) {*/
+    public void infoWindow(List<Object> list){
 /*        for (GeoJsonFeature feature : layer.getFeatures()) {
             //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
             GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
@@ -199,11 +201,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             LatLng latLng = point.getCoordinates();
             //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
 
+        for (int i = 0; i < list.size(); i++) {
+            StudyArea studyArea = (StudyArea) list.get(i);
+            String name = studyArea.getName();
+            LatLng latLng = studyArea.getLatLng();
+
             // creating a marker with a infowindow
             Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
-                    .snippet(distance + " km")
+                    .snippet("distance" + " km")
                     .title(name));
             marker.showInfoWindow();
+        }
     }
 
     /**
@@ -275,11 +283,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 addsbObjectFlag = true;
             }
 
-/*            btnliblayer.setOnClickListener(new View.OnClickListener() {
+            infoWindow(Datahandler.studyAreaList);
+
+            btnliblayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(librariesLayer);
+                    //infoWindow(librariesLayer);
+                    infoWindow(Datahandler.libList);
                 }
             });
 
@@ -288,36 +299,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(ccLayer);
+                    //infoWindow(ccLayer);
+                    infoWindow(Datahandler.ccList);
                 }
             });
 
-            btncafelayer.setOnClickListener(
+            btncafelayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(mcdonaldsLayer);
-                    infoWindow(starbucksLayer);
-
-
-            );
+                    //infoWindow(mcdonaldsLayer);
+                    //infoWindow(starbucksLayer);
+                    infoWindow(Datahandler.cafeList);
+                }
+            });
             btnschlayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
-                    infoWindow(schoolsLayer);
+                    //infoWindow(schoolsLayer);
+                    infoWindow(Datahandler.schoolList);
                 }
-            });*/
-            for(int i = 0; i < Datahandler.studyAreaList.size(); i++){
+            });
+
+/*            for(int i = 0; i < Datahandler.studyAreaList.size(); i++){
                 StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
                 String name = studyArea.getName();
                 LatLng latLng = studyArea.getLatLng();
 
-/*                double distance;
-                distance = distance(latLng.latitude,latLng.longitude,userCurrentLatLng.latitude,userCurrentLatLng.longitude);
-                Log.i("distance conversion", "distance: " + distance);
+                //double distance;
+                //distance = distance(latLng.latitude,latLng.longitude,userCurrentLatLng.latitude,userCurrentLatLng.longitude);
+                //Log.i("distance conversion", "distance: " + distance);
 
-                String distanceStr = String.valueOf(distance);*/
+                //String distanceStr = String.valueOf(distance);
                 infoWindow(latLng, name, "distance");
-            }
+            }*/
+
+
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");
@@ -348,6 +366,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+/*    private void infoWindow(GeoJsonLayer layer) {
+        for (GeoJsonFeature feature : layer.getFeatures()) {
+            //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
+            GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
+            point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + point.getCoordinates());
+
+            //placing coordinates into a LatLng variable
+            LatLng latLng = point.getCoordinates();
+            //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());
+
+            infoWindow(latLng,feature.getProperty("name"),"distance");
+        }
+    }*/
+
     public boolean checkUserLocationPermission()
     {
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -370,28 +403,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-       switch(requestCode)
-       {
-           case Request_User_Location_Code:
-               if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-               {
-                   if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-                   {
-                       if(googleApiClient == null)
-                       {
-                           buildGoogleApiClient();
-                       }
-                       mMap.setMyLocationEnabled(true);
-                   }
-               }
-               else
-               {
-                   Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
-               }
-               return;
+        switch(requestCode)
+        {
+            case Request_User_Location_Code:
+                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                {
+                    if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+                    {
+                        if(googleApiClient == null)
+                        {
+                            buildGoogleApiClient();
+                        }
+                        mMap.setMyLocationEnabled(true);
+                    }
+                }
+                else
+                {
+                    Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
+                }
+                return;
 
 
-       }
+        }
     }
 
     protected synchronized void buildGoogleApiClient()
