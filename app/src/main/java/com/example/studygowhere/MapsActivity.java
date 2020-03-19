@@ -7,9 +7,6 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
-import android.app.ProgressDialog;
-import android.app.assist.AssistStructure;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -26,26 +23,21 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
-import com.google.maps.android.geojson.GeoJsonPoint;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.io.IOException;
 
-import java.util.ArrayList;
 import java.util.List;
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
 import static com.example.studygowhere.Datahandler.cafeList;
@@ -65,14 +57,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener
 {
-    private GoogleMap mMap;
-    private GoogleApiClient googleApiClient;
+    private static GoogleMap mMap;
+    private static GoogleApiClient googleApiClient;
     private LocationRequest locationRequest;
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btnAcc, btnsgw, btnschlayer, btncclayer, btnliblayer, btncafelayer;
+    Button btnAcc, btnsgw, btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi;
     static public Intent viewOnMapIntent;
+    private static TaxiManager taxiManager = new TaxiManager();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +87,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btncclayer = (Button) findViewById(R.id.btncclayer);
         btnschlayer = (Button) findViewById(R.id.btnschoollayer);
         btnliblayer = (Button) findViewById(R.id.btnliblayer);
+        btnTaxi = (Button) findViewById(R.id.btnTaxi);
 
         if(getUn() != null) {
             btnAcc.setOnClickListener(new View.OnClickListener() {
@@ -119,57 +114,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(i);
             }
         });
-
     }
 
+    static int NumOfTaxi = 20;
+    static MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
+    static Marker[] markerListRemove = new Marker[NumOfTaxi];
 
+    public static void onTaxiRun() throws Exception {
+        Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
+/*        if(currentLocation!=null) {
+            Log.i("CurrentLocation2", "test" + currentLocation.getLongitude() + currentLocation.getLatitude());
+        }
+        else{
+            Log.i("Currentlocation2", "FAIL");
+        }*/
+        JSONArray x = taxiManager.GetTaxiInformation();
 
-/*    public float[] distanceAway(LatLng position1, LatLng position2){
-        //calculates distance away from user location
-        // The computed distance is stored in results[0].
-        //If results has length 2 or greater, the initial bearing is stored in results[1].
-        //If results has length 3 or greater, the final bearing is stored in results[2].
-        float[] results = new float[1];
-        Location.distanceBetween(position1.latitude, position1.longitude,
-                position2.latitude, position2.longitude, results);
-        return results;
-    }*/
+        double[][] ans = taxiManager.NearestTaxi(NumOfTaxi, currentLocation.getLongitude(), currentLocation.getLatitude());
+
+        LatLng latlng;
+        MarkerOptions markerOptions;
+
+        for (int i = 0; i < NumOfTaxi; i++) {
+            markerList[i] = new MarkerOptions();
+            markerList[i].position(new LatLng(ans[i][0], ans[i][1]));
+            markerList[i].icon(BitmapDescriptorFactory.fromResource(R.drawable.car));
+            markerListRemove[i] = mMap.addMarker(markerList[i]);
+        }
+    }
 
     public static void viewOnMap(Intent intent) throws IOException, JSONException {
         viewOnMapIntent = intent;
-/*
-        Marker clickedMarker;
-        String nameClicked = intent.getStringExtra("Name");
-        Log.i("GeoJsonClick", "name clicked: " + nameClicked);
-        Log.i("TestClick", "" + Datahandler.studyAreaList.size());
-        //Toast toast = Toast.makeText(context, "clicked", Toast.LENGTH_LONG);
-        //toast.show();
-        for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
-            StudyArea temp = (StudyArea) Datahandler.studyAreaList.get(i);
-            String tempName = temp.getName();
-            //Log.i("GeoJsonClick", "Feature clicked: " + "hello");
-            //Log.i("GeoJsonClick", "looping through name: " + tempName);
-            if (tempName.equals(nameClicked)) {
-                Log.i("GeoJsonClick", "LatLng"+temp.getLatLng());
-                LatLng clickedLatLng = temp.getLatLng();
-                Log.i("GeoJsonClick", "clickedLatLng"+clickedLatLng);
-
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(clickedLatLng, 14));
-                // creating a marker with a infowindow
-*/
-/*                clickedMarker = mMap.addMarker(new MarkerOptions().position(clickedLatLng)
-                        .snippet("distance2")
-                        .title(nameClicked));
-                clickedMarker.showInfoWindow();*//*
-
-                Log.i("GeoJsonClick", "Success!");
-                */
-/*Toast toast = Toast.makeText(context, tempName, Toast.LENGTH_LONG);
-                toast.show();*//*
-
-            }
-        }
-*/
     }
     public void infoWindow(List<Object> list){
 /*        for (GeoJsonFeature feature : layer.getFeatures()) {
@@ -183,7 +158,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
 
         // creating a marker with a infowindow
-
         for (int i = 0; i < list.size(); i++) {
             StudyArea studyArea = (StudyArea) list.get(i);
             String name = studyArea.getName();
@@ -225,6 +199,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * installed Google Play services and returned to the app.
      */
 
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -236,7 +211,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             final GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
             //librariesLayer.addLayerToMap();
-
             //infoWindow(librariesLayer);
 
             final GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
@@ -249,7 +223,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             final GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
             //mcdonaldsLayer.addLayerToMap();
-
             //infoWindow(mcdonaldsLayer);
 
             final GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
@@ -292,7 +265,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
-
            btncclayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -308,6 +280,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     infoWindow(cafeList);
                 }
             });
+
             btnschlayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -316,6 +289,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
+            btnTaxi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        onTaxiRun();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");
@@ -335,8 +318,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 /*                        Log.i("GeoJsonClick", "Success!");*/
                     }
                 }
-
-            }
+           }
             // phone app will start up with a infowindow near africa at the south atlantic ocean
 
         } catch (JSONException e) {
