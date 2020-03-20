@@ -5,7 +5,9 @@ import android.widget.ImageView;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 
-public class StudyArea {
+import java.util.Comparator;
+
+public class StudyArea implements Comparable{
     private String name;
     private String imageurl;
     private String address;
@@ -14,6 +16,7 @@ public class StudyArea {
     private String type;
     private LatLng latLng;
     private String distance;
+    private double distancedouble;
 
     public StudyArea(String name, String imageurl, String address, int zipcode, String website, String type) {}
 
@@ -98,6 +101,31 @@ public class StudyArea {
         this.distance = Double.toString(round);
     }
 
+    public static class sortByDistance implements Comparator<StudyArea>
+    {
 
+        @Override
+        public int compare(StudyArea o1, StudyArea o2) {
+            //return o1.getDistance().compareTo(o2.getDistance());
+            return Double.compare(o1.distancedouble, o2.distancedouble);
+        }
 
+        @Override
+        public Comparator<StudyArea> reversed() {
+            return null;
+        }
+    }
+    @Override
+    public int compareTo(Object o) {
+        return this.getDistance().compareTo(((StudyArea) o).getDistance());
+
+    }
+
+    public double getDistancedouble() {
+        return distancedouble;
+    }
+
+    public void setDistancedouble(double distancedouble) {
+        this.distancedouble = distancedouble;
+    }
 }

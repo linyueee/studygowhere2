@@ -2,8 +2,12 @@ package com.example.studygowhere;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
@@ -17,9 +21,13 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
+
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.location.LocationListener;
@@ -37,6 +45,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.navigation.NavigationView;
 import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 import com.google.maps.android.geojson.GeoJsonPoint;
@@ -52,6 +61,7 @@ import static com.example.studygowhere.Datahandler.cafeList;
 import static com.example.studygowhere.Datahandler.ccList;
 import static com.example.studygowhere.Datahandler.libList;
 import static com.example.studygowhere.Datahandler.schoolList;
+import static com.example.studygowhere.Datahandler.studyAreaList;
 import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
 
 
@@ -63,7 +73,8 @@ import static com.example.studygowhere.Starbucksdatahandler.addsbObjectFlag;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-        LocationListener
+        LocationListener,
+        NavigationView.OnNavigationItemSelectedListener
 {
     private GoogleMap mMap;
     private GoogleApiClient googleApiClient;
@@ -71,9 +82,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btnAcc, btnsgw, btnschlayer, btncclayer, btnliblayer, btncafelayer;
+    Button btnalllayer;
+    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer;
     static public Intent viewOnMapIntent;
-
+    DrawerLayout drawer;
+    NavigationView navigationView;
+    ActionBarDrawerToggle toggle;
+    Toolbar toolbar;
+    View mapView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,39 +102,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+        mapView = mapFragment.getView();
         mapFragment.getMapAsync(this);
-        btnAcc = (Button) findViewById(R.id.user_icon);
-        btnsgw = (Button) findViewById(R.id.sgw);
-        btncafelayer = (Button) findViewById(R.id.btnreslayer);
-        btncclayer = (Button) findViewById(R.id.btncclayer);
-        btnschlayer = (Button) findViewById(R.id.btnschoollayer);
-        btnliblayer = (Button) findViewById(R.id.btnliblayer);
 
-        if(getUn() != null) {
-            btnAcc.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i = new Intent(MapsActivity.this, ProfileActivity.class);
-                    startActivity(i);
-                }
-            });
-        }
-        else{
-            btnAcc.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i = new Intent(MapsActivity.this, LoginActivity.class);
-                    startActivity(i);
-                }
-            });
-        }
-        btnsgw.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MapsActivity.this, SGWActivity.class);
-                startActivity(i);
-            }
-        });
+        btncafelayer = (ImageButton) findViewById(R.id.btnreslayer);
+        btncclayer = (ImageButton) findViewById(R.id.btncclayer);
+        btnschlayer = (ImageButton) findViewById(R.id.btnschoollayer);
+        btnliblayer = (ImageButton) findViewById(R.id.btnliblayer);
+        btnalllayer = (Button) findViewById(R.id.btnalllayer);
+        drawer = findViewById(R.id.drawer);
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("StudyGoWhere");
+        toolbar.setTitleTextColor(255-255-255);
+        //getSupportActionBar().setTitle("Hello world App");
+        navigationView = findViewById(R.id.navigationView);
+        navigationView.setNavigationItemSelectedListener(this);
+        toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.open,R.string.close);
+        drawer.addDrawerListener(toggle);
+        toggle.setDrawerIndicatorEnabled(true);
+        toggle.syncState();
+
+
 
     }
 
@@ -284,6 +288,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 addsbObjectFlag = true;
             }
 
+            btnalllayer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMap.clear();
+                    infoWindow(studyAreaList);
+                }
+            });
            btnliblayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -344,6 +355,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        View locationButton = ((View) mapView.findViewById(Integer.parseInt("1")).getParent()).findViewById(Integer.parseInt("2"));
+        RelativeLayout.LayoutParams rlp = (RelativeLayout.LayoutParams) locationButton.getLayoutParams();
+        // position on right bottom
+        rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0);
+        rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);rlp.setMargins(0,0,30,30);
     }
 
     public boolean checkUserLocationPermission()
@@ -420,7 +437,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 /*        Log.i("GeoJsonClick", "Feature clicked: " + lastLocation.getLatitude());
         Log.i("GeoJsonClick", "location " + location.getLatitude());*/
         if (location != null) {
-            Log.i("GeoJsonClick", "meagain " + location.getLatitude());
             for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
                 StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
                 String name = studyArea.getName();
@@ -431,6 +447,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 float dis = location.distanceTo(temp);
                 infoWindow(salatLng, name, dis);
                 studyArea.setDistance(dis);
+                studyArea.setDistancedouble(dis);
 
             }
 
@@ -461,6 +478,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        int id=menuItem.getItemId();
+        switch (id){
+            case R.id.sgwhr:
+                Intent i = new Intent(MapsActivity.this, SGWActivity.class);
+                startActivity(i);
+                break;
+            case R.id.account:
+                if(getUn() != null)
+                {
+                    Intent k = new Intent(MapsActivity.this, ProfileActivity.class);
+                    startActivity(k);
+                }
+                else
+                {
+                    Intent j = new Intent(MapsActivity.this, LoginActivity.class);
+                    startActivity(j);
+                }
+                break;
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
 }

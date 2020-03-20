@@ -30,6 +30,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import static com.example.studygowhere.Datahandler.cafeList;
+import static com.example.studygowhere.Datahandler.ccList;
+import static com.example.studygowhere.Datahandler.libList;
+import static com.example.studygowhere.Datahandler.schoolList;
+import static com.example.studygowhere.StudyArea.sortByDistance;
+
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
 import static com.example.studygowhere.Datahandler.studyAreaList;
 import static com.example.studygowhere.Librarydatahandler.addLibObjectFlag;
@@ -65,31 +71,36 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if(parent.getSelectedItem().toString().equals("ALL"))
         {
-            //studyAreaList.sort(new DistanceSorter());
+
+            insertionSort(studyAreaList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
             mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("SCHOOLS"))
         {
+            insertionSort(schoolList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.schoolList);
             mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("LIBRARIES"))
         {
+            insertionSort(libList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.libList);
             mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("COMMUNITY CENTERS"))
         {
+            insertionSort(ccList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.ccList);
             mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("CAFES/RESTAURANTS"))
         {
+            insertionSort(cafeList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.cafeList);
             mRecyclerView.setAdapter(mAdapter);
         }
@@ -100,6 +111,32 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
     }
 
-
+    public static void insertionSort(List<Object> listsa) {
+        StudyArea temp = null;
+        for (int i = 1; i < listsa.size(); i++) {
+            for(int j = i; j > 0; j--)
+            {
+                if(((StudyArea)listsa.get(j)).getDistancedouble() < ((StudyArea)listsa.get(j-1)).getDistancedouble())
+                {
+                    temp = (StudyArea)listsa.get(j);
+                    listsa.set(j, listsa.get(j-1));
+                    listsa.set(j-1, temp);
+                }
+                else
+                    break;
+            }
+/*            double current = ((StudyArea)listsa.get(i)).getDistancedouble();
+            int j = i - 1;
+            while(j >= 0) {
+                if(current<((StudyArea)listsa.get(j)).getDistancedouble() ) {
+                    listsa.set(j + 1, listsa.get(j));
+                }
+                j--;
+            }
+            // at this point we've exited, so j is either -1
+            // or it's at the first element where current >= a[j]
+            listsa.set(j+1, listsa.get(i));*/
+        }
+    }
 
 }
