@@ -79,11 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final int Request_User_Location_Code = 99;
 
     Button btnalllayer;
-<<<<<<< HEAD
     ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi, btnTaxiOff;
-=======
-    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi;
->>>>>>> 367e05772ad92b65fa0bd48fc567a3cd6522fda8
     static public Intent viewOnMapIntent;
     DrawerLayout drawer;
     NavigationView navigationView;
@@ -121,10 +117,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnliblayer = (ImageButton) findViewById(R.id.btnliblayer);
         btnalllayer = (Button) findViewById(R.id.btnalllayer);
         btnTaxi = (ImageButton) findViewById(R.id.btnTaxi);
-<<<<<<< HEAD
         btnTaxiOff = (ImageButton) findViewById(R.id.btnTaxiOff);
-=======
->>>>>>> 367e05772ad92b65fa0bd48fc567a3cd6522fda8
         drawer = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
@@ -137,12 +130,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 367e05772ad92b65fa0bd48fc567a3cd6522fda8
     }
 
     public static void onTaxiRun() throws Exception {

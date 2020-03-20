@@ -109,14 +109,9 @@
             android:layout_weight="1"
 
             />
-<<<<<<< HEAD
-
-=======
->>>>>>> 367e05772ad92b65fa0bd48fc567a3cd6522fda8
         <ImageButton
             android:id="@+id/btnTaxi"
             android:layout_width="55dp"
-<<<<<<< HEAD
             android:layout_height="45dp"
             android:src="@drawable/taxi" />
 
@@ -126,9 +121,6 @@
             android:layout_height="45dp"
             android:src="@drawable/remove_taxi" />
 
-=======
-            android:src="@drawable/ic_local_taxi_black_24dp" />
->>>>>>> 367e05772ad92b65fa0bd48fc567a3cd6522fda8
 
     </LinearLayout>
 
