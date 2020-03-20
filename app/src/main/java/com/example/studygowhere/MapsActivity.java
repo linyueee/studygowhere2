@@ -78,8 +78,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
 
-    Button btnalllayer, btnTaxi;
-    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer;
+    Button btnalllayer;
+    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi, btnTaxiOff;
     static public Intent viewOnMapIntent;
     DrawerLayout drawer;
     NavigationView navigationView;
@@ -116,6 +116,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnschlayer = (ImageButton) findViewById(R.id.btnschoollayer);
         btnliblayer = (ImageButton) findViewById(R.id.btnliblayer);
         btnalllayer = (Button) findViewById(R.id.btnalllayer);
+        btnTaxi = (ImageButton) findViewById(R.id.btnTaxi);
+        btnTaxiOff = (ImageButton) findViewById(R.id.btnTaxiOff);
         drawer = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
@@ -127,9 +129,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         drawer.addDrawerListener(toggle);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
-
-        btnTaxi = (Button) findViewById(R.id.btnTaxi);
-
 
     }
 
@@ -153,6 +152,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             markerList[i].position(new LatLng(ans[i][0], ans[i][1]));
             markerList[i].icon(BitmapDescriptorFactory.fromResource(R.drawable.car));
             markerListRemove[i] = mMap.addMarker(markerList[i]);
+        }
+    }
+
+    public void removeTaxiFromMap(){
+        if(markerListRemove.length!=0) {
+            for (int i = 0; i < NumOfTaxi; i++) {
+                markerListRemove[i].remove();
+            }
+            Log.i("removeTaxiFromMap", "taxis removed "+ markerListRemove.length);
+        }
+        else {
+            Log.i("removeTaxiFromMap","No Taxi to remove");
         }
     }
 
@@ -211,7 +222,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -310,15 +320,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
             btnTaxi.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        onTaxiRun();
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                   @Override
+                   public void onClick(View v) {
+                       try {
+                           onTaxiRun();
+                       } catch (Exception e) {
+                           e.printStackTrace();
+                       }
+                   }
+               });
+            btnTaxiOff.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            removeTaxiFromMap();
+                        } catch(Exception e){
+                            e.printStackTrace();
+                        }
                     }
-                }
-            });
+                });
+
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");

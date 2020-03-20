@@ -109,11 +109,19 @@
             android:layout_weight="1"
 
             />
-        <Button
+
+        <ImageButton
             android:id="@+id/btnTaxi"
-            android:layout_height="wrap_content"
             android:layout_width="55dp"
-            android:text="Taxi" />
+            android:layout_height="45dp"
+            android:src="@drawable/taxi" />
+
+        <ImageButton
+            android:id="@+id/btnTaxiOff"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:src="@drawable/remove_taxi" />
+
 
     </LinearLayout>
 
