@@ -146,7 +146,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public static void viewOnMap(Intent intent) throws IOException, JSONException {
         viewOnMapIntent = intent;
     }
-    public void infoWindow(List<Object> list){
+    public void infoWindow(List<StudyArea> list){
 /*        for (GeoJsonFeature feature : layer.getFeatures()) {
             //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
             GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();

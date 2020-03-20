@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -38,9 +43,13 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
     private RecyclerView mRecyclerView;
 //    private List<Object> studyAreaList = new ArrayList<>();
-    private RecyclerView.Adapter mAdapter;
+    private RecyclerAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     Spinner dropdownspinner;
+
+    //steffi add
+    private RecyclerAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,15 +58,24 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         dropdownspinner = (Spinner) findViewById(R.id.aSpinner);
+        //searchView = (SearchView) findViewById(R.id.searchView);
 
         dropdownspinner.setOnItemSelectedListener(this);
-
 
         mRecyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
 
-
+        //Steffi added
+/*        List<StudyArea> tempList = new ArrayList<>();
+        for(int i=0; i< studyAreaList.size();i++) {
+            StudyArea temp = (StudyArea) studyAreaList.get(i);
+            if(temp!=null) {
+                tempList.add(temp);
+            }
+        }*/
+        //adapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
+        //mRecyclerView.setAdapter(adapter);
 
     }
 
@@ -67,32 +85,34 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
         {
             //studyAreaList.sort(new DistanceSorter());
             mAdapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
-            mRecyclerView.setAdapter(mAdapter);
+            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("SCHOOLS"))
         {
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.schoolList);
-            mRecyclerView.setAdapter(mAdapter);
+            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("LIBRARIES"))
         {
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.libList);
-            mRecyclerView.setAdapter(mAdapter);
+            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("COMMUNITY CENTERS"))
         {
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.ccList);
-            mRecyclerView.setAdapter(mAdapter);
+            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("CAFES/RESTAURANTS"))
         {
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.cafeList);
-            mRecyclerView.setAdapter(mAdapter);
+            //mRecyclerView.setAdapter(mAdapter);
         }
+        adapter = mAdapter;
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
@@ -100,6 +120,26 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
     }
 
+    // Steffi added
+    @SuppressLint("ResourceType")
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
-
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return true;
+    }
 }
