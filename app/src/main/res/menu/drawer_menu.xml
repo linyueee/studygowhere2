@@ -9,8 +9,5 @@
         android:id="@+id/account"
         android:title="My Account"
         android:icon="@drawable/ic_account_circle_black_24dp"/>
-    <item
-        android:icon="@drawable/ic_local_taxi_black_24dp"
-        android:id="@+id/taxi"
-        android:title="View taxi near me" />
+
 </menu>

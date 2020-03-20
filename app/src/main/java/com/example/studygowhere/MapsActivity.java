@@ -78,8 +78,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
 
-    Button btnalllayer, btnTaxi;
-    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer;
+    Button btnalllayer;
+    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi;
     static public Intent viewOnMapIntent;
     DrawerLayout drawer;
     NavigationView navigationView;
@@ -116,6 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnschlayer = (ImageButton) findViewById(R.id.btnschoollayer);
         btnliblayer = (ImageButton) findViewById(R.id.btnliblayer);
         btnalllayer = (Button) findViewById(R.id.btnalllayer);
+        btnTaxi = (ImageButton) findViewById(R.id.btnTaxi);
         drawer = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
@@ -128,7 +129,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
-        btnTaxi = (Button) findViewById(R.id.btnTaxi);
+
 
 
     }

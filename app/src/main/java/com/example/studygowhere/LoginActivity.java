@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class LoginActivity extends AppCompatActivity {
     EditText etUsername, etPassword;
 
-    static private String Un;
+    static private String Un = null;
     static private String currentusername;
     Button btnLogin, btnRegister, btnToMap;
     @Override
@@ -48,8 +48,11 @@ public class LoginActivity extends AppCompatActivity {
     public void OnLogin(View view) throws InterruptedException {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
+        if(username.equals("") || password.equals(""))
+            setUn(null);
+        else
+             setUn(username);
         String type = "login";
-        setUn(username);
         AccountWorker bgw = new AccountWorker(this);
         bgw.execute(type, username, password);
 
