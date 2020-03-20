@@ -34,7 +34,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     //private List<StudyArea> fullList;
 /*    private OnItemClickListener mListener;*/
 
-    public RecyclerAdapter(Context context, List<StudyArea> studyArea/*, List<Object> searchList*/)
+    public RecyclerAdapter(Context context, List<StudyArea> studyArea)
     {
         this.context = context;
         this.fullList = new ArrayList<>(studyArea);
