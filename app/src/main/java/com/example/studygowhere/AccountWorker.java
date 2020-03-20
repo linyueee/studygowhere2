@@ -126,6 +126,10 @@ public class AccountWorker extends AsyncTask<String, Void, String>
             {
                 context.startActivity(new Intent(context, ProfileActivity.class));
             }
+/*            else
+            {
+                context.startActivity(new Intent(context, LoginActivity.class));
+            }*/
             if(result.equals("Register successful"))
             {
                 Toast toast = Toast.makeText(context, "Account created", Toast.LENGTH_SHORT);
@@ -133,6 +137,8 @@ public class AccountWorker extends AsyncTask<String, Void, String>
                 context.startActivity(new Intent(context, LoginActivity.class));
 
             }
+
+
 
 
         }
