@@ -2,9 +2,12 @@ package com.example.studygowhere;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -18,19 +21,33 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
 
     private Context context;
-    private List<Object> studyArea;
+    private List<StudyArea> studyArea;
+    private List<StudyArea> fullList;
+    private List<StudyArea> studyAreaFullList;
+    //private List<StudyArea> fullList;
 /*    private OnItemClickListener mListener;*/
 
-    public RecyclerAdapter(Context context, List<Object> studyArea)
+    public RecyclerAdapter(Context context, List<StudyArea> studyArea/*, List<Object> searchList*/)
     {
         this.context = context;
-        this.studyArea = studyArea;
+        this.fullList = new ArrayList<>(studyArea);
+        //this.studyAreaFullList = studyArea;
+        this.studyArea = new ArrayList<>(studyArea);
+        //this.studyArea.addAll(studyArea);
     }
+
+/*    public RecyclerAdapter(List<StudyArea> list){
+        this.searchList=list;
+        this.fullList = new ArrayList<>(searchList);
+        //this.studyArea = List;
+    }*/
 /*    public interface OnItemClickListener {
         void onItemClick(View view, int position);
     }
@@ -101,6 +118,52 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @Override
     public int getItemCount() {
-        return studyArea.size();
+        if(studyArea != null) {
+            return studyArea.size();
+        }
+        return 0;
     }
+
+    @Override
+    public Filter getFilter(){
+        return exampleFilter;
+    }
+
+    private Filter exampleFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<StudyArea> filteredList = new ArrayList<>();
+
+            if(constraint == null || constraint.length() == 0){
+
+                //filteredList.addAll(studyArea);
+                filteredList.addAll(fullList);
+//                Log.i("test:","tbh was here "+ studyAreaFullList.size());
+//                Log.i("test:","tbh was here "+ searchList.size());
+//                Log.i("test:","tbh was here "+ studyArea.size());
+            }else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for(StudyArea obj : fullList){
+                    if(obj.getName().toLowerCase().contains(filterPattern)){
+                        filteredList.add(obj);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values =filteredList;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            Log.i("test:","tbh was here :"+ studyArea.size());
+            studyArea.clear();
+            Log.i("test:","tbh was here 2:"+ studyArea.size());
+            studyArea.addAll((List)results.values);
+            Log.i("test:","tbh was here 3:"+ studyArea.size());
+            notifyDataSetChanged();
+        }
+    };
 }
+

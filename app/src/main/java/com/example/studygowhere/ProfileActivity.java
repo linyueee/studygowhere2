@@ -32,7 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
     static RecyclerView rvbookmark;
     static Context context;
     static boolean bookmarkflag = false;
-    static List<Object> BookmarkList;
+    static List<StudyArea> BookmarkList;
 
 
     @Override
