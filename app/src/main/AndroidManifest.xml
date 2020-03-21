@@ -22,6 +22,7 @@
         <activity android:name=".SGWActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
+
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

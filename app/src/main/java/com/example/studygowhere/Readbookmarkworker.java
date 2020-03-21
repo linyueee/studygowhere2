@@ -31,7 +31,7 @@ public class Readbookmarkworker  extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         String username = params[0];
-        String Readbookmark_url = "http://studygowhere.000webhostapp.com/Readbookmark.php";
+        String Readbookmark_url = "https://studygowhere.000webhostapp.com/Readbookmark.php";
         try{
             URL url = new URL(Readbookmark_url);
             HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();

@@ -13,12 +13,16 @@ import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 import com.google.maps.android.geojson.GeoJsonMultiPoint;
 
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -38,31 +42,32 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
 
 
     public void onRunTaxi(double latitude, double longitude) throws Exception {
-        double[][] ans = NearestTaxi(8,longitude,latitude);
+        double[][] ans = NearestTaxi(8, longitude, latitude);
 
     }
 
+
     @Override
     protected String doInBackground(Void... voids) {
-
-
         OkHttpClient client = new OkHttpClient();
         String GET_URL = "https://api.data.gov.sg/v1/transport/taxi-availability";
 
         Request request = new Request.Builder().url(GET_URL).build();
-
-        client.newCall(request).enqueue(new Callback(){
+        //HttpConnectionParams.setConnectionTimeout(params, 10000);
+        client.newCall(request).enqueue(new Callback() {
 
             @Override
             public void onFailure(Call call, IOException e) {
+                Log.i("Failure", "hello " + e.getMessage());
                 e.printStackTrace();
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                if (response.isSuccessful()){
+                if (response.isSuccessful()) {
                     myResponse = response.body().string();
                 }
+                Log.i("Failure", "hello2: " + response.toString());
             }
         });
 
@@ -103,16 +108,16 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
     }
 
     public JSONArray GetTaxiInformation() throws Exception {
-            String response = doInBackground();
-            JSONArray CoordinateList = null;
-            try {
-                JSONObject myResponse = new JSONObject(response);
-                //JSONObject myResponse2 = new JSONObject(myResponse.getString("features[geometry"));
-                CoordinateList = (JSONArray) ((JSONObject) ((JSONObject) ((JSONArray) myResponse.get("features")).get(0)).get("geometry")).get("coordinates");
-            } catch (Exception e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+        String response = doInBackground();
+        JSONArray CoordinateList = null;
+        try {
+            JSONObject myResponse = new JSONObject(response);
+            //JSONObject myResponse2 = new JSONObject(myResponse.getString("features[geometry"));
+            CoordinateList = (JSONArray) ((JSONObject) ((JSONObject) ((JSONArray) myResponse.get("features")).get(0)).get("geometry")).get("coordinates");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         return CoordinateList;
     }
 
@@ -132,34 +137,35 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
             //System.out.println(DistList[i]);
         }
 
-        for (int i = 0; i < NumOfTaxi; i++)
-        {
+        for (int i = 0; i < NumOfTaxi; i++) {
             list[i] = 0;
-            for (int j = 0; j < DistList.length; j++)
-            {
-                if (check(list, j, i))
-                {
+            for (int j = 0; j < DistList.length; j++) {
+
+                if (check(list, j, i)) {
+
                     System.out.println(j);
                     continue;
-                }
-                else if (DistList[j] <= DistList[list[i]] )
-                {
+                } else if (DistList[j] <= DistList[list[i]]) {
                     list[i] = j;
+
                 }
             }
         }
 
         for (int i = 0; i < NumOfTaxi; i++) {
-            result[i] = new double[] {((JSONArray) LongLatList.get(list[i])).getDouble(1),((JSONArray) LongLatList.get(list[i])).getDouble(0)};
+            result[i] = new double[]{((JSONArray) LongLatList.get(list[i])).getDouble(1), ((JSONArray) LongLatList.get(list[i])).getDouble(0)};
             System.out.println(DistList[list[i]]);
 
             System.out.println(list[i]);
         }
+
+
         return result;
+
     }
 
     public boolean check(int[] list, int j, int index) {
-        for (int i = list.length -1; i >= 0; i--) {
+        for (int i = list.length - 1; i >= 0; i--) {
             if (list[i] == j)
                 return true;
         }
@@ -174,15 +180,14 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         double alpha = Math.toRadians(Latitude - UserLocationLatitude);
         double lamda = Math.toRadians(Longitude - UserLocationLongitude);
 
-        double a = Math.sin(alpha/2) * Math.sin(alpha/2) +
+        double a = Math.sin(alpha / 2) * Math.sin(alpha / 2) +
                 Math.cos(UserLat) * Math.cos(TaxLat) *
-                        Math.sin(lamda/2) * Math.sin(lamda/2);
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                        Math.sin(lamda / 2) * Math.sin(lamda / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
         return r * c;
 
     }
-
 
 
 }

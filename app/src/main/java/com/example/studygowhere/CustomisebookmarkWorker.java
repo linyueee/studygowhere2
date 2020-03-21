@@ -32,8 +32,8 @@ public class CustomisebookmarkWorker extends AsyncTask<String, Void, String> {
         String username = params[0];
         String saname = params[1];
         String type = params[2];
-        String addbookmark_url = "http://studygowhere.000webhostapp.com/Addbookmark.php";
-        String deletebookmark_url = "http://studygowhere.000webhostapp.com/Deletebookmark.php";
+        String addbookmark_url = "https://studygowhere.000webhostapp.com/Addbookmark.php";
+        String deletebookmark_url = "https://studygowhere.000webhostapp.com/Deletebookmark.php";
         URL url = null;
             try {
                 if (type.equals("Add")) {

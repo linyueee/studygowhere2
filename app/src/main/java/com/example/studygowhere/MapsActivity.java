@@ -27,6 +27,8 @@ import android.widget.Toast;
 
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
@@ -40,17 +42,27 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import com.google.android.gms.security.ProviderInstaller;
 import com.google.android.material.navigation.NavigationView;
-import com.google.maps.android.geojson.GeoJsonFeature;
 
 import com.google.maps.android.geojson.GeoJsonLayer;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
+
+import javax.net.ssl.SSLContext;
+
 import static com.example.studygowhere.Ccdatahandler.addccObjectFlag;
 import static com.example.studygowhere.Datahandler.cafeList;
 import static com.example.studygowhere.Datahandler.ccList;
@@ -64,6 +76,7 @@ import static com.example.studygowhere.LoginActivity.getUn;
 import static com.example.studygowhere.Mcdonaldsdatahandler.addmacObjectFlag;
 import static com.example.studygowhere.SchoolDatahandler.addschoolObjectFlag;
 import static com.example.studygowhere.Starbucksdatahandler.addsbObjectFlag;
+
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -86,18 +99,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
     View mapView;
+    
 
 
-    private static TaxiManager taxiManager = new TaxiManager();
+    private TaxiManager taxiManager = new TaxiManager();
     static int NumOfTaxi = 20;
     static MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
     static Marker[] markerListRemove = new Marker[NumOfTaxi];
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        try {
+            // Google Play will install latest OpenSSL
+            ProviderInstaller.installIfNeeded(getApplicationContext());
+            SSLContext sslContext;
+            sslContext = SSLContext.getInstance("TLSv1.2");
+            sslContext.init(null, null, null);
+            sslContext.createSSLEngine();
+        } catch (GooglePlayServicesRepairableException | GooglePlayServicesNotAvailableException
+                | NoSuchAlgorithmException | KeyManagementException e) {
+            e.printStackTrace();
+        }
+
+
         setContentView(R.layout.activity_maps);
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
@@ -132,28 +158,49 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public static void onTaxiRun() throws Exception {
+    public  void onTaxiRun() throws Exception {
         Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-/*        if(currentLocation!=null) {
-            Log.i("CurrentLocation2", "test" + currentLocation.getLongitude() + currentLocation.getLatitude());
-        }
-        else{
-            Log.i("Currentlocation2", "FAIL");
-        }*/
         JSONArray x = taxiManager.GetTaxiInformation();
 
-        double[][] ans = taxiManager.NearestTaxi(NumOfTaxi, currentLocation.getLongitude(), currentLocation.getLatitude());
+
+        double[][] ans = taxiManager.NearestTaxi(NumOfTaxi,currentLocation.getLongitude(),currentLocation.getLatitude());
 
         LatLng latlng;
         MarkerOptions markerOptions;
 
-        for (int i = 0; i < NumOfTaxi; i++) {
+        for (int i = 0; i < NumOfTaxi; i++){
+
             markerList[i] = new MarkerOptions();
             markerList[i].position(new LatLng(ans[i][0], ans[i][1]));
-            markerList[i].icon(BitmapDescriptorFactory.fromResource(R.drawable.car));
+            markerList[i].icon(BitmapDescriptorFactory.fromResource(R.drawable.taxi));
             markerListRemove[i] = mMap.addMarker(markerList[i]);
         }
     }
+
+    private String readStream(InputStream in) {
+        BufferedReader reader = null;
+        StringBuffer response = new StringBuffer();
+        try {
+            reader = new BufferedReader(new InputStreamReader(in));
+            String line = "";
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return response.toString();
+    }
+
+
 
     public void removeTaxiFromMap(){
         if(markerListRemove.length!=0) {

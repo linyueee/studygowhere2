@@ -17,6 +17,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+
+import android.util.Log;
 import android.widget.Toast;
 import android.os.Bundle;
 
@@ -32,8 +34,8 @@ public class AccountWorker extends AsyncTask<String, Void, String>
         @Override
         protected String doInBackground(String... params) {
             String type = params[0];
-            String register_url = "http://studygowhere.000webhostapp.com/register.php";
-            String login_url = "http://studygowhere.000webhostapp.com/Login.php";
+            String register_url = "https://studygowhere.000webhostapp.com/register.php";
+            String login_url = "https://studygowhere.000webhostapp.com/Login.php";
             if(type.equals("login"))
             {
                 try{
@@ -122,24 +124,24 @@ public class AccountWorker extends AsyncTask<String, Void, String>
         protected void onPostExecute(String result) {
             alertDialog.setMessage(result);
             alertDialog.show();
+
+            Log.i("result","hello: "+ result);
+
             if(result.equals("Welcome"))
             {
                 context.startActivity(new Intent(context, ProfileActivity.class));
             }
-/*            else
-            {
-                context.startActivity(new Intent(context, LoginActivity.class));
-            }*/
+
             if(result.equals("Register successful"))
             {
                 Toast toast = Toast.makeText(context, "Account created", Toast.LENGTH_SHORT);
                 toast.show();
                 context.startActivity(new Intent(context, LoginActivity.class));
-
             }
 
-
-
+            if(result.equals("Please enter your Username")){
+                Log.i("hello", "hello");
+            }
 
         }
 
