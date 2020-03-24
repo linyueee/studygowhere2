@@ -34,6 +34,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     //private List<StudyArea> fullList;
 /*    private OnItemClickListener mListener;*/
 
+
+
     public RecyclerAdapter(Context context, List<StudyArea> studyArea)
     {
         this.context = context;
@@ -87,6 +89,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         ItemViewHolder ivh = (ItemViewHolder) holder;
         StudyArea sa = (StudyArea) studyArea.get(position);
         ivh.studyname.setText(sa.getName());
+
         ivh.distance.setText(sa.getDistance());
         if(sa.getAddress() != null) {
             ivh.address.setText(sa.getAddress());

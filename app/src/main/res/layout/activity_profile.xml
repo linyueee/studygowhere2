@@ -21,6 +21,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:text="TextView" />
 
     <TextView
@@ -63,6 +64,14 @@
         android:layout_margin="25dp"
         android:layout_alignParentBottom="true"
          />
+
+    <Button
+        android:id="@+id/btnmyreviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_alignLeft="@+id/tvname"
+        android:text="My reviews" />
 
 
 </RelativeLayout>

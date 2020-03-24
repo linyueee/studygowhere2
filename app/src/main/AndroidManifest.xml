@@ -17,12 +17,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".MyReviewActivity"></activity>
+        <activity android:name=".WriteReviewActivity" />
+        <activity android:name=".DetailActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SGWActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

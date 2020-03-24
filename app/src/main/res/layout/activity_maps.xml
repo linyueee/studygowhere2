@@ -113,7 +113,7 @@
             android:id="@+id/btnTaxi"
             android:layout_width="55dp"
             android:layout_height="45dp"
-            android:src="@drawable/taxi" />
+            android:src="@drawable/ic_local_taxi_black_24dp" />
 
         <ImageButton
             android:id="@+id/btnTaxiOff"

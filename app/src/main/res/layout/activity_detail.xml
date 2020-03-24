@@ -11,6 +11,22 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
          />
+    <TextView
+        android:id="@+id/tvrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text='Average Rating: '
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/avgrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ratinghere"
+        android:layout_toRightOf="@+id/tvrate"
+        android:layout_alignTop="@+id/tvrate"/>
+
 
     <TextView
         android:id="@+id/tvDetailName"
@@ -46,4 +62,54 @@
         android:layout_marginHorizontal="20dp"
         android:text="DELETE FROM MY BOOKMARK"
         android:onClick="DeleteBM"/>
+    <TextView
+        android:id="@+id/noreviewmessage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btndelete"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Review Yet" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvreviewList"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btndelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem= "@layout/review_list"
+        android:layout_above="@+id/btnaddreview"/>
+
+    <Button
+        android:id="@+id/btnaddreview"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/toAcc"
+        android:layout_marginLeft="15dp"
+        android:textSize="10dp"
+        android:text="Write Review"/>
+
+    <Button
+        android:id="@+id/toSGW"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Go to StudyGoWhere" />
+
+    <Button
+        android:id="@+id/toAcc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/toSGW"
+        android:textSize="10dp"
+        android:text="Go to My Account" />
 </RelativeLayout>

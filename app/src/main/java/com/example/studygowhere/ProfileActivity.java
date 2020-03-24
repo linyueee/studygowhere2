@@ -28,7 +28,7 @@ import java.util.List;
 public class ProfileActivity extends AppCompatActivity {
 
     TextView tvName;
-    Button btnBack, btnLogout;
+    Button btnBack, btnLogout, btnmyreview;
     static RecyclerView rvbookmark;
     static Context context;
     static boolean bookmarkflag = false;
@@ -43,6 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnLogout = (Button) findViewById(R.id.btnLogout);
         tvName = (TextView) findViewById(R.id.tvname);
         rvbookmark = (RecyclerView) findViewById(R.id.recycler_view_profile);
+        btnmyreview = (Button) findViewById(R.id.btnmyreviews);
         context = getApplicationContext();
 
 
@@ -58,6 +59,14 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 setUn(null);
                 Intent i = new Intent(ProfileActivity.this, LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnmyreview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ProfileActivity.this, MyReviewActivity.class);
                 startActivity(i);
             }
         });
