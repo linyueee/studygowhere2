@@ -62,10 +62,51 @@
         android:layout_marginHorizontal="20dp"
         android:text="DELETE FROM MY BOOKMARK"
         android:onClick="DeleteBM"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btndelete"
+        android:layout_marginHorizontal="20dp"
+        android:text="Get Directions:"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/directionsOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center|top"
+            android:text="\nWalk" />
+
+        <Button
+            android:id="@+id/btnPT"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Public\n Transport" />
+
+        <Button
+            android:id="@+id/btnDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Drive/Taxi" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/noreviewmessage"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btndelete"
+        android:layout_below="@+id/directionsOptions"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +115,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvreviewList"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/btndelete"
+        android:layout_below="@+id/directionsOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem= "@layout/review_list"
@@ -112,4 +153,5 @@
         android:layout_toRightOf="@+id/toSGW"
         android:textSize="10dp"
         android:text="Go to My Account" />
+
 </RelativeLayout>

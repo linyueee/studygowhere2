@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -33,12 +34,11 @@ import static com.example.studygowhere.LoginActivity.getUn;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private GoogleMap mMap;
     static RecyclerView reviewlv;
     TextView detailName;
     static TextView avgrating;
     ImageView image;
-    Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc;
+    Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc, btnWalk, btnDrive, btnPT;
     static String saname;
     String imageurl;
     static Context context;
@@ -60,10 +60,15 @@ public class DetailActivity extends AppCompatActivity {
         avgrating = (TextView) findViewById(R.id.avgrate);
         btnsgw = (Button) findViewById(R.id.toSGW);
         btnacc = (Button) findViewById(R.id.toAcc);
+        btnPT = (Button) findViewById(R.id.btnPT);
+        btnWalk = (Button) findViewById(R.id.btnWalk);
+        btnDrive = (Button) findViewById(R.id.btnDrive);
         saname = intent.getStringExtra("Name");
         detailName.setText(saname);
         imageurl = intent.getStringExtra("Image");
         Picasso.get().load(imageurl).placeholder(R.drawable.ic_launcher_background).into(image);
+        final LatLng latlng= intent.getParcelableExtra("LatLng");
+
 
         btnviewonmap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,6 +122,35 @@ public class DetailActivity extends AppCompatActivity {
 
         ReadReviewWorker rrw = new ReadReviewWorker(this);
         rrw.execute(saname);
+
+
+        btnWalk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("LatLng",latlng);
+                i.putExtra("Mode","mode=walk");
+                startActivity(i);
+            }
+        });
+        btnDrive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("LatLng",latlng);
+                i.putExtra("Mode","mode=drive");
+                startActivity(i);
+            }
+        });
+        btnPT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("LatLng",latlng);
+                i.putExtra("Mode","mode=transit");
+                startActivity(i);
+            }
+        });
     }
 
     public void AddBM(View view) {

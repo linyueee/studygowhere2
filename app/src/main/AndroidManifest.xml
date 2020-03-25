@@ -24,6 +24,10 @@
         <activity android:name=".SGWActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".RouteDetailsActivity" />
+        <activity android:name=".DirectionsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
