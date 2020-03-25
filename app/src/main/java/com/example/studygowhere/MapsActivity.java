@@ -487,8 +487,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         markerOption.title("user current location");
         markerOption.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
         currentUserLocationMarker = mMap.addMarker(markerOption);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mMap.animateCamera(CameraUpdateFactory.zoomBy(14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
+        //mMap.animateCamera(CameraUpdateFactory.zoomBy(14));
         if (googleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
