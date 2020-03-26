@@ -157,10 +157,10 @@ public class DetailActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(result);
                 String avg = jsonObject.getString("avg");
-                Double douavg = Double.parseDouble(avg);
-                String rounded = String.format("%.0f", douavg);
+/*                Double douavg = Double.parseDouble(avg);
+                String rounded = String.format("%.0f", douavg);*/
                 //Log.i("check", "content"+ douavg);
-                avgrating.setText(rounded);
+                avgrating.setText(avg);
                 int success = jsonObject.getInt("success");
                 if (success == 1) {
                     JSONArray reviews = jsonObject.getJSONArray("review");
