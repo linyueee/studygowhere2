@@ -78,7 +78,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btndetails;
+    Button btndetails, btnexit;
     private LatLng mOrigin;
     private LatLng mDestination;
     private Polyline mPolyline;
@@ -111,6 +111,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         fusedLocationProviderClient=LocationServices.getFusedLocationProviderClient(this);
 
         btndetails = (Button) findViewById(R.id.detail);
+        btnexit = (Button) findViewById(R.id.exit);
 
         mapFragment.getMapAsync(this);
         intent=getIntent();
@@ -132,6 +133,14 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
             }
         });
+
+        btnexit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(DirectionsActivity.this,MapsActivity.class);
+                        startActivity(i);
+                    }
+                });
         drawer = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
