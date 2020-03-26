@@ -34,8 +34,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     //private List<StudyArea> fullList;
 /*    private OnItemClickListener mListener;*/
 
-
-
     public RecyclerAdapter(Context context, List<StudyArea> studyArea)
     {
         this.context = context;
@@ -45,18 +43,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         //this.studyArea.addAll(studyArea);
     }
 
-/*    public RecyclerAdapter(List<StudyArea> list){
-        this.searchList=list;
-        this.fullList = new ArrayList<>(searchList);
-        //this.studyArea = List;
-    }*/
-/*    public interface OnItemClickListener {
-        void onItemClick(View view, int position);
-    }
-
-    public void setOnItemClickListener(OnItemClickListener listener) {
-        mListener = listener;
-    }*/
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mview;
@@ -111,6 +97,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
                 if(((StudyArea) studyArea.get(position)).getImageurl() != null) {
                     selected.putExtra("Image", ((StudyArea) studyArea.get(position)).getImageurl());
+                }
+                if(((StudyArea) studyArea.get(position)).getLatLng() != null) {
+                    selected.putExtra("LatLng", ((StudyArea) studyArea.get(position)).getLatLng());
                 }
                 selected.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(selected);
