@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,7 +39,8 @@ public class DetailActivity extends AppCompatActivity {
     TextView detailName;
     static TextView avgrating;
     ImageView image;
-    Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc, btnWalk, btnDrive, btnPT;
+    Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc;
+    ImageButton btnWalk, btnDrive, btnPT;
     static String saname;
     String imageurl;
     static Context context;
@@ -60,9 +62,9 @@ public class DetailActivity extends AppCompatActivity {
         avgrating = (TextView) findViewById(R.id.avgrate);
         btnsgw = (Button) findViewById(R.id.toSGW);
         btnacc = (Button) findViewById(R.id.toAcc);
-        btnPT = (Button) findViewById(R.id.btnPT);
-        btnWalk = (Button) findViewById(R.id.btnWalk);
-        btnDrive = (Button) findViewById(R.id.btnDrive);
+        btnPT = (ImageButton) findViewById(R.id.btnPT);
+        btnWalk = (ImageButton) findViewById(R.id.btnWalk);
+        btnDrive = (ImageButton) findViewById(R.id.btnDrive);
         saname = intent.getStringExtra("Name");
         detailName.setText(saname);
         imageurl = intent.getStringExtra("Image");
@@ -191,10 +193,10 @@ public class DetailActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(result);
                 String avg = jsonObject.getString("avg");
-                Double douavg = Double.parseDouble(avg);
-                String rounded = String.format("%.0f", douavg);
+/*                Double douavg = Double.parseDouble(avg);
+                String rounded = String.format("%.0f", douavg);*/
                 //Log.i("check", "content"+ douavg);
-                avgrating.setText(rounded);
+                avgrating.setText(avg);
                 int success = jsonObject.getInt("success");
                 if (success == 1) {
                     JSONArray reviews = jsonObject.getJSONArray("review");
