@@ -23,10 +23,6 @@
         android:id="@+id/avgrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:text=" no ratings yet"
-=======
->>>>>>> 8952bf1bdbf26b50585b2f21234c2fb6130d5c87
         android:layout_toRightOf="@+id/tvrate"
         android:text="No Rating Yet"
         android:layout_alignTop="@+id/tvrate"/>
