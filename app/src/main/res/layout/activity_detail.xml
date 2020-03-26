@@ -23,7 +23,7 @@
         android:id="@+id/avgrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ratinghere"
+        android:text=" no ratings yet"
         android:layout_toRightOf="@+id/tvrate"
         android:layout_alignTop="@+id/tvrate"/>
 
