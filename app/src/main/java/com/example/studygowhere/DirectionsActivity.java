@@ -26,6 +26,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -87,6 +88,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
+    private WeatherManager weatherManager = new WeatherManager();
     private static final int REQUEST_CODE = 101;
     Location currentLocation;
     Intent intent;
@@ -173,7 +175,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
 
-
         mDestination=intent.getParcelableExtra("LatLng");
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mDestination, 14));
         MarkerOptions markerOption2 = new MarkerOptions();
@@ -183,6 +184,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         mMap.addMarker(markerOption2);
 
         drawRoute();
+        updateWeather();
     }
 
     @Override
@@ -223,6 +225,11 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+    public void updateTextView(String originWeather,String destinationWeather) {
+        TextView weather = (TextView) findViewById(R.id.weather);
+        String toThis="Weather:\n"+"Current Location:\n"+originWeather+"\nDestination:\n"+destinationWeather;
+        weather.setText(toThis);
+    }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -347,6 +354,12 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
         // Start downloading json data from Google Directions API
         downloadTask.execute(url);
+    }
+    private void updateWeather(){
+        Log.d("heree","updateWeather");
+        WeatherDownloadTask downloadTask =new WeatherDownloadTask();
+        downloadTask.execute();
+        Log.d("heree","updateWeather2");
     }
 
 
@@ -511,6 +524,74 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                 Toast.makeText(getApplicationContext(),"No route is found", Toast.LENGTH_LONG).show();
         }
     }
+    /** A class to download data from Weather API URL */
+    private class WeatherDownloadTask extends AsyncTask<Void, Void, String> {
+
+        // Downloading data in non-ui thread
+        @Override
+        protected String doInBackground(Void... params) {
+
+            // For storing data from web service
+
+            String data = "";
+
+            try{
+                // Fetching the data from web service
+                data = downloadUrl("https://api.data.gov.sg/v1/environment/2-hour-weather-forecast");
+                Log.d("DownloadTask","DownloadTask : " + data);
+            }catch(Exception e){
+                Log.d("Background Task",e.toString());
+            }
+            return data;
+        }
+
+        // Executes in UI thread, after the execution of
+        // doInBackground()
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+
+            WeatherParserTask parserTask=new WeatherParserTask();
+
+            // Invokes the thread for parsing the JSON data
+            parserTask.execute(result);
+        }
+    }
+    /** A class to parse the Weather Data in JSON format */
+    private class WeatherParserTask extends AsyncTask<String, Integer, HashMap<String, List<String>> > {
+
+        // Parsing the data in non-ui thread
+        @Override
+        protected HashMap<String, List<String>> doInBackground(String... jsonData) {
+
+            JSONObject jObject;
+            HashMap<String, List<String>> weatherArray = null;
+
+            try {
+                jObject = new JSONObject(jsonData[0]);
+                // Starts parsing data
+                weatherArray = weatherManager.weatherParse(jObject);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return weatherArray;
+        }
+
+        // Executes in UI thread, after the parsing process
+        @Override
+        protected void onPostExecute(HashMap<String, List<String>> result) {
+            try {
+                String originWeather=weatherManager.getNearestAreaWeather(result,mOrigin.latitude,mOrigin.longitude);
+                String destinationWeather=weatherManager.getNearestAreaWeather(result,mDestination.latitude,mDestination.longitude);
+                updateTextView(originWeather,destinationWeather);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id=menuItem.getItemId();

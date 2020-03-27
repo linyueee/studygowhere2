@@ -9,6 +9,8 @@
 
 
 
+
+
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,7 +35,6 @@
 
 
 
-
         <fragment
             android:id="@+id/map"
             android:layout_marginTop="50dp"
@@ -41,6 +42,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".DirectionsActivity" />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@layout/toolbar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/roundcorners"
+                android:text="Weather:\n Loading weather details..."
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+
 
         <com.google.android.material.navigation.NavigationView
             android:layout_width="match_parent"
@@ -52,6 +73,8 @@
             android:fitsSystemWindows="true"
             />
     </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -81,7 +104,6 @@
 
 
     </LinearLayout>
-
 
 
 
