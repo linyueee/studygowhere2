@@ -3,6 +3,7 @@ package com.example.studygowhere;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -20,6 +21,10 @@ import java.net.URLEncoder;
 public class AddReviewWorker extends AsyncTask<String, Void, String> {
     Context context;
 
+    String user_name;
+    String content;
+    String saname;
+    String rating;
     public AddReviewWorker(Context context) {
         this.context = context;
     }
@@ -28,10 +33,10 @@ public class AddReviewWorker extends AsyncTask<String, Void, String> {
     protected String doInBackground(String... params) {
         String writereview_url = "https://studygowhere.000webhostapp.com/Write_review.php";
         try{
-            String user_name = params[0];
-            String content = params[1];
-            String saname = params[2];
-            String rating = params[3];
+            user_name = params[0];
+            content = params[1];
+            saname = params[2];
+            rating = params[3];
             URL url = new URL(writereview_url);
             HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
@@ -72,6 +77,8 @@ public class AddReviewWorker extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String s) {
         Toast toast = Toast.makeText(context, "Review added", Toast.LENGTH_SHORT);
         toast.show();
-        context.startActivity(new Intent(context, DetailActivity.class));
+        Intent intent = new Intent(context, DetailActivity.class);
+        intent.putExtra("Name", saname);
+        context.startActivity(intent);
     }
 }

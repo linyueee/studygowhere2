@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
     Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc;
     ImageButton btnWalk, btnDrive, btnPT;
     static String saname;
-    String imageurl;
+    String imageurl = null;
     static Context context;
 
     @Override
@@ -68,6 +68,17 @@ public class DetailActivity extends AppCompatActivity {
         saname = intent.getStringExtra("Name");
         detailName.setText(saname);
         imageurl = intent.getStringExtra("Image");
+        if(imageurl == null)
+        {
+            for(int i = 0; i < Datahandler.studyAreaList.size(); i++)
+            {
+                if(saname.equals(Datahandler.studyAreaList.get(i).getName()))
+                {
+                    imageurl = Datahandler.studyAreaList.get(i).getImageurl();
+                }
+            }
+        }
+
         Picasso.get().load(imageurl).placeholder(R.drawable.ic_launcher_background).into(image);
         final LatLng latlng= intent.getParcelableExtra("LatLng");
 
