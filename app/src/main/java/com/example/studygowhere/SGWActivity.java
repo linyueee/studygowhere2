@@ -71,18 +71,6 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
         mRecyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
-
-        //Steffi added
-/*        List<StudyArea> tempList = new ArrayList<>();
-        for(int i=0; i< studyAreaList.size();i++) {
-            StudyArea temp = (StudyArea) studyAreaList.get(i);
-            if(temp!=null) {
-                tempList.add(temp);
-            }
-        }*/
-        //adapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
-        //mRecyclerView.setAdapter(adapter);
-
     }
 
     @Override
@@ -92,35 +80,30 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
             insertionSort(studyAreaList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
-            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("SCHOOLS"))
         {
             insertionSort(schoolList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.schoolList);
-            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("LIBRARIES"))
         {
             insertionSort(libList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.libList);
-            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("COMMUNITY CENTERS"))
         {
             insertionSort(ccList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.ccList);
-            //mRecyclerView.setAdapter(mAdapter);
         }
 
         else if(parent.getSelectedItem().toString().equals("CAFES/RESTAURANTS"))
         {
             insertionSort(cafeList);
             mAdapter = new RecyclerAdapter(getApplicationContext(), Datahandler.cafeList);
-            //mRecyclerView.setAdapter(mAdapter);
         }
         adapter = mAdapter;
         mRecyclerView.setAdapter(mAdapter);
@@ -146,17 +129,6 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
                 else
                     break;
             }
-/*            double current = ((StudyArea)listsa.get(i)).getDistancedouble();
-            int j = i - 1;
-            while(j >= 0) {
-                if(current<((StudyArea)listsa.get(j)).getDistancedouble() ) {
-                    listsa.set(j + 1, listsa.get(j));
-                }
-                j--;
-            }
-            // at this point we've exited, so j is either -1
-            // or it's at the first element where current >= a[j]
-            listsa.set(j+1, listsa.get(i));*/
         }
     }
 

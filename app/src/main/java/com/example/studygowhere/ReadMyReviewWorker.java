@@ -17,9 +17,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class ReadMyReviewWorker extends AsyncTask<String, Void, String> {
-
     Context context;
-
     public ReadMyReviewWorker(Context context) {
         this.context = context;
     }

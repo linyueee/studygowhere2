@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
     Button btnaddBookmark, btnviewonmap, btndelete, btnwritereview, btnsgw, btnacc;
     ImageButton btnWalk, btnDrive, btnPT;
     static String saname;
-    String imageurl;
+    String imageurl = null;
     static Context context;
 
     @Override
@@ -68,6 +68,17 @@ public class DetailActivity extends AppCompatActivity {
         saname = intent.getStringExtra("Name");
         detailName.setText(saname);
         imageurl = intent.getStringExtra("Image");
+        if(imageurl == null)
+        {
+            for(int i = 0; i < Datahandler.studyAreaList.size(); i++)
+            {
+                if(saname.equals(Datahandler.studyAreaList.get(i).getName()))
+                {
+                    imageurl = Datahandler.studyAreaList.get(i).getImageurl();
+                }
+            }
+        }
+
         Picasso.get().load(imageurl).placeholder(R.drawable.ic_launcher_background).into(image);
         final LatLng latlng= intent.getParcelableExtra("LatLng");
 
@@ -193,9 +204,6 @@ public class DetailActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(result);
                 String avg = jsonObject.getString("avg");
-/*                Double douavg = Double.parseDouble(avg);
-                String rounded = String.format("%.0f", douavg);*/
-                //Log.i("check", "content"+ douavg);
                 avgrating.setText(avg);
                 int success = jsonObject.getInt("success");
                 if (success == 1) {
@@ -246,106 +254,4 @@ public class DetailActivity extends AppCompatActivity {
         DetailActivity.saname = saname;
     }
 
-
-
-
-
-
-
-
-
-
-/*     class DisplayReviewMgr
-    {
-        String result;
-
-        public DisplayReviewMgr(String result) {
-            this.result = result;
-        }
-        public void DisplayReview() {
-            ReviewAdapter adapter;
-            List<String> reviewlist = new ArrayList<>();
-            RecyclerView.Adapter mAdapter;
-            RecyclerView.LayoutManager layoutManager;
-            List<String> reviewerlist = new ArrayList<>();
-            ArrayList<Review> reviewListfordisplay = new ArrayList<>();
-            try {
-                JSONObject jsonObject = new JSONObject(result);
-                int success = jsonObject.getInt("success");
-                if (success == 1) {
-                    JSONArray reviews = jsonObject.getJSONArray("review");
-                    for (int i = 0; i < reviews.length(); i++) {
-                        JSONObject review = reviews.getJSONObject(i);
-                        String reviewer = review.getString("Username");
-                        reviewerlist.add(reviewer);
-                        String reviewcontent = review.getString("Reviews");
-                        reviewlist.add(reviewcontent);
-
-                    }
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-
-            for (int i = 0; i < reviewerlist.size(); i++) {
-                String reviewer = reviewerlist.get(i);
-                String content = reviewlist.get(i);
-                reviewListfordisplay.add(new Review(reviewer, content, getSaname()));
-            }
-            Log.i("check", "content" + reviewListfordisplay.get(1).getAuthor());
-            Log.i("check", "content" + reviewListfordisplay.size());
-            ReviewAdapter reviewAdapter = new ReviewAdapter(reviewListfordisplay, getApplicationContext());
-            //adapter = new ReviewAdapter(DetailActivity.getContext(), R.id.review_list, reviewListfordisplay);
-            reviewlv.setAdapter(rdapter);
-
-        }
-
-    }
-    */
-
-
-
-
-/*    class ReviewAdapter extends BaseAdapter {
-        private ArrayList<Review> reviewlist;
-        private Context context;
-
-        public ReviewAdapter(ArrayList<Review> reviewlist, Context context) {
-            this.reviewlist = reviewlist;
-            this.context = context;
-        }
-
-        public ReviewAdapter(ArrayList<Review> reviewlist) {
-            this.reviewlist = reviewlist;
-        }
-
-        @Override
-        public int getCount() {
-            return reviewlist.size();
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.review_list,null);
-
-            TextView tvauthor = (TextView) convertView.findViewById(R.id.tvAuthor);
-            TextView tvContent = (TextView) convertView.findViewById(R.id.tvcontent);
-            TextView tvRating = (TextView) convertView.findViewById(R.id.tvrating);
-            tvauthor.setText(reviewlist.get(position).getAuthor());
-            tvContent.setText(reviewlist.get(position).getContent());
-            tvRating.setText("lalal");
-            return convertView;
-        }
-    }*/
 }

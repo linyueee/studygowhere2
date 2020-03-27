@@ -45,6 +45,7 @@ public class ProfileActivity extends AppCompatActivity {
         rvbookmark = (RecyclerView) findViewById(R.id.recycler_view_profile);
         btnmyreview = (Button) findViewById(R.id.btnmyreviews);
         context = getApplicationContext();
+        tvName.setText(getUn());
 
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -71,12 +72,8 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        tvName.setText(getUn());
-
-
         Readbookmarkworker rbw = new Readbookmarkworker(this);
         rbw.execute(getUn());
-
     }
 
     static public void Displaybookmark(String result) {
@@ -95,7 +92,6 @@ public class ProfileActivity extends AppCompatActivity {
                         JSONObject bookmark = bookmarks.getJSONObject(i);
                         String studyareaname = bookmark.getString("studyareaname");
                         mybookmarkstring.add(studyareaname);
-
                     }
                 }
             } catch (JSONException e) {
@@ -109,7 +105,6 @@ public class ProfileActivity extends AppCompatActivity {
                         BookmarkList.add(temp);
                     }
                 }
-
             }
             ProfileActivity.bookmarkflag = true;
             setCurrentusername(getUn());
@@ -119,7 +114,6 @@ public class ProfileActivity extends AppCompatActivity {
         rvbookmark.setLayoutManager(layoutManager);
         mAdapter = new RecyclerAdapter(ProfileActivity.getContext(), BookmarkList);
         rvbookmark.setAdapter(mAdapter);
-
     }
 
 

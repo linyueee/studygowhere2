@@ -128,11 +128,15 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         btndetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("html_instructions",inst.get(0).get(0));
-                Intent i = new Intent(DirectionsActivity.this,RouteDetailsActivity.class);
-                i.putStringArrayListExtra("details",inst.get(0));
-                startActivity(i);
-
+                Log.d("html_instructions",""+inst);
+                if(inst.get(0).get(0).isEmpty() && inst.get(0).get(0).equals("[]")) {
+                    Toast.makeText(getApplicationContext(),"No route is found", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    Intent i = new Intent(DirectionsActivity.this, RouteDetailsActivity.class);
+                    i.putStringArrayListExtra("details", inst.get(0));
+                    startActivity(i);
+                }
             }
         });
 
@@ -147,7 +151,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
         toolbar.setTitleTextColor(255-255-255);
-        //getSupportActionBar().setTitle("Hello world App");
         navigationView = findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(this);
         toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.open,R.string.close);
@@ -235,30 +238,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setMyLocationEnabled(true);
-/*        mDestination=intent.getParcelableExtra("LatLng");*/
-        //Log.d("Location", "location2: " + mDestination.latitude + " " + mDestination.longitude);
         currentLocation=LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-/*        while(currentLocation==null)
-        {
-            currentLocation=LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-            Log.d("Hacker2",": )");
-        }*/
-        Log.d("Hacker3",": )");
-        //drawRoute();
-/*        mOrigin=new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-
-        MarkerOptions markerOption = new MarkerOptions();
-        markerOption.position(mOrigin);
-        markerOption.title("user current location");
-        markerOption.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-        currentUserLocationMarker = mMap.addMarker(markerOption);
-
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mDestination, 14));
-        MarkerOptions markerOption2 = new MarkerOptions();
-        markerOption2.position(mDestination);
-        markerOption2.title("Destination");
-        markerOption2.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
-        mMap.addMarker(markerOption2);*/
     }
 
     public boolean checkUserLocationPermission()
@@ -302,8 +282,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                     Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
                 }
                 return;
-
-
         }
     }
 
@@ -345,7 +323,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
     }
     private void drawRoute(){
-        Log.d("Hacker4",": )");
         // Getting URL to the Google Directions API
         String url = getDirectionsUrl(mOrigin, mDestination);
 

@@ -218,16 +218,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         viewOnMapIntent = intent;
     }
     public void infoWindow(List<StudyArea> list){
-/*        for (GeoJsonFeature feature : layer.getFeatures()) {
-            //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
-            GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
-            point.getCoordinates();
-            //Log.i("GeoJsonClick", "Feature clicked: " + point.getCoordinates());
-
-            //placing coordinates into a LatLng variable
-            LatLng latLng = point.getCoordinates();
-            //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
-
         // creating a marker with a infowindow
         for (int i = 0; i < list.size(); i++) {
             StudyArea studyArea = (StudyArea) list.get(i);
@@ -241,15 +231,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
     public void infoWindow(LatLng latLng, String name, double distance){
-/*        for (GeoJsonFeature feature : layer.getFeatures()) {
-            //type casting from GeoJsonGeometry to GeoJsonPoint to getCoordinates of Point
-            GeoJsonPoint point = (GeoJsonPoint) feature.getGeometry();
-            point.getCoordinates();
-            //Log.i("GeoJsonClick", "Feature clicked: " + point.getCoordinates());
-
-            //placing coordinates into a LatLng variable
-            LatLng latLng = point.getCoordinates();
-            //Log.i("GeoJsonClick", "Feature clicked: " + latLng.latitude());*/
 
             // creating a marker with a infowindow
         double inkm = distance/1000;
@@ -278,28 +259,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         try{
-
+            // read geojson layers
             final GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
-            //librariesLayer.addLayerToMap();
-            //infoWindow(librariesLayer);
-
             final GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
-            //ccLayer.addLayerToMap();
-            //infoWindow(ccLayer);
-
             final GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
-            //schoolsLayer.addLayerToMap();
-            //infoWindow(schoolsLayer);
-
             final GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
-            //mcdonaldsLayer.addLayerToMap();
-            //infoWindow(mcdonaldsLayer);
-
             final GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
-            //starbucksLayer.addLayerToMap();
-            //infoWindow(starbucksLayer);
 
-
+            //apply geojson layers on map
             if(!addLibObjectFlag) {
                 Librarydatahandler ldh = new Librarydatahandler();
                 ldh.addObject(librariesLayer);
@@ -320,13 +287,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 macdh.addObject(mcdonaldsLayer);
                 addmacObjectFlag = true;
             }
-
             if(!addsbObjectFlag) {
                 Starbucksdatahandler sbdh = new Starbucksdatahandler();
                 sbdh.addObject(starbucksLayer);
                 addsbObjectFlag = true;
             }
 
+            //set filter clicker
             btnalllayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -390,25 +357,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");
-/*                Log.i("GeoJsonClick", "name clicked: " + nameClicked);
-                Log.i("TestClick", "" + Datahandler.studyAreaList.size());*/
                 for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
                     StudyArea temp = (StudyArea) Datahandler.studyAreaList.get(i);
                     String tempName = temp.getName();
-                    //Log.i("GeoJsonClick", "Feature clicked: " + "hello");
-                    //Log.i("GeoJsonClick", "looping through name: " + tempName);
                     if (tempName.equals(nameClicked)) {
-/*                        Log.i("GeoJsonClick", "LatLng"+temp.getLatLng());*/
                         LatLng clickedLatLng = temp.getLatLng();
-/*                        Log.i("GeoJsonClick", "clickedLatLng"+clickedLatLng);*/
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(clickedLatLng, 14));
-                        //mMap.animateCamera(CameraUpdateFactory.zoomBy(14));
-/*                        Log.i("GeoJsonClick", "Success!");*/
                     }
                 }
            }
-            // phone app will start up with a infowindow near africa at the south atlantic ocean
-
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -463,8 +420,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                    Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
                }
                return;
-
-
        }
     }
 
@@ -473,10 +428,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
         googleApiClient.connect();
     }
+
+
     @Override
     public void onLocationChanged(Location location) {
-
-
         lastLocation = location;
         if (currentUserLocationMarker != null) {
             currentUserLocationMarker.remove();
@@ -492,9 +447,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (googleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
-
-/*        Log.i("GeoJsonClick", "Feature clicked: " + lastLocation.getLatitude());
-        Log.i("GeoJsonClick", "location " + location.getLatitude());*/
         if (location != null) {
             for (int i = 0; i < Datahandler.studyAreaList.size(); i++) {
                 StudyArea studyArea = (StudyArea) Datahandler.studyAreaList.get(i);
@@ -507,10 +459,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 infoWindow(salatLng, name, dis);
                 studyArea.setDistance(dis);
                 studyArea.setDistancedouble(dis);
-
             }
-
-
         }
     }
 

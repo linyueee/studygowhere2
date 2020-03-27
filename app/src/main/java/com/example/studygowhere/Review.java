@@ -7,12 +7,6 @@ public class Review {
     private String studyAreaName;
 
 
-    public Review(String author, String content, String studyAreaName) {
-        this.author = author;
-        this.content = content;
-        this.studyAreaName = studyAreaName;
-    }
-
     public Review(String author, String content, String rating, String studyAreaName) {
         this.author = author;
         this.content = content;
