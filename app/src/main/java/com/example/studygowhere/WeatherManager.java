@@ -73,20 +73,22 @@ public class WeatherManager {
             detailsList.add(key);
             detailsList.add(distance);
             detailsList.add(weather);
-            Log.d("Trying pls 3.8",detailsList.get(2));
+            Log.d("Trying pls 3.8",key+" "+weather+" "+distance);
             DistList.add(detailsList);
         }
+        String closestArea=DistList.get(0).get(0);
         closestDist=Double.parseDouble(DistList.get(0).get(1));
         closestWeather=DistList.get(0).get(2);
             for (int i = 0; i < DistList.size(); i++) {
                 double dist=Double.parseDouble(DistList.get(i).get(1));
                 if(dist <= closestDist) {
                     closestDist=dist;
+                    closestArea=DistList.get(i).get(0);
                     closestWeather=DistList.get(i).get(2);
                 }
-                Log.d("Trying pls 3.8",DistList.get(i).get(2));
-            }
 
+            }
+            Log.d("closest",closestArea+" "+closestWeather+" "+String.valueOf(closestDist));
 
 
 
@@ -95,7 +97,7 @@ public class WeatherManager {
     }
 
 
-    public double CalculateDistanceFromArea(double Longitude, double Latitude, double LocationLatitude, double LocationLongitude) {
+    public double CalculateDistanceFromArea(double Latitude, double Longitude, double LocationLatitude, double LocationLongitude) {
         double r = 6371e3;
         double TaxLat = Math.toRadians(Latitude);
         double UserLat = Math.toRadians(LocationLatitude);
