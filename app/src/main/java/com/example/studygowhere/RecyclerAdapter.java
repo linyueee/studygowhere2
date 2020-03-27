@@ -127,12 +127,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             List<StudyArea> filteredList = new ArrayList<>();
 
             if(constraint == null || constraint.length() == 0){
-
-                //filteredList.addAll(studyArea);
                 filteredList.addAll(fullList);
-//                Log.i("test:","tbh was here "+ studyAreaFullList.size());
-//                Log.i("test:","tbh was here "+ searchList.size());
-//                Log.i("test:","tbh was here "+ studyArea.size());
             }else{
                 String filterPattern = constraint.toString().toLowerCase().trim();
 
@@ -149,11 +144,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-            Log.i("test:","tbh was here :"+ studyArea.size());
             studyArea.clear();
-            Log.i("test:","tbh was here 2:"+ studyArea.size());
             studyArea.addAll((List)results.values);
-            Log.i("test:","tbh was here 3:"+ studyArea.size());
             notifyDataSetChanged();
         }
     };

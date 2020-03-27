@@ -26,22 +26,22 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
 
 
-public class ItemViewHolder extends RecyclerView.ViewHolder
-{
-    View mview;
-    TextView tvrmcontent, tvrmstudyarea, tvrmrating;
-    ImageView imsa;
+    public class ItemViewHolder extends RecyclerView.ViewHolder
+    {
+        View mview;
+        TextView tvrmcontent, tvrmstudyarea, tvrmrating;
+        ImageView imsa;
 
-    public ItemViewHolder(@NonNull View itemView) {
-        super(itemView);
-        mview = itemView;
-        imsa = (ImageView) itemView.findViewById(R.id.rmimage);
-        tvrmcontent = (TextView) itemView.findViewById(R.id.tvrmcontent);
-        tvrmstudyarea = (TextView) itemView.findViewById(R.id.tvrmstudyarea);
-        tvrmrating = (TextView) itemView.findViewById(R.id.tvrmrating);
+        public ItemViewHolder(@NonNull View itemView) {
+            super(itemView);
+            mview = itemView;
+            imsa = (ImageView) itemView.findViewById(R.id.rmimage);
+            tvrmcontent = (TextView) itemView.findViewById(R.id.tvrmcontent);
+            tvrmstudyarea = (TextView) itemView.findViewById(R.id.tvrmstudyarea);
+            tvrmrating = (TextView) itemView.findViewById(R.id.tvrmrating);
 
+        }
     }
-}
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

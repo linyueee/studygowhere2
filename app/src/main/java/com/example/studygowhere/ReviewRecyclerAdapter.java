@@ -26,8 +26,6 @@ public class ReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         ReviewList = review;
     }
 
-
-
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mview;

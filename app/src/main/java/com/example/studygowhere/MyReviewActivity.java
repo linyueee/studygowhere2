@@ -25,8 +25,6 @@ public class MyReviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_review);
 
-
-        Log.i("get","whynoun"+ getUn());
         rvmyreview = (RecyclerView) findViewById(R.id.my_recycler_view);
         ReadMyReviewWorker rmrw = new ReadMyReviewWorker(this);
         rmrw.execute(getUn());

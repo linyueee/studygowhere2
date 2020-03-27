@@ -139,10 +139,6 @@ public class AccountWorker extends AsyncTask<String, Void, String>
                 context.startActivity(new Intent(context, LoginActivity.class));
             }
 
-            if(result.equals("Please enter your Username")){
-                Log.i("hello", "hello");
-            }
-
         }
 
         @Override

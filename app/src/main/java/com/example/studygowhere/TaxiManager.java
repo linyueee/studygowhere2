@@ -72,39 +72,6 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         });
 
         return myResponse;
-
-        /*
-        String GET_URL = "https://api.data.gov.sg/v1/transport/taxi-availability"; //+ GetDateTime();
-        try {
-            URL obj = new URL(GET_URL);
-            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-            con.setRequestMethod("GET");
-            con.setRequestProperty("User-Agent", USER_AGENT);
-            int responseCode = con.getResponseCode();
-            System.out.println("GET Response Code :: " + responseCode);
-            if (responseCode == HttpURLConnection.HTTP_OK) { // success
-                BufferedReader in = new BufferedReader(new InputStreamReader(
-                        con.getInputStream()));
-                String inputLine;
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
-                System.out.println(response.toString());
-                Log.d("hello", "doInBackground() returned: " + response.toString());
-                return response.toString();
-            } else {
-                Log.d("hello", "doInBackground() returned: " + "FAILED");
-                return "";
-            }
-        }
-        catch (Exception e){
-
-        }
-
-        */
     }
 
     public JSONArray GetTaxiInformation() throws Exception {
@@ -130,13 +97,11 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         double[] DistList = new double[LongLatList.length()];
         double[][] result = new double[NumOfTaxi][];
 
-
         for (int i = 0; i < LongLatList.length(); i++) {
             JSONArray dummy = LongLatList.getJSONArray(i);
             DistList[i] = CalculateDistanceFromTaxi(dummy.getDouble(0), dummy.getDouble(1), Latitude, Longitude);
             //System.out.println(DistList[i]);
         }
-
         for (int i = 0; i < NumOfTaxi; i++) {
             list[i] = 0;
             for (int j = 0; j < DistList.length; j++) {
@@ -151,17 +116,13 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
                 }
             }
         }
-
         for (int i = 0; i < NumOfTaxi; i++) {
             result[i] = new double[]{((JSONArray) LongLatList.get(list[i])).getDouble(1), ((JSONArray) LongLatList.get(list[i])).getDouble(0)};
             System.out.println(DistList[list[i]]);
 
             System.out.println(list[i]);
         }
-
-
         return result;
-
     }
 
     public boolean check(int[] list, int j, int index) {
