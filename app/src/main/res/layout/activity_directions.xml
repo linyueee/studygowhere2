@@ -7,14 +7,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
-
-
-
-
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/drawer">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,10 +27,7 @@
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-
         </LinearLayout>
-
-
 
         <fragment
             android:id="@+id/map"
@@ -41,7 +35,7 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".DirectionsActivity" />
+            tools:context=".Boundary.DirectionsActivity" />
 
         <RelativeLayout
             android:layout_width="200dp"
@@ -60,9 +54,6 @@
 
         </RelativeLayout>
 
-
-
-
         <com.google.android.material.navigation.NavigationView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -73,8 +64,6 @@
             android:fitsSystemWindows="true"
             />
     </androidx.drawerlayout.widget.DrawerLayout>
-
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -93,6 +82,7 @@
             android:textSize = "15dp"
             android:layout_weight="1"
             />
+
         <Button
             android:id="@+id/exit"
             android:layout_height="wrap_content"
@@ -102,12 +92,5 @@
             android:layout_weight="1"
             />
 
-
     </LinearLayout>
-
-
-
-
-
-
 </RelativeLayout>

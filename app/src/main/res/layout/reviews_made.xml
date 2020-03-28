@@ -9,26 +9,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
-            android:id="@+id/relativereviewmade"
+            android:id="@+id/relativeReviewMade"
             android:scrollbars="vertical"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <ImageView
-                android:id="@+id/rmimage"
+                android:id="@+id/rmImage"
                 android:layout_width="120dp"
                 android:layout_height="120dp"/>
 
             <TextView
-                android:id="@+id/tvrmstudyarea"
+                android:id="@+id/tvRmStudyArea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="putnamehere"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:layout_toRightOf="@+id/rmimage"
+                android:layout_toRightOf="@+id/rmImage"
                 />
             <TextView
                 android:id="@+id/review"
@@ -36,17 +35,17 @@
                 android:layout_height="wrap_content"
                 android:text="My Review:"
                 android:textColor="@color/colorAccent"
-                android:layout_below="@+id/tvrmstudyarea"
-                android:layout_toRightOf="@+id/rmimage"
+                android:layout_below="@+id/tvRmStudyArea"
+                android:layout_toRightOf="@+id/rmImage"
                 android:layout_marginLeft="20dp"
                 />
             <TextView
-                android:id="@+id/tvrmcontent"
+                android:id="@+id/tvRmContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/review"
                 android:text="putcontenthere"
-                android:layout_toRightOf="@+id/rmimage"
+                android:layout_toRightOf="@+id/rmImage"
                 android:layout_marginLeft="20dp"/>
 
             <TextView
@@ -58,19 +57,14 @@
                 android:layout_alignParentEnd="true"
                 android:text="My Rating"/>
 
-
             <TextView
-                android:id="@+id/tvrmrating"
+                android:id="@+id/tvRmRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="rating here"
                 android:textSize="20dp"
                 android:layout_below="@+id/rate"
                 android:layout_alignStart="@+id/rate" />
-
-
-
-
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

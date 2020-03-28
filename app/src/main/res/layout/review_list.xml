@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         >
+
         <RelativeLayout
-            android:id="@+id/relativelo"
+            android:id="@+id/relativeLO"
             android:scrollbars="vertical"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
 
             <TextView
                 android:id="@+id/By"
@@ -37,7 +37,7 @@
                 />
 
             <TextView
-                android:id="@+id/tvcontent"
+                android:id="@+id/tvContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvAuthor"
@@ -50,19 +50,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rating: "
-                android:layout_alignTop="@+id/tvrating"
-                android:layout_toLeftOf="@+id/tvrating"/>
+                android:layout_alignTop="@+id/tvRating"
+                android:layout_toLeftOf="@+id/tvRating"/>
+
             <TextView
-                android:id="@+id/tvrating"
+                android:id="@+id/tvRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:text="ratinghere"
+                android:text="No Ratings Yet"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"/>
-
-
-
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

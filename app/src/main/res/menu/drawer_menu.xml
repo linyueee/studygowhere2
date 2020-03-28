@@ -3,7 +3,7 @@
     <group android:checkableBehavior="single"/>
     <item
         android:icon="@drawable/binoculars"
-        android:id="@+id/sgwhr"
+        android:id="@+id/StudyGoWhere"
         android:title="StudyGoWhere" />
     <item
         android:id="@+id/account"

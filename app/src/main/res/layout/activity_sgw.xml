@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SGWActivity">
+    tools:context=".Boundary.SGWActivity">
 
    <Spinner
        android:id="@+id/aSpinner"
@@ -12,13 +12,11 @@
        android:layout_height="40dp"
        android:entries="@array/Spinner_items"
       />
+
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/recycler_view"
        android:layout_below="@+id/aSpinner"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        tools:listitem= "@layout/study_area_list"/>
-       
-
-       
 </RelativeLayout>

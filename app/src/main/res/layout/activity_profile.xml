@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".Boundary.ProfileActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,7 +15,7 @@
         android:src="@drawable/potatoeman" />
 
     <TextView
-        android:id="@+id/tvname"
+        android:id="@+id/tvName"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@+id/imageView"
         android:layout_marginTop="20dp"
@@ -33,8 +33,6 @@
         android:layout_height="wrap_content"
         android:text="No Bookmark Yet" />
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_profile"
         android:layout_width="match_parent"
@@ -42,8 +40,6 @@
         tools:listitem= "@layout/study_area_list"
         android:layout_below="@+id/imageView"
         android:layout_above="@+id/btnBack"/>
-
-
 
     <Button
         android:id="@+id/btnBack"
@@ -66,12 +62,10 @@
          />
 
     <Button
-        android:id="@+id/btnmyreviews"
+        android:id="@+id/btnMyReviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvname"
-        android:layout_alignLeft="@+id/tvname"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
         android:text="My reviews" />
-
-
 </RelativeLayout>

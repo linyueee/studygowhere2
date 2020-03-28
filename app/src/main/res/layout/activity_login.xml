@@ -5,16 +5,14 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-<!--
-    tools:context=".Boundary.RegisterActivity">
+    android:orientation="vertical"
+    tools:context=".Boundary.LoginActivity">
 
--->
     <TextView
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username     *Required"
+        android:text="Username"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/colorAccent"
         />
@@ -30,7 +28,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password        *Required"
+        android:text="Password"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/colorAccent"
         />
@@ -44,45 +42,30 @@
         android:layout_marginBottom="30dp"
         />
 
-    <TextView
+    <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Login"
         android:layout_marginHorizontal="30dp"
-        android:textColor="@color/colorAccent"
-        />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="30dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mobile number"
-        android:layout_marginHorizontal="30dp"
-        android:textColor="@color/colorAccent"
-        />
-
-    <EditText
-        android:id="@+id/hp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:inputType="number"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="OnLogin"
         />
 
     <Button
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="No Account Yet? Register"
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="20dp"
-        android:onClick="OnReg"
         />
+
+    <Button
+        android:id="@+id/btnToMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back to map" />
 </LinearLayout>

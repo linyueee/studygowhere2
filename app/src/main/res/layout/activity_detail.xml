@@ -4,35 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".Boundary.DetailActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
          />
+
     <TextView
-        android:id="@+id/tvrate"
+        android:id="@+id/tvRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text='Average Rating: '
-        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView"
         android:layout_marginTop="30dp"/>
+
     <TextView
-        android:id="@+id/avgrate"
+        android:id="@+id/avgRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/tvrate"
+        android:layout_toRightOf="@+id/tvRate"
         android:text="No Rating Yet"
-        android:layout_alignTop="@+id/tvrate"/>
-
+        android:layout_alignTop="@+id/tvRate"/>
 
     <TextView
         android:id="@+id/tvDetailName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/imageView"
         />
 
     <Button
@@ -51,11 +52,10 @@
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:text="View On Map"
-        android:onClick="viewOnMap"/>
-
+        android:onClick="ViewOnMap"/>
 
     <Button
-        android:id="@+id/btndelete"
+        android:id="@+id/btnDelete"
         android:layout_below="@+id/viewOnMap"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -63,14 +63,13 @@
         android:text="DELETE FROM MY BOOKMARK"
         android:onClick="DeleteBM"/>
 
-
-
     <LinearLayout
         android:id="@+id/directionsOptions"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_below="@id/btndelete"
+        android:layout_below="@id/btnDelete"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -107,7 +106,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/noreviewmessage"
+        android:id="@+id/noReviewMessage"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/directionsOptions"
         android:layout_marginTop="20dp"
@@ -116,16 +115,16 @@
         android:text="No Review Yet" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvreviewList"
+        android:id="@+id/rvReviewList"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/directionsOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem= "@layout/review_list"
-        android:layout_above="@+id/btnaddreview"/>
+        android:layout_above="@+id/btnAddReview"/>
 
     <Button
-        android:id="@+id/btnaddreview"
+        android:id="@+id/btnAddReview"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"

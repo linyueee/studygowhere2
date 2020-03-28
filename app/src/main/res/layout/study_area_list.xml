@@ -8,13 +8,13 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     <RelativeLayout
-        android:id="@+id/relativelo"
+        android:id="@+id/relativeLO"
         android:scrollbars="vertical"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <ImageView
             android:id="@+id/image"
@@ -30,6 +30,7 @@
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/image"
             />
+
         <TextView
             android:id="@+id/address"
             android:layout_width="wrap_content"
@@ -41,7 +42,7 @@
             android:layout_marginLeft="20dp"
             />
         <TextView
-            android:id="@+id/tvaddress"
+            android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/address"
@@ -50,22 +51,20 @@
             android:layout_marginLeft="20dp"/>
 
         <TextView
-            android:id="@+id/tvdistance"
+            android:id="@+id/tvDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="distancehere"
             android:layout_marginTop="80dp"
             android:layout_marginRight="10dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvdistance"
-            android:layout_alignEnd="@+id/tvdistance"
+            android:layout_below="@+id/tvDistance"
+            android:layout_alignEnd="@+id/tvDistance"
             android:text="Km away"/>
-
-
-
     </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
