@@ -13,7 +13,6 @@ import androidx.fragment.app.FragmentActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Point;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
@@ -48,7 +47,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -96,8 +94,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
 
-    Button btnalllayer;
-    ImageButton btnschlayer, btncclayer, btnliblayer, btncafelayer, btnTaxi, btnTaxiOff;
+    Button btnAllLayer;
+    ImageButton btnSchLayer, btnCCLayer, btnLibLayer, btnCafeLayer, btnTaxi, btnTaxiOff;
     static public Intent viewOnMapIntent;
     DrawerLayout drawer;
     NavigationView navigationView;
@@ -142,11 +140,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
 
-        btncafelayer = (ImageButton) findViewById(R.id.btnResLayer);
-        btncclayer = (ImageButton) findViewById(R.id.btnCCLayer);
-        btnschlayer = (ImageButton) findViewById(R.id.btnSchoolLayer);
-        btnliblayer = (ImageButton) findViewById(R.id.btnLibLayer);
-        btnalllayer = (Button) findViewById(R.id.btnAllLayer);
+        btnCafeLayer = (ImageButton) findViewById(R.id.btnResLayer);
+        btnCCLayer = (ImageButton) findViewById(R.id.btnCCLayer);
+        btnSchLayer = (ImageButton) findViewById(R.id.btnSchoolLayer);
+        btnLibLayer = (ImageButton) findViewById(R.id.btnLibLayer);
+        btnAllLayer = (Button) findViewById(R.id.btnAllLayer);
         btnTaxi = (ImageButton) findViewById(R.id.btnTaxi);
         btnTaxiOff = (ImageButton) findViewById(R.id.btnTaxiOff);
         drawer = findViewById(R.id.drawer);
@@ -302,14 +300,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
 
             //set filter clicker
-            btnalllayer.setOnClickListener(new View.OnClickListener() {
+            btnAllLayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
                     infoWindow(studyAreaList);
                 }
             });
-           btnliblayer.setOnClickListener(new View.OnClickListener() {
+           btnLibLayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -317,7 +315,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
-           btncclayer.setOnClickListener(new View.OnClickListener() {
+           btnCCLayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -325,7 +323,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
-            btncafelayer.setOnClickListener(new View.OnClickListener() {
+            btnCafeLayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -333,7 +331,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
-            btnschlayer.setOnClickListener(new View.OnClickListener() {
+            btnSchLayer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mMap.clear();

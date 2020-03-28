@@ -74,7 +74,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     private Location lastLocation;
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
-    Button btndetails, btnexit;
+    Button btnDetails, btnExit;
     private LatLng mOrigin;
     private LatLng mDestination;
     private Polyline mPolyline;
@@ -107,19 +107,19 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.map);
         fusedLocationProviderClient=LocationServices.getFusedLocationProviderClient(this);
 
-        btndetails = (Button) findViewById(R.id.detail);
-        btnexit = (Button) findViewById(R.id.exit);
+        btnDetails = (Button) findViewById(R.id.detail);
+        btnExit = (Button) findViewById(R.id.exit);
 
         mapFragment.getMapAsync(this);
         intent=getIntent();
         mode=intent.getStringExtra("Mode");
         if (mode.compareToIgnoreCase("mode=transit")!=0){
-            btndetails.setVisibility(View.GONE);
+            btnDetails.setVisibility(View.GONE);
         }else {
-            btndetails.setVisibility(View.VISIBLE);
+            btnDetails.setVisibility(View.VISIBLE);
         }
 
-        btndetails.setOnClickListener(new View.OnClickListener() {
+        btnDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("html_instructions",""+inst);
@@ -134,7 +134,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
             }
         });
 
-        btnexit.setOnClickListener(new View.OnClickListener() {
+        btnExit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(DirectionsActivity.this,MapsActivity.class);

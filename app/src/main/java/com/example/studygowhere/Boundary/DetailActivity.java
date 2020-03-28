@@ -37,7 +37,7 @@ public class DetailActivity extends AppCompatActivity {
 
     static RecyclerView reviewLV;
     TextView detailName;
-    static TextView avGrating;
+    static TextView avgRating;
     ImageView image;
     Button btnAddBookmark, btnViewOnMap, btnDelete, btnWriteReview, btnSGW, btnAcc;
     ImageButton btnWalk, btnDrive, btnPT;
@@ -59,7 +59,7 @@ public class DetailActivity extends AppCompatActivity {
         btnDelete = (Button) findViewById(R.id.btnDelete);
         btnWriteReview = (Button) findViewById(R.id.btnAddReview);
         reviewLV = (RecyclerView) findViewById(R.id.rvReviewList);
-        avGrating = (TextView) findViewById(R.id.avgRate);
+        avgRating = (TextView) findViewById(R.id.avgRate);
         btnSGW = (Button) findViewById(R.id.toSGW);
         btnAcc = (Button) findViewById(R.id.toAcc);
         btnPT = (ImageButton) findViewById(R.id.btnPT);
@@ -200,7 +200,7 @@ public class DetailActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(result);
                 String avg = jsonObject.getString("avg");
-                avGrating.setText(avg);
+                avgRating.setText(avg);
                 int success = jsonObject.getInt("success");
                 if (success == 1) {
                     JSONArray reviews = jsonObject.getJSONArray("review");
