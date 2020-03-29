@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import com.example.studygowhere.Control.MyReviewRecyclerAdapter;
 import com.example.studygowhere.Control.ReadMyReviewWorker;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.Entity.Review;
 import com.example.studygowhere.R;
 
@@ -30,8 +31,10 @@ public class MyReviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_review);
 
         rvMyReview = (RecyclerView) findViewById(R.id.my_recycler_view);
-        ReadMyReviewWorker rmRW = new ReadMyReviewWorker(this);
-        rmRW.execute(getUn());
+        Worker readMyReview = new Worker(this);
+        readMyReview.ReadMyReview(getUn());
+/*        ReadMyReviewWorker rmRW = new ReadMyReviewWorker(this);
+        rmRW.execute(getUn());*/
     }
 
     static public void DisplayReview(String result)

@@ -274,27 +274,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             //apply geojson layers on map
             if(!addLibObjectFlag) {
-                LibraryDataHandler ldh = new LibraryDataHandler();
+                DataHandler ldh = new LibraryDataHandler();
                 ldh.addObject(librariesLayer);
                 addLibObjectFlag = true;
             }
             if(!addCCObjectFlag) {
-                CcDataHandler ccdh = new CcDataHandler();
+                DataHandler ccdh = new CcDataHandler();
                 ccdh.addObject(ccLayer);
                 addCCObjectFlag = true;
             }
             if(!addSchoolObjectFlag) {
-                SchoolDataHandler sdh = new SchoolDataHandler();
+                DataHandler sdh = new SchoolDataHandler();
                 sdh.addObject(schoolsLayer);
                 addSchoolObjectFlag = true;
             }
             if(!addMacObjectFlag) {
-                McDonaldsDataHandler macdh = new McDonaldsDataHandler();
+                DataHandler macdh = new McDonaldsDataHandler();
                 macdh.addObject(mcdonaldsLayer);
                 addMacObjectFlag = true;
             }
             if(!addSBObjectFlag) {
-                StarbucksDataHandler sbdh = new StarbucksDataHandler();
+                DataHandler sbdh = new StarbucksDataHandler();
                 sbdh.addObject(starbucksLayer);
                 addSBObjectFlag = true;
             }

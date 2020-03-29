@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.SearchView;
 import android.widget.Spinner;
 
-import com.example.studygowhere.Control.RecyclerAdapter;
+import com.example.studygowhere.Control.StudyAreaRecyclerAdapter;
 import com.example.studygowhere.Entity.StudyArea;
 import com.example.studygowhere.R;
 
@@ -30,10 +30,10 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
 
     private RecyclerView mRecyclerView;
     //private List<Object> studyAreaList = new ArrayList<>();
-    private RecyclerAdapter mAdapter;
+    private StudyAreaRecyclerAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     Spinner dropDownSpinner;
-    private RecyclerAdapter adapter;
+    private StudyAreaRecyclerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,30 +56,30 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
         if(parent.getSelectedItem().toString().equals("ALL"))
         {
             insertionSort(studyAreaList);
-            mAdapter = new RecyclerAdapter(getApplicationContext(), studyAreaList);
+            mAdapter = new StudyAreaRecyclerAdapter(getApplicationContext(), studyAreaList);
         }
         else if(parent.getSelectedItem().toString().equals("SCHOOLS"))
         {
             insertionSort(schoolList);
-            mAdapter = new RecyclerAdapter(getApplicationContext(), schoolList);
+            mAdapter = new StudyAreaRecyclerAdapter(getApplicationContext(), schoolList);
         }
 
         else if(parent.getSelectedItem().toString().equals("LIBRARIES"))
         {
             insertionSort(libList);
-            mAdapter = new RecyclerAdapter(getApplicationContext(), libList);
+            mAdapter = new StudyAreaRecyclerAdapter(getApplicationContext(), libList);
         }
 
         else if(parent.getSelectedItem().toString().equals("COMMUNITY CENTERS"))
         {
             insertionSort(ccList);
-            mAdapter = new RecyclerAdapter(getApplicationContext(), ccList);
+            mAdapter = new StudyAreaRecyclerAdapter(getApplicationContext(), ccList);
         }
 
         else if(parent.getSelectedItem().toString().equals("CAFES/RESTAURANTS"))
         {
             insertionSort(cafeList);
-            mAdapter = new RecyclerAdapter(getApplicationContext(), cafeList);
+            mAdapter = new StudyAreaRecyclerAdapter(getApplicationContext(), cafeList);
         }
         adapter = mAdapter;
         mRecyclerView.setAdapter(mAdapter);

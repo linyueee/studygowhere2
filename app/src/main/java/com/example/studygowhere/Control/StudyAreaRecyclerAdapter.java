@@ -22,7 +22,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
+public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
 
     private Context context;
     private List<StudyArea> studyArea;
@@ -31,7 +31,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     //private List<StudyArea> fullList;
 /*    private OnItemClickListener mListener;*/
 
-    public RecyclerAdapter(Context context, List<StudyArea> studyArea)
+    public StudyAreaRecyclerAdapter(Context context, List<StudyArea> studyArea)
     {
         this.context = context;
         this.fullList = new ArrayList<>(studyArea);

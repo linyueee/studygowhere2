@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.studygowhere.Control.AddReviewWorker;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
 import com.squareup.picasso.Picasso;
 
@@ -57,8 +58,11 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
             String review = edReview.getText().toString();
             if(review == null)
                 review = "No comment";
-            AddReviewWorker arw = new AddReviewWorker(this);
-            arw.execute(getUn(), review, StudyAreaName, getRating());
+            Worker addreview = new Worker(this);
+            addreview.AddReview(getUn(), review, StudyAreaName, getRating());
+
+/*            AddReviewWorker arw = new AddReviewWorker(this);
+            arw.execute(getUn(), review, StudyAreaName, getRating());*/
         }
     }
 

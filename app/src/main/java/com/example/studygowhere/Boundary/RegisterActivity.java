@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.studygowhere.Control.AccountWorker;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
 
 import static com.example.studygowhere.Boundary.LoginActivity.setUn;
@@ -31,7 +32,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         String type = "register";
         setUn(str_name);
-        AccountWorker bgw = new AccountWorker(this);
-        bgw.execute(type, str_name, str_password, str_email, str_mobile);
+        Worker registerworker = new Worker(this);
+        registerworker.Register(type, str_name, str_password, str_email, str_mobile);
+/*        AccountWorker bgw = new AccountWorker(this);
+        bgw.execute(type, str_name, str_password, str_email, str_mobile);*/
     }
 }

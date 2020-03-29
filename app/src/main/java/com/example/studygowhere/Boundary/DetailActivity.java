@@ -18,6 +18,7 @@ import com.example.studygowhere.Control.CustomiseBookmarkWorker;
 import com.example.studygowhere.Control.DataHandler;
 import com.example.studygowhere.Control.ReadReviewWorker;
 import com.example.studygowhere.Control.ReviewRecyclerAdapter;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.Entity.Review;
 import com.example.studygowhere.R;
 import com.google.android.gms.maps.model.LatLng;
@@ -131,8 +132,7 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
-        ReadReviewWorker rrw = new ReadReviewWorker(this);
-        rrw.execute(saName);
+
 
         btnWalk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +163,9 @@ public class DetailActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Worker readReview = new Worker(this);
+        readReview.ReadReview(saName);
     }
 
     public void AddBM(View view) {
@@ -172,8 +175,11 @@ public class DetailActivity extends AppCompatActivity {
             toast.show();
         } else {
             String type = "Add";
-            CustomiseBookmarkWorker bmw = new CustomiseBookmarkWorker(this);
-            bmw.execute(getUn(), intent.getStringExtra("Name"), type);
+            Worker addbm = new Worker(this);
+            ProfileActivity.bookmarkFlag = false;
+            addbm.AddBookmark(getUn(), intent.getStringExtra("Name"), type);
+/*            CustomiseBookmarkWorker bmw = new CustomiseBookmarkWorker(this);
+            bmw.execute(getUn(), intent.getStringExtra("Name"), type);*/
         }
     }
 
@@ -184,8 +190,11 @@ public class DetailActivity extends AppCompatActivity {
             toast.show();
         } else {
             String type = "Delete";
-            CustomiseBookmarkWorker dbm = new CustomiseBookmarkWorker(this);
-            dbm.execute(getUn(), intent.getStringExtra("Name"), type);
+            Worker delbm = new Worker(this);
+            ProfileActivity.bookmarkFlag = false;
+            delbm.DeleteBookmark(getUn(), intent.getStringExtra("Name"), type);
+/*            CustomiseBookmarkWorker dbm = new CustomiseBookmarkWorker(this);
+            dbm.execute(getUn(), intent.getStringExtra("Name"), type);*/
         }
     }
 

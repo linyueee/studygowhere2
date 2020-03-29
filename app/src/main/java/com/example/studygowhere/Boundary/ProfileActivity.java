@@ -17,8 +17,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.studygowhere.Control.DataHandler;
-import com.example.studygowhere.Control.ReadBookmarkWorker;
-import com.example.studygowhere.Control.RecyclerAdapter;
+import com.example.studygowhere.Control.StudyAreaRecyclerAdapter;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.Entity.StudyArea;
 import com.example.studygowhere.R;
 
@@ -75,8 +75,10 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        ReadBookmarkWorker rbw = new ReadBookmarkWorker(this);
-        rbw.execute(getUn());
+        Worker readBm = new Worker(this);
+        readBm.ReadBookmark(getUn());
+/*        ReadBookmarkWorker rbw = new ReadBookmarkWorker(this);
+        rbw.execute(getUn());*/
     }
 
     static public void DisplayBookmark(String result) {
@@ -115,7 +117,7 @@ public class ProfileActivity extends AppCompatActivity {
         rvBookmark.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(ProfileActivity.getContext());
         rvBookmark.setLayoutManager(layoutManager);
-        mAdapter = new RecyclerAdapter(ProfileActivity.getContext(), BookmarkList);
+        mAdapter = new StudyAreaRecyclerAdapter(ProfileActivity.getContext(), BookmarkList);
         rvBookmark.setAdapter(mAdapter);
     }
 

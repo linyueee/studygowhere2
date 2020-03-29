@@ -9,6 +9,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.studygowhere.Control.AccountWorker;
+import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
 
 
@@ -53,8 +54,10 @@ public class LoginActivity extends AppCompatActivity {
         else
              setUn(username);
         String type = "login";
-        AccountWorker bgw = new AccountWorker(this);
-        bgw.execute(type, username, password);
+        Worker loginworker = new Worker(this);
+        loginworker.Login(type, username, password);
+/*        AccountWorker bgw = new AccountWorker(this);
+        bgw.execute(type, username, password);*/
     }
 
 
