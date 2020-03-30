@@ -104,8 +104,8 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(DetailActivity.this, WriteReviewActivity.class);
-                i.putExtra("StudyName", intent.getStringExtra("Name"));
-                i.putExtra("Picture", intent.getStringExtra("Image"));
+                i.putExtra("StudyName", saName);
+                i.putExtra("Picture", imageURL);
                 startActivity(i);
             }
         });

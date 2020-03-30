@@ -3,9 +3,10 @@ package com.example.studygowhere.Control;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.Toast;
 
-import com.example.studygowhere.Boundary.DetailActivity;
+import com.example.studygowhere.Boundary.LoginActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,36 +20,30 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class AddReviewWorker extends AsyncTask<String, Void, String> {
+public class ResetPasswordWorker extends AsyncTask<String, Void, String> {
+
+
     Context context;
 
-    String user_name;
-    String content;
-    String saName;
-    String rating;
-    public AddReviewWorker(Context context) {
+    public ResetPasswordWorker(Context context) {
         this.context = context;
     }
 
     @Override
     protected String doInBackground(String... params) {
-        String writeReview_url = "https://studygowhere.000webhostapp.com/Write_review.php";
+        String verifyAcc_URL = "https://studygowhere.000webhostapp.com/Resetpassword.php";
         try{
-            user_name = params[0];
-            content = params[1];
-            saName = params[2];
-            rating = params[3];
-            URL url = new URL(writeReview_url);
+            String username = params[0];
+            String password = params[1];
+            URL url = new URL(verifyAcc_URL);
             HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
             httpURLConnection.setDoInput(true);
             OutputStream outputStream = httpURLConnection.getOutputStream();
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-            String post_data = URLEncoder.encode("user_name","UTF-8")+"="+URLEncoder.encode(user_name,"UTF-8")+"&"
-                    +URLEncoder.encode("content","UTF-8")+"="+URLEncoder.encode(content,"UTF-8")+"&"
-                    +URLEncoder.encode("saname","UTF-8")+"="+URLEncoder.encode(saName,"UTF-8")+"&"
-                    +URLEncoder.encode("rating","UTF-8")+"="+URLEncoder.encode(rating,"UTF-8");
+            String post_data = URLEncoder.encode("username","UTF-8")+"="+URLEncoder.encode(username,"UTF-8")+"&"
+                    +URLEncoder.encode("password","UTF-8")+"="+URLEncoder.encode(password,"UTF-8");
             bufferedWriter.write(post_data);
             bufferedWriter.flush();
             bufferedWriter.close();
@@ -74,8 +69,11 @@ public class AddReviewWorker extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String s) {
-        Toast toast = Toast.makeText(context, "Review added", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(context, s, Toast.LENGTH_SHORT);
         toast.show();
-
+        if(s.equals("Password reset"))
+        {
+            context.startActivity(new Intent(context, LoginActivity.class));
+        }
     }
 }

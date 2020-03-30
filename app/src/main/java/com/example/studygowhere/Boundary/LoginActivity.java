@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
 
     static private String Un = null;
     static private String currentUserName;
-    Button btnLogin, btnRegister, btnToMap;
+    Button btnLogin, btnRegister, btnToMap, btnreset;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.login);
         btnRegister = (Button) findViewById(R.id.register);
         btnToMap = (Button) findViewById(R.id.btnToMap);
+        btnreset = (Button) findViewById(R.id.btnresetpass);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(LoginActivity.this, MapsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnreset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, AccountVerificationActivity.class);
                 startActivity(i);
             }
         });

@@ -59,5 +59,16 @@ public class Worker {
         dbm.execute(username, studyAreaName, type);
     }
 
+    public void VerifyAccount(String username, String email, String phone)
+    {
+        VerifyAccountWorker vaw = new VerifyAccountWorker(context);
+        vaw.execute(username, email, phone);
+    }
+
+    public void ResetPassword(String username, String password)
+    {
+        ResetPasswordWorker rpw = new ResetPasswordWorker(context);
+        rpw.execute(username, password);
+    }
 
 }

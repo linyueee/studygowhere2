@@ -17,18 +17,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Boundary.ResetPasswordActivity"></activity>
+        <activity android:name=".Boundary.AccountVerificationActivity" />
         <activity android:name=".Boundary.MyReviewActivity" />
         <activity android:name=".Boundary.WriteReviewActivity" />
         <activity android:name=".Boundary.DetailActivity" />
         <activity android:name=".Boundary.ProfileActivity" />
         <activity android:name=".Boundary.SGWActivity" />
         <activity android:name=".Boundary.RegisterActivity" />
-        <activity android:name=".Boundary.LoginActivity"
-            android:label="@string/title_activity_login"/>
+        <activity
+            android:name=".Boundary.LoginActivity"
+            android:label="@string/title_activity_login" />
         <activity android:name=".Boundary.RouteDetailsActivity" />
-        <activity android:name=".Boundary.DirectionsActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+        <activity
+            android:name=".Boundary.DirectionsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -50,6 +53,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

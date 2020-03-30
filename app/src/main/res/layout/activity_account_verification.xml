@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Boundary.LoginActivity">
+    tools:context=".Boundary.AccountVerificationActivity">
 
     <TextView
         android:layout_marginTop="30dp"
@@ -18,7 +18,7 @@
         />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/resetpassusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -28,56 +28,45 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="Registered Email"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/colorAccent"
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/resetpassemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:inputType="textPassword"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         />
-    <Button
-        android:id="@+id/btnresetpass"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
-        android:text="Reset Password"
-        android:layout_gravity="right"
-        android:textSize="13dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="10dp"
-        android:background="@android:color/white"/>
-
-    <Button
-        android:id="@+id/login"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Registered Phone Number"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="OnLogin"
+        android:textColor="@color/colorAccent"
         />
 
-    <Button
-        android:id="@+id/register"
+    <EditText
+        android:id="@+id/resetpassphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No Account Yet? Register"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         />
 
+
+
     <Button
-        android:id="@+id/btnToMap"
+        android:id="@+id/btnveri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="30dp"
-        android:text="Back to map" />
+        android:text="Verify Account"
+        android:onClick="VerifyAccount"/>
 
 
 </LinearLayout>

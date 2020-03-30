@@ -60,7 +60,9 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
                 review = "No comment";
             Worker addreview = new Worker(this);
             addreview.AddReview(getUn(), review, StudyAreaName, getRating());
-
+            Intent intent = new Intent(this, DetailActivity.class);
+            intent.putExtra("Name", StudyAreaName);
+            startActivity(intent);
 /*            AddReviewWorker arw = new AddReviewWorker(this);
             arw.execute(getUn(), review, StudyAreaName, getRating());*/
         }
