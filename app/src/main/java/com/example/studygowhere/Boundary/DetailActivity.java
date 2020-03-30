@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -132,12 +133,11 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
-
-
         btnWalk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("Name", getSaName());
                 i.putExtra("LatLng",latlng);
                 i.putExtra("Mode","mode=walk");
                 startActivity(i);
@@ -148,6 +148,8 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("Name", getSaName());
+                i.putExtra("Name", saName);
                 i.putExtra("LatLng",latlng);
                 i.putExtra("Mode","mode=drive");
                 startActivity(i);
@@ -158,6 +160,8 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(DetailActivity.this, DirectionsActivity.class);
+                i.putExtra("Name", getSaName());
+                i.putExtra("Name", saName);
                 i.putExtra("LatLng",latlng);
                 i.putExtra("Mode","mode=transit");
                 startActivity(i);

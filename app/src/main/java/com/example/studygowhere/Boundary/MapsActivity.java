@@ -349,6 +349,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                        }
                    }
                });
+
             btnTaxiOff.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -359,6 +360,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
+
+            mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                @Override
+                public void onInfoWindowClick(Marker marker) {
+                    Intent intent = new Intent(MapsActivity.this , DetailActivity.class);
+                    String studyAreaName = marker.getTitle();
+                    LatLng studyAreaLatLng = marker.getPosition();
+                    intent.putExtra("Name", studyAreaName);
+                    intent.putExtra("LatLng",studyAreaLatLng);
+                    if(!studyAreaName.contains("user current location")) {
+                        startActivity(intent);
+                    }
+                }
+            });
 
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");

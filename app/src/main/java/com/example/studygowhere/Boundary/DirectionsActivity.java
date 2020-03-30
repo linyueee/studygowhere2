@@ -173,10 +173,14 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         }
 
         mDestination=intent.getParcelableExtra("LatLng");
+        String saName = intent.getStringExtra("Name");
+        if (saName == null) {
+            saName = "Destination";
+        }
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mDestination, 14));
         MarkerOptions markerOption2 = new MarkerOptions();
         markerOption2.position(mDestination);
-        markerOption2.title("Destination");
+        markerOption2.title(saName);
         markerOption2.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
         mMap.addMarker(markerOption2);
 
