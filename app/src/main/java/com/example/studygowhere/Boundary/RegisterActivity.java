@@ -31,7 +31,6 @@ public class RegisterActivity extends AppCompatActivity {
         String str_mobile = mobile.getText().toString();
 
         String type = "register";
-        setUn(str_name);
         Worker registerworker = new Worker(this);
         registerworker.Register(type, str_name, str_password, str_email, str_mobile);
 /*        AccountWorker bgw = new AccountWorker(this);
