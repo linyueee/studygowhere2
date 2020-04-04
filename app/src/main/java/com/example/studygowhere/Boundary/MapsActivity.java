@@ -106,7 +106,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     private TaxiManager taxiManager = new TaxiManager();
-    static int NumOfTaxi = 20;
+    static int NumOfTaxi = 8;
     static MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
     static Marker[] markerListRemove = new Marker[NumOfTaxi];
 
@@ -204,6 +204,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void removeTaxiFromMap(){
+        mMap.clear();
         if(markerListRemove.length!=0) {
             for (int i = 0; i < NumOfTaxi; i++) {
                 markerListRemove[i].remove();
@@ -354,7 +355,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     @Override
                     public void onClick(View v) {
                         try {
-                            removeTaxiFromMap();
+                            mMap.clear();
+                            //removeTaxiFromMap();
+                            infoWindow(studyAreaList);
                         } catch(Exception e){
                             e.printStackTrace();
                         }
