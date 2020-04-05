@@ -22,24 +22,48 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * <h1>Study Area RecyclerView controller</h1>
+ * This class is responsible for putting the Study Area Objects in recycler view.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
 
+    /**
+     * Instance variable context.
+     */
     private Context context;
-    private List<StudyArea> studyArea;
-    private List<StudyArea> fullList;
-    private List<StudyArea> studyAreaFullList;
-    //private List<StudyArea> fullList;
-/*    private OnItemClickListener mListener;*/
 
+    /**
+     * Instance variable that contains the StudyArea Objects passed in
+     */
+    private List<StudyArea> studyArea;
+
+    /**
+     * Instance variable that contains the StudyArea Objects passed in
+     */
+    private List<StudyArea> fullList;
+
+
+    /**
+     * Constructor
+     * @param context context of the activity that construct the adapter object
+     * @param studyArea list of Review objects
+     */
     public StudyAreaRecyclerAdapter(Context context, List<StudyArea> studyArea)
     {
         this.context = context;
         this.fullList = new ArrayList<>(studyArea);
-        //this.studyAreaFullList = studyArea;
         this.studyArea = new ArrayList<>(studyArea);
-        //this.studyArea.addAll(studyArea);
     }
 
+
+    /**
+     * This class is to assign value to instance variables.
+     */
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mView;
@@ -59,6 +83,12 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
         }
     }
 
+    /**
+     * This is a override method to inflate the recycler view with layout study_area_list.
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -66,6 +96,13 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
         return new ItemViewHolder(view);
     }
 
+
+    /**
+     * This is a override method to set the content of each recyclerView item and the listener of each item.
+     * Upon clicking an item, the name, address, imageurl and latlng will be passed to the next activity using intent.
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, final int position) {
 
@@ -105,6 +142,11 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
 
     }
 
+
+    /**
+     * This is a override method to get the size of the instance variable studyArea.
+     * @return
+     */
     @Override
     public int getItemCount() {
         if(studyArea != null) {

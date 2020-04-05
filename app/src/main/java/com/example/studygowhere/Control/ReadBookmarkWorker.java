@@ -23,13 +23,38 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+
+/**
+ * <h1>Read Bookmark controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * The method stores the parameters into local variables and passes them into the php file.
+ * THe php file returns a JSON String containing username and Study Area name pairs where the username
+ * is equal to the username passed in.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class ReadBookmarkWorker extends AsyncTask<String, Void, String> {
+    /**
+     * Instance variable context
+     */
     Context context;
-    static String result = "";
+
+    /**
+     * constructor with parameter context
+     * @param ctx
+     */
     public ReadBookmarkWorker(Context ctx)
     {
         context = ctx;
     }
+    static String result = "";
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String username = params[0];
@@ -70,18 +95,15 @@ public class ReadBookmarkWorker extends AsyncTask<String, Void, String> {
         return null;
     }
 
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-    }
 
+    /**
+     * This method is to pass the JSon string returned from the php file in to method DisplayBookmark as parameter.
+     * @param result string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String result) {
         ProfileActivity.DisplayBookmark(result);
     }
 
-    @Override
-    protected void onProgressUpdate(Void... values) {
-        super.onProgressUpdate(values);
-    }
+
 }

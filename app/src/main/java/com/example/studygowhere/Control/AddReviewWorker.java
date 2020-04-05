@@ -19,25 +19,47 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+
+
+/**
+ * <h1>Add Review controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * The method stores the parameters into local variables and passes them into the php file.
+ * A message will be displayed after the operation has done.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class AddReviewWorker extends AsyncTask<String, Void, String> {
+
+    /**
+     * Instance variable context
+     */
     Context context;
 
-    String user_name;
-    String content;
-    String saName;
-    String rating;
+    /**
+     * constructor with parameter context
+     * @param context
+     */
     public AddReviewWorker(Context context) {
         this.context = context;
     }
 
+
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String writeReview_url = "https://studygowhere.000webhostapp.com/Write_review.php";
         try{
-            user_name = params[0];
-            content = params[1];
-            saName = params[2];
-            rating = params[3];
+            String user_name = params[0];
+            String content = params[1];
+            String saName = params[2];
+            String rating = params[3];
             URL url = new URL(writeReview_url);
             HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
@@ -72,6 +94,11 @@ public class AddReviewWorker extends AsyncTask<String, Void, String> {
         return null;
     }
 
+
+    /**
+     * This method is to display a message after the operation is done.
+     * @param s string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String s) {
         Toast toast = Toast.makeText(context, "Review added", Toast.LENGTH_SHORT);

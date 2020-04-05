@@ -81,35 +81,129 @@ import static com.example.studygowhere.Control.McDonaldsDataHandler.addMacObject
 import static com.example.studygowhere.Control.SchoolDataHandler.addSchoolObjectFlag;
 import static com.example.studygowhere.Control.StarbucksDataHandler.addSBObjectFlag;
 
+
+/**
+ * <h1>Google Map UI</h1>
+ * This is the MainActivity of the application.
+ * This is a user interface that is responsible for displaying a google map and markers marking the Study Areas
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener,
         NavigationView.OnNavigationItemSelectedListener
 {
+    /**
+     * Static variable mMap.
+     */
     private static GoogleMap mMap;
+
+    /**
+     * Static variable googleApiClient.
+     */
     private static GoogleApiClient googleApiClient;
+
+    /**
+     * Instance variable locationRequest.
+     */
     private LocationRequest locationRequest;
-    private Location lastLocation;
+
+    /**
+     * Instance variable currentUserLocationMarker.
+     * This is the marker to mark the user current location.
+     */
     private Marker currentUserLocationMarker;
+
+    /**
+     * Static variable Request_User_Location_Code.
+     */
     private static final int Request_User_Location_Code = 99;
 
-    Button btnAllLayer;
-    ImageButton btnSchLayer, btnCCLayer, btnLibLayer, btnCafeLayer, btnTaxi, btnTaxiOff;
-    static public Intent viewOnMapIntent;
-    DrawerLayout drawer;
-    NavigationView navigationView;
-    ActionBarDrawerToggle toggle;
-    Toolbar toolbar;
-    View mapView;
-    
 
+    /**
+     * Instance variable where Button btnAllLayer in the XML file will be assigned to.
+     */
+    Button btnAllLayer;
+
+    /**
+     * Instance variable where ImageButton btnSchoolLayer in the XML file will be assigned to.
+     */
+    ImageButton btnSchLayer;
+
+    /**
+     * Instance variable where ImageButton btnCCLayer in the XML file will be assigned to.
+     */
+    ImageButton btnCCLayer;
+
+    /**
+     * Instance variable where ImageButton btnLibLayer in the XML file will be assigned to.
+     */
+    ImageButton btnLibLayer;
+
+    /**
+     * Instance variable where ImageButton btnResLayer in the XML file will be assigned to.
+     */
+    ImageButton btnCafeLayer;
+
+    /**
+     * Instance variable where ImageButton btnTaxi in the XML file will be assigned to.
+     */
+    ImageButton btnTaxi;
+
+    /**
+     * Instance variable where ImageButton btnTaxiOff in the XML file will be assigned to.
+     */
+    ImageButton btnTaxiOff;
+
+    /**
+     * Static variable viewOnMapIntent.
+     */
+    static public Intent viewOnMapIntent;
+
+    /**
+     * Instance variable drawer which will be used for displaying the navigation drawer view
+     */
+    DrawerLayout drawer;
+
+    /**
+     * Instance variable where NavigationView navigationView in the XML file will be assigned to.
+     */
+    NavigationView navigationView;
+
+    /**
+     * Instance variable that is used to open and close the navigation drawer.
+     */
+    ActionBarDrawerToggle toggle;
+
+    /**
+     * Instance variable where Toolbar toolbar in the XML file will be assigned to.
+     * This is used mainly to contain the navigation drawer toggle.
+     */
+    Toolbar toolbar;
+
+    /**
+     * Instance variable to display the map fragment.
+     */
+    View mapView;
+
+    /**
+     *
+     */
 
     private TaxiManager taxiManager = new TaxiManager();
     static int NumOfTaxi = 20;
     static MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
     static Marker[] markerListRemove = new Marker[NumOfTaxi];
 
+
+    /**
+     * Override method to assign value to instance variables.
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -161,16 +255,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+
+
     public  void onTaxiRun() throws Exception {
         Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-        JSONArray x = taxiManager.GetTaxiInformation();
-
-
         double[][] ans = taxiManager.NearestTaxi(NumOfTaxi,currentLocation.getLongitude(),currentLocation.getLatitude());
-
-        LatLng latlng;
-        MarkerOptions markerOptions;
-
         for (int i = 0; i < NumOfTaxi; i++){
 
             markerList[i] = new MarkerOptions();
@@ -180,45 +269,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private String readStream(InputStream in) {
-        BufferedReader reader = null;
-        StringBuffer response = new StringBuffer();
-        try {
-            reader = new BufferedReader(new InputStreamReader(in));
-            String line = "";
-            while ((line = reader.readLine()) != null) {
-                response.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        return response.toString();
-    }
-
+    /**
+     * This method is to remove the taxi markers from the map upon clicking btnTaxiOff.
+     * The taxi markers are removed one by one so that removing taxi markers will not affect other markers.
+     */
     public void removeTaxiFromMap(){
         if(markerListRemove.length!=0) {
             for (int i = 0; i < NumOfTaxi; i++) {
                 markerListRemove[i].remove();
             }
-            Log.i("removeTaxiFromMap", "taxis removed "+ markerListRemove.length);
         }
         else {
-            Log.i("removeTaxiFromMap","No Taxi to remove");
         }
     }
 
+    /**
+     * This method is to assign the instance variable viewOnMapIntent with intent from the previous activity.
+     * @param intent intent from the previous activity
+     * @throws IOException
+     * @throws JSONException
+     */
     public static void viewOnMap(Intent intent) throws IOException, JSONException {
         viewOnMapIntent = intent;
-        Log.i("viewOnMapIntent",""+intent);
     }
+
+    /**
+     * This method is to display all Study Areas in the parameter list with a marker on the map and a information window showing the name and distance away.
+     * @param list list of Study Area to be displayed with markers
+     */
 
     public void infoWindow(List<StudyArea> list){
         // creating a marker with a infowindow
@@ -227,33 +305,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             String name = studyArea.getName();
             LatLng latLng = studyArea.getLatLng();
             String distance = studyArea.getDistance();
-            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
+            mMap.addMarker(new MarkerOptions().position(latLng)
                     .snippet(distance + " km")
                     .title(name));
-            //marker.showInfoWindow();
         }
     }
 
+
+    /**
+     * This method is to display the marker and the information window of a selected location.
+     * @param latLng latitude and logitude of the selected location
+     * @param name name of the selected location
+     * @param distance distance away from user current location
+     */
     public void infoWindow(LatLng latLng, String name, double distance){
-        // creating a marker with a infowindow
         double inkm = distance/1000;
         double round = Math.round(inkm * 100.0)/100.0;
-            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng)
+        mMap.addMarker(new MarkerOptions().position(latLng)
                     .snippet(round + " km")
                     .title(name));
-            //marker.showInfoWindow();
     }
 
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
      * If Google Play services is not installed on the device, the user will be prompted to install
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
 
+    /**
+     * This method is to check whether location access is enabled and display the map.
+     * This method is also responsible for reading the local JSon files and loading the Study Areas created into lists.
+     * It also displays different layers of the markers or icons according to user input.
+     * @param googleMap
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -261,9 +347,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
         }
-//        LatLng SINGAPORE = new LatLng(1.354822, 103.867685);
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SINGAPORE,10));
-//        //mMap.animateCamera(CameraUpdateFactory.zoomBy(5));
         try{
             // read geojson layers
             final GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
@@ -301,6 +384,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             //set filter clicker
             btnAllLayer.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to display all Study Areas upon clicking btnAllLayer.
+                 * @param v
+                 */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -308,6 +395,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
            btnLibLayer.setOnClickListener(new View.OnClickListener() {
+               /**
+                * This method is to display all Study Areas belong to the Library category upon clicking btnLibLayer.
+                * @param v
+                */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -316,6 +407,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
            btnCCLayer.setOnClickListener(new View.OnClickListener() {
+               /**
+                * This method is to display all Study Areas belong to the Community Center category upon clicking btnCCLayer.
+                * @param v
+                */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -324,6 +419,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
             btnCafeLayer.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to display all Study Areas belong to the Macdonald's and the Starbucks category upon clicking btnCafeLayer.
+                 * @param v
+                 */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -332,6 +431,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
             btnSchLayer.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to display all Study Areas belong to the School category upon clicking btnSchLayer.
+                 * @param v
+                 */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -340,6 +443,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
             btnTaxi.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to call onTaxiRun() method upon clicking btnTaxi.
+                 * @param v
+                 */
                    @Override
                    public void onClick(View v) {
                        try {
@@ -351,6 +458,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                });
 
             btnTaxiOff.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to call removeTaxiFromMap() method upon clicking btnTaxi.
+                 * @param v
+                 */
                     @Override
                     public void onClick(View v) {
                         try {
@@ -362,6 +473,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 });
 
             mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                /**
+                 * This method is to start DetailActivity class upon clicking a information window.
+                 * The title of the marker will be put to "Name" and the latitude and longitude of the marker will
+                 * be put to "LatLng" under intent and passed to DetailActivity.
+                 * The method also check whether the marker clicked is the current location marker.
+                 * DetailActivity class will only be started if the marker clicked is not the current location marker.
+                 * @param marker the marker that is clicked
+                 */
                 @Override
                 public void onInfoWindowClick(Marker marker) {
                     Intent intent = new Intent(MapsActivity.this , DetailActivity.class);
@@ -375,6 +494,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
+            /**
+             * This is to zoom in to the marker that has the same name as the "Name" field in viewOnMapIntent.
+             */
             if(viewOnMapIntent!=null){
                 String nameClicked = viewOnMapIntent.getStringExtra("Name");
                 for (int i = 0; i < DataHandler.studyAreaList.size(); i++) {
@@ -392,6 +514,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
 
+
+        /**
+         * This is to shift the current location button from the default location to the right bottom corner of the screen.
+         */
         View locationButton = ((View) mapView.findViewById(Integer.parseInt("1")).getParent()).findViewById(Integer.parseInt("2"));
         RelativeLayout.LayoutParams rlp = (RelativeLayout.LayoutParams) locationButton.getLayoutParams();
         // position on right bottom
@@ -399,6 +525,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);rlp.setMargins(0,0,30,30);
     }
 
+
+    /**
+     * This method is to check whether GPS permission is granted for the application.
+     * @return True if permission is granted.
+     */
     public boolean checkUserLocationPermission()
     {
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -419,6 +550,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+
+    /**
+     * This method is to check whether Google API permission is granted.
+     * The permission will only be granted with a authentic Google API key
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
        switch(requestCode)
@@ -443,6 +582,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
        }
     }
 
+    /**
+     * This method is to buildGoogleApiClient.
+     */
     protected synchronized void buildGoogleApiClient()
     {
         googleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
@@ -450,9 +592,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
+    /**
+     * This method is to marker the user current location with a marker and title "user current location"
+     * This method is also used to calculate the distance of all Study Area away from the user current location.
+     * @param location user current location
+     */
     @Override
     public void onLocationChanged(Location location) {
-        lastLocation = location;
         if (currentUserLocationMarker != null) {
             currentUserLocationMarker.remove();
         }
@@ -483,7 +629,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-
+    /**
+     * This method is to send location request in a fixed time interval
+     * @param bundle
+     */
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         locationRequest = new LocationRequest();
@@ -498,16 +647,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    /**
+     * Override method
+     * @param i
+     */
     @Override
     public void onConnectionSuspended(int i) {
 
     }
 
+    /**
+     * Override method
+     * @param connectionResult
+     */
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
 
+    /**
+     * This method is listener method of the navigation drawer.
+     * If button StudyGoWhere is clicked, SGWActivity will be started
+     * If button account is clicked, the value of Un will be checked.
+     * If Un is null, it means that the user has not logged in. LoginActivity will be started.
+     * If Um is not null, ProfileActivity will be started.
+     * The drawer will be closed after pressing the back button even the new activity is opened from the drawer.
+     * @param menuItem
+     * @return
+     */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id=menuItem.getItemId();

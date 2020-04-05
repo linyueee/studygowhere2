@@ -20,15 +20,39 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+
+
+/**
+ * <h1>Reset Password controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * The method stores the parameters into local variables and passes them into the php file.
+ * THe php file returns a String containing a message.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class ResetPasswordWorker extends AsyncTask<String, Void, String> {
 
-
+    /**
+     * Instance variable context
+     */
     Context context;
 
+    /**
+     * constructor with parameter context
+     * @param context
+     */
     public ResetPasswordWorker(Context context) {
         this.context = context;
     }
 
+
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String verifyAcc_URL = "https://studygowhere.000webhostapp.com/Resetpassword.php";
@@ -67,6 +91,12 @@ public class ResetPasswordWorker extends AsyncTask<String, Void, String> {
         return null;
     }
 
+
+    /**
+     * This method is to display the message returned from the php file.
+     * If the message is "Password reset", LoginActivity will be started.
+     * @param s string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String s) {
         Toast toast = Toast.makeText(context, s, Toast.LENGTH_SHORT);

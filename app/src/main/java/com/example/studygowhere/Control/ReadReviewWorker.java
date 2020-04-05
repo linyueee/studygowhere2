@@ -18,14 +18,37 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class ReadReviewWorker extends AsyncTask <String, Void, String> {
 
+/**
+ * <h1>Read Review controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * The method stores the parameters into local variables and passes them into the php file.
+ * THe php file returns a JSON String containing username, Study Area name, review and rating combinations where the
+ * Study Area name is equal to the name passed in.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
+public class ReadReviewWorker extends AsyncTask <String, Void, String> {
+    /**
+     * Instance variable context
+     */
     Context context;
 
+    /**
+     * constructor with parameter context
+     * @param context
+     */
     public ReadReviewWorker(Context context) {
         this.context = context;
     }
 
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String readReview_URL = "https://studygowhere.000webhostapp.com/Readreviewindetail.php";
@@ -62,10 +85,13 @@ public class ReadReviewWorker extends AsyncTask <String, Void, String> {
         return null;
     }
 
+
+    /**
+     * This method is to pass the JSon string returned from the php file in to method DisplayReview as parameter.
+     * @param s string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String s) {
-        //Log.i("check", "content"+ s);
-        //DetailActivity.DisplayReviewMgr displayReviewMgr = new DetailActivity.DisplayReviewMgr(s);
         DetailActivity.DisplayReview(s);
     }
 }

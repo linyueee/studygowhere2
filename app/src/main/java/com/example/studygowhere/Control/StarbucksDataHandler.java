@@ -6,14 +6,33 @@ import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 import com.google.maps.android.geojson.GeoJsonPoint;
 
+
+/**
+ * <h1>Starbucks data controller</h1>
+ * This class implements from DataHandler interface and is used to handle Starbucks data.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class StarbucksDataHandler implements DataHandler {
+    /**
+     * This is a static variable that is used to ensure the Starbucks objects are only
+     * created once.
+     */
     public static boolean addSBObjectFlag = false;
 
+
+    /**
+     * This class is responsible for parsing the local geoJSon file and creating Study Area
+     * Objects using the data as attributes.
+     * The Study Area objects created are passed in to a cafe list which is used for filtering
+     * and a general Study Area list which contains all Study Areas.
+     * @param layer
+     */
     public void addObject(GeoJsonLayer layer) {
         for(GeoJsonFeature feature:layer.getFeatures())
         {
             StudyArea sa = new StudyArea();
-            sa.setType("Starbucks");
             if(feature.getProperty("Name") != null)
             {
                 String name = feature.getProperty("Name");

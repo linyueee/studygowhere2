@@ -3,125 +3,153 @@ package com.example.studygowhere.Entity;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.Comparator;
-
-public class StudyArea implements Comparable{
+/**
+ * <h1>StudyArea Entity</h1>
+ * This is a StudyArea Entity class that specify the attributes of StudyArea object.
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
+public class StudyArea{
+    /**
+     * Instance variable that stores the name of the StudyArea
+     */
     private String name;
+
+    /**
+     * Instance variable that stores the URL of the image of the StudyArea
+     */
     private String imageURL;
+
+    /**
+     * Instance variable that stores the address of the StudyArea
+     */
     private String address;
-    private int zipCode;
-    private String website;
-    private String type;
+
+    /**
+     * Instance variable that stores the latitude and longitude of the StudyArea
+     */
     private LatLng latLng;
+
+    /**
+     * Instance variable that stores the distance away from user current location
+     */
     private String distance;
+
+    /**
+     * Instance variable that stores the distance away from user current location
+     */
     private double distanceDouble;
 
-    public StudyArea(String name, String imageURL, String address, int zipCode, String website, String type) {}
 
-    public StudyArea(String name, String imageURL, String address, int zipCode, String website, String type, LatLng latLng) {
-        this.name = name;
-        this.imageURL = imageURL;
-        this.address = address;
-        this.zipCode = zipCode;
-        this.website = website;
-        this.type = type;
-        this.latLng = latLng;
-    }
-
-    public StudyArea(String name, String imageURL) {
-        this.name = name;
-        this.imageURL = imageURL;
-    }
-
+    /**
+     * Constructor
+     */
     public StudyArea() {
 
     }
 
+    /**
+     * Getter method of instance variable name
+     * @return StudyArea name
+     */
     public String getName() {
         return name;
     }
 
+
+    /**
+     * Setter method of instance variable name
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+
+    /**
+     * Getter method of instance variable imageURL
+     * @return URL of the image
+     */
     public String getImageURL() {
         return imageURL;
     }
 
+
+    /**
+     * Setter method of instance variable imageURL
+     * @param imageURL
+     */
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
     }
 
+
+    /**
+     * Getter method of instance variable address
+     * @return address
+     */
     public String getAddress() {
         return address;
     }
 
+
+    /**
+     * Setter method of instance variable address
+     * @param address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public int getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(int zipCode) {
-        this.zipCode = zipCode;
-    }
-
-    public String getWebsite() {
-        return website;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
+    /**
+     * Getter method of instance variable latLng
+     * @return latitude and longitude
+     */
     public LatLng getLatLng() { return latLng; }
 
+
+    /**
+     * Setter method of instance variable latLng
+     * @param latLng
+     */
     public void setLatLng(LatLng latLng) { this.latLng = latLng; }
 
+
+    /**
+     * Getter method of instance variable distance
+     * @return distance
+     */
     public String getDistance() {
         return distance;
     }
 
+
+    /**
+     * Setter method of instance variable distance
+     * This method convert the unit of the distance passed in and round it up.
+     * @param distance
+     */
     public void setDistance(double distance) {
         double inkm = distance/1000;
         double round = Math.round(inkm * 100.0)/100.0;
         this.distance = Double.toString(round);
     }
 
-    public static class sortByDistance implements Comparator<StudyArea>
-    {
 
-        @Override
-        public int compare(StudyArea o1, StudyArea o2) {
-            //return o1.getDistance().compareTo(o2.getDistance());
-            return Double.compare(o1.distanceDouble, o2.distanceDouble);
-        }
 
-        @Override
-        public Comparator<StudyArea> reversed() {
-            return null;
-        }
-    }
-    @Override
-    public int compareTo(Object o) {
-        return this.getDistance().compareTo(((StudyArea) o).getDistance());
-
-    }
-
+    /**
+     * Getter method of instance variable distanceDouble
+     * @return distance in double
+     */
     public double getDistanceDouble() {
         return distanceDouble;
     }
 
+
+    /**
+     * Setter method of instance variable distanceDouble
+     * @param distanceDouble
+     */
     public void setDistanceDouble(double distanceDouble) {
         this.distanceDouble = distanceDouble;
     }

@@ -23,14 +23,37 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+
+
+/**
+ * <h1>Account Verification controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class VerifyAccountWorker extends AsyncTask<String, Void, String> {
 
+    /**
+     * Instance variable context
+     */
     Context context;
 
+    /**
+     * constructor with parameter context
+     * @param context
+     */
     public VerifyAccountWorker(Context context) {
         this.context = context;
     }
 
+
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String verifyAcc_URL = "https://studygowhere.000webhostapp.com/VerifyAccount.php";
@@ -71,9 +94,14 @@ public class VerifyAccountWorker extends AsyncTask<String, Void, String> {
         return null;
     }
 
+
+
+    /**
+     * This method is to display the message from the php file.
+     * @param s string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String s) {
-        Log.i("output" , "string" + s);
         JSONObject jsonObject = null;
         try {
             jsonObject = new JSONObject(s);

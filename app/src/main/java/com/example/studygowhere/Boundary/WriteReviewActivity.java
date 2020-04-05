@@ -20,14 +20,55 @@ import com.squareup.picasso.Picasso;
 
 import static com.example.studygowhere.Boundary.LoginActivity.getUn;
 
+
+/**
+ * <h1>Write Review UI</h1>
+ * This is an user interface that allows user to write review and give rating on the selected Study Area.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class WriteReviewActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+
+    /**
+     * Instance variable where ImageView reviewImV in the XML file will be assigned to.
+     */
     ImageView imReviewImage;
+
+    /**
+     * Instance variable where TextView tvReviewLocationName in the XML file will be assigned to.
+     */
     TextView tvReviewName;
-    EditText edReview, edRate;
+
+    /**
+     * Instance variable where EditText edReview in the XML file will be assigned to.
+     */
+    EditText edReview;
+
+    /**
+     * Instance variable where Button btnAddReview in the XML file will be assigned to.
+     */
     Button btnAddReview;
+
+    /**
+     * Instance variable that stores the Study Area name of the selected Study Area by using getIntentExtra
+     */
     String StudyAreaName;
+
+    /**
+     * Instance variable that allows that user to selected a rating from 1 to 5
+     */
     Spinner ratingSpinner;
+
+    /**
+     * Instance variable that store the selected rating.
+     */
     String rating;
+
+    /**
+     * Override method to assign value to instance variables.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +88,15 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
 
     }
 
+
+    /**
+     * This method is a listener method of button Add review
+     * A toast message will be shown if static variable Un is null, which indicates the user has yet to login.
+     * If Un is not null, the input review will be stored to local String review and passed to method AddReview
+     * together with Un, the name of the Study Area and the rating.
+     * It will then start DetailActivity while AddReview is running in the thread.
+     * @param view
+     */
     public void AddReview(View view)
     {
         if(getUn() == null)
@@ -63,12 +113,19 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
             Intent intent = new Intent(this, DetailActivity.class);
             intent.putExtra("Name", StudyAreaName);
             startActivity(intent);
-/*            AddReviewWorker arw = new AddReviewWorker(this);
-            arw.execute(getUn(), review, StudyAreaName, getRating());*/
         }
     }
 
 
+
+    /**
+     * This is an override method of the spinner.
+     * It checks the String value of the selected position and sets rating to the selected value.
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if(parent.getSelectedItem().toString().equals("1"))
@@ -93,16 +150,30 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
         }
     }
 
+
+    /**
+     * This is an override method of the spinner
+     * @param parent
+     */
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-        setRating("0");
 
     }
 
+
+    /**
+     * This is a Getter method of instance variable rating
+     * @return string rating
+     */
     public String getRating() {
         return rating;
     }
 
+
+    /**
+     * This is a Setter method of instance variable rating
+     * @param rating the rating that the user gives to the selected Study Area.
+     */
     public void setRating(String rating) {
         this.rating = rating;
     }

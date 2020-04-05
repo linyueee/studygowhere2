@@ -16,17 +16,38 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+/**
+ * <h1>My Review RecyclerView controller</h1>
+ * This class is responsible for putting the Review Objects in recycler view.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    /**
+     * Instance variable context.
+     */
     private Context context;
+
+    /**
+     * Instance variable that contains the Review Objects passed in
+     */
     private List<Review> ReviewList;
 
+    /**
+     * Constructor
+     * @param context context of the activity that construct the adapter object
+     * @param review list of Review objects
+     */
     public MyReviewRecyclerAdapter(Context context, List<com.example.studygowhere.Entity.Review> review) {
         this.context = context;
         ReviewList = review;
         }
 
 
-
+    /**
+     * This class is to assign value to instance variables.
+     */
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mView;
@@ -43,6 +64,13 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
         }
     }
+
+    /**
+     * This is a override method to inflate the recycler view with layout reviews_made.
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -50,6 +78,12 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
         return new MyReviewRecyclerAdapter.ItemViewHolder(view);
     }
 
+
+    /**
+     * This is a override method to set the content of each recyclerView item.
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MyReviewRecyclerAdapter.ItemViewHolder ivh = (MyReviewRecyclerAdapter.ItemViewHolder) holder;
@@ -69,6 +103,11 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
     }
 
+
+    /**
+     * This is a override method to get the size of the instance variable ReviewList.
+     * @return
+     */
     @Override
     public int getItemCount() {
         if(ReviewList != null)

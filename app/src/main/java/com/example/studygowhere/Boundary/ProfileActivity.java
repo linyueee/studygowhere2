@@ -28,21 +28,65 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h1>My Profile UI</h1>
+ * This is an user interface that displays the user's name and profile picture as well as the bookmarks that the user added.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class ProfileActivity extends AppCompatActivity {
 
-    public static boolean bookMarkFlag;
+    /**
+     * Static variable that is set to false when there is an update in user's bookmark.
+     */
+    public static boolean bookmarkFlag = false;
+
+    /**
+     * Instance variable where TextView tvName in the XML file will be assigned to.
+     */
     TextView tvName;
-    Button btnBack, btnLogout, btnMyReview;
+
+    /**
+     * Instance variable where Button btnBack in the XML file will be assigned to.
+     */
+    Button btnBack;
+
+    /**
+     * Instance variable where Button btnLogout in the XML file will be assigned to.
+     */
+    Button btnLogout;
+
+    /**
+     * Instance variable where Button btnMyReviews in the XML file will be assigned to.
+     */
+    Button btnMyReview;
+
+    /**
+     * Static variable where RecyclerView recycler_view_profile in the XML file will be assigned to.
+     */
     static RecyclerView rvBookmark;
+
+    /**
+     * Static variable that store the context of ProfileActivity.
+     */
     static Context context;
-    static boolean bookmarkFlag = false;
+
+    /**
+     * Static variable that store the list of bookmark added.
+     */
     static List<StudyArea> BookmarkList;
 
-
+    /**
+     * Override method to assign value to instance variables.
+     * It also calls the ReadBookmark method by passing in Un as parameter.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         btnBack = (Button) findViewById(R.id.btnBack);
         btnLogout = (Button) findViewById(R.id.btnLogout);
         tvName = (TextView) findViewById(R.id.tvName);
@@ -52,13 +96,23 @@ public class ProfileActivity extends AppCompatActivity {
         tvName.setText(getUn());
 
         btnBack.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Upon clicking btnBack, MapsActivity class will be started.
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(ProfileActivity.this, MapsActivity.class);
                 startActivity(i);
             }
         });
+
+
         btnLogout.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Upon clicking btnLogout, LoginActivity class will be started.
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 setUn(null);
@@ -68,6 +122,10 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
         btnMyReview.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Upon clicking btnMyReview, MyReviewActivity class will be started.
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(ProfileActivity.this, MyReviewActivity.class);
@@ -77,10 +135,17 @@ public class ProfileActivity extends AppCompatActivity {
 
         Worker readBm = new Worker(this);
         readBm.ReadBookmark(getUn());
-/*        ReadBookmarkWorker rbw = new ReadBookmarkWorker(this);
-        rbw.execute(getUn());*/
     }
 
+
+    /**
+     * This method is to parse the JSon string returned from the Database and add the Study Area names that the user
+     * has added into a bookmark arraylist. This arraylist of Study Area name is later compared with the arrarlist containing
+     * all Study Areas to find out other attributes of the corresponding Study Area.
+     * The Study Areas with name matches the name in bookmark list is put in another arraylist.
+     * This arraylist is then passed into an adapter to be displayed in recycler view.
+     * @param result JSon string returned from the Database containing the name of Study Area.
+     */
     static public void DisplayBookmark(String result) {
         List<String> myBookmarkString;
         RecyclerView.Adapter mAdapter;
@@ -121,6 +186,11 @@ public class ProfileActivity extends AppCompatActivity {
         rvBookmark.setAdapter(mAdapter);
     }
 
+
+    /**
+     * Getter method of context
+     * @return context
+     */
     static public Context getContext()
     {
         return context;

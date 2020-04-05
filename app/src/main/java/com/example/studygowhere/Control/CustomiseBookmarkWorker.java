@@ -19,14 +19,42 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class CustomiseBookmarkWorker extends AsyncTask<String, Void, String> {
 
+/**
+ * <h1>Customise Bookmark controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * If the type passed in is "Add", the username and the Study Area name values will be stored into
+ * local variables user_name and saname and passed into the php file. The php file will do a INSERT sql query on the
+ * Database and return a message string accordingly.
+ * If the type passed in is "Delete", the username and the Study Area name values will
+ * be stored into local variables and then passed into the php file. The php file will do a DELETE query.
+ * If the query fails, it means the username and Study Area pair is not in the bookmark Database.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
+public class CustomiseBookmarkWorker extends AsyncTask<String, Void, String> {
+    /**
+     * Instance variable context
+     */
     Context context;
 
+    /**
+     * constructor with parameter context
+     * @param ctx
+     */
     public CustomiseBookmarkWorker(Context ctx)
     {
         context = ctx;
     }
+
+
+    /**
+     * This method is to do background operation on background thread.
+     * @param params parameters can be of any types and number
+     * @return
+     */
     @Override
     protected String doInBackground(String... params) {
         String username = params[0];
@@ -75,24 +103,22 @@ public class CustomiseBookmarkWorker extends AsyncTask<String, Void, String> {
         return null;
     }
 
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-    }
 
+    /**
+     * This method is to display a message from the php file
+     * Delete bookmark is successful, ProfileActivity will be started.
+     * @param result string result returned from the php file
+     */
     @Override
     protected void onPostExecute(String result) {
         Toast toast=Toast. makeText(context,result, Toast.LENGTH_LONG);
         toast.show();
-        ProfileActivity.bookMarkFlag = false;
+        ProfileActivity.bookmarkFlag = false;
         if(result.equals("Deleted from your bookmark"))
         {
             context.startActivity(new Intent(context, ProfileActivity.class));
         }
     }
 
-    @Override
-    protected void onProgressUpdate(Void... values) {
-        super.onProgressUpdate(values);
-    }
+
 }

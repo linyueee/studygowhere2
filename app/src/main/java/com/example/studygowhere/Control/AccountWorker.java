@@ -25,15 +25,49 @@ import android.os.Bundle;
 import com.example.studygowhere.Boundary.LoginActivity;
 import com.example.studygowhere.Boundary.ProfileActivity;
 
+
+/**
+ * <h1>Login and register controller</h1>
+ * This is a asynchronous class that passes values into php files and the php files return
+ * a string value after communicating with the Database.
+ * If the type passed in is "login", the username and the password values will be stored into
+ * local variables user_name and pw and passed into the php file. The php file will do a sql query on the
+ * Database and return a string message accordingly.
+ * If the type passed in is "register", the username, the password, the email and the phone number will
+ * be stored into local variables and then passed into the php file. The php file will do a INSERT query.
+ * If the query fails, it means the username has already existed.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class AccountWorker extends AsyncTask<String, Void, String>
     {
+        /**
+         * Instance variable context
+         */
         Context context;
+
+        /**
+         * Instance variable alertdialog
+         */
         AlertDialog alertDialog;
 
+
+        /**
+         * constructor with parameter context
+         * @param ctx
+         */
         public AccountWorker(Context ctx)
         {
             context = ctx;
         }
+
+
+        /**
+         * This method is to do background operation on background thread.
+         * @param params parameters can be of any types and number
+         * @return
+         */
         @Override
         protected String doInBackground(String... params) {
             String type = params[0];
@@ -117,18 +151,26 @@ public class AccountWorker extends AsyncTask<String, Void, String>
             return null;
         }
 
+
+        /**
+         * This method is to display a alert dialog before the main thread begins
+         */
         @Override
         protected void onPreExecute() {
             alertDialog = new AlertDialog.Builder(context).create();
             alertDialog.setTitle("LoginActivity Status");
         }
 
+
+        /**
+         * This method is to display message in the alert dialog and update the UI accordingly
+         * @param result string result returned from the php file
+         */
         @Override
         protected void onPostExecute(String result) {
             alertDialog.setMessage(result);
             alertDialog.show();
 
-            Log.i("result","hello: "+ result);
 
             if(result.equals("Welcome"))
             {
@@ -141,11 +183,6 @@ public class AccountWorker extends AsyncTask<String, Void, String>
                 toast.show();
                 context.startActivity(new Intent(context, LoginActivity.class));
             }
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-            super.onProgressUpdate(values);
         }
 
     }

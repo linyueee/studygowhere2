@@ -22,9 +22,31 @@ import java.util.List;
 
 import static com.example.studygowhere.Boundary.LoginActivity.getUn;
 
+
+/**
+ * <h1>My Review UI</h1>
+ * This is an user interface that displays the reviews made by the current user in revyvler view.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class MyReviewActivity extends AppCompatActivity {
+
+    /**
+     * Static variable where RecyclerView my_recycler_view in the XML file will be assigned to.
+     */
     static RecyclerView rvMyReview;
+
+    /**
+     * Static variable that store the context of MyReviewActivity.
+     */
     static Context context;
+
+    /**
+     * Override method to assign value to instance variables.
+     * It also calls the ReadMyReview method by passing in Un as parameter.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +55,17 @@ public class MyReviewActivity extends AppCompatActivity {
         rvMyReview = (RecyclerView) findViewById(R.id.my_recycler_view);
         Worker readMyReview = new Worker(this);
         readMyReview.ReadMyReview(getUn());
-/*        ReadMyReviewWorker rmRW = new ReadMyReviewWorker(this);
-        rmRW.execute(getUn());*/
     }
 
+
+    /**
+     * This method is to display all reviews made by the current user and put them into recycler view.
+     * This JSon string result is first parsed and stored in local variables.
+     * The variables are used to instantiate Review Objects and the objects are added to a list.
+     * The list is then pass into adapter to be displayed in recycler view.
+     * @param result JSon string returned from the Database containing the name of Study Area that the user has
+     *               reviewed on, the content of the review and the rating that the user gave.
+     */
     static public void DisplayReview(String result)
     {
         RecyclerView.Adapter mAdapter;
@@ -78,10 +107,20 @@ public class MyReviewActivity extends AppCompatActivity {
         rvMyReview.setAdapter(mAdapter);
     }
 
+
+    /**
+     * Getter method of context
+     * @return context
+     */
     public static Context getContext() {
         return context;
     }
 
+
+    /**
+     * Setter method of context
+     * @param context
+     */
     public static void setContext(Context context) {
         DetailActivity.context = context;
     }
