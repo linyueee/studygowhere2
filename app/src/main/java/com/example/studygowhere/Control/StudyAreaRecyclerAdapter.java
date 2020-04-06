@@ -144,7 +144,7 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
 
 
     /**
-     * This is a override method to get the size of the instance variable studyArea.
+     * This is an override method to get the size of the instance variable studyArea.
      * @return
      */
     @Override
@@ -155,12 +155,24 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
         return 0;
     }
 
+    /**
+     * This is an override method to get the filter that can be used to constrain data with a filtering pattern.
+     * @return a filter used to constrain data
+     */
     @Override
     public Filter getFilter(){
         return exampleFilter;
     }
 
+    /**
+     * Instance variable that contains a filter used to constrain data
+     */
     private Filter exampleFilter = new Filter() {
+        /**
+         * This is an override method to filter the data according to the constraint.
+         * @param constraint
+         * @return The results of the filtering operation
+         */
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
             List<StudyArea> filteredList = new ArrayList<>();
@@ -177,10 +189,15 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
                 }
             }
             FilterResults results = new FilterResults();
-            results.values =filteredList;
+            results.values = filteredList;
             return results;
         }
 
+        /**
+         * This is an override method to publish the filtering results in the user interface.
+         * @param constraint
+         * @param results
+         */
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             studyArea.clear();
