@@ -11,8 +11,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * <h1>Weather Information controller</h1>
+ * This is a class that parses weather data and finds the weather of the area closest to the location provided.
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class WeatherManager {
-
+    /**
+     * This method parses weather data JSONObject obtained from API URL.
+     * @param jo JSONObject to be parsed
+     * @return Return a HashMap with area name mapped to an array containing its latitude,longitude, and weather
+     */
     public HashMap<String, List<String>> weatherParse(JSONObject jo) throws JSONException {
         JSONArray areaLatLng=null;
         JSONArray areaWeather=null;
@@ -34,6 +44,13 @@ public class WeatherManager {
         return weatherDetails;
     }
 
+    /**
+     * This method finds the weather of the nearest area from a given Latitude and Longitude
+     * @param weatherDetails This is the HashMap containing weather details
+     * @param Latitude This double variable contains the latitude of the location of which weather details is requested
+     * @param Longitude This double variable contains the Longitude of the location of which weather details is requested
+     * @return Return a String containing weather of the nearest area from given Latitude and Longitude
+     */
     public String getNearestAreaWeather(HashMap<String,List<String>> weatherDetails,double Latitude, double Longitude) throws Exception {
         double closestDist=0.0;
         String closestWeather="";
@@ -70,7 +87,14 @@ public class WeatherManager {
         //Log.d("closest",closestArea+" "+closestWeather+" "+String.valueOf(closestDist));
         return closestWeather;
     }
-
+    /**
+     * This method calculates the distance between two locations given their latitudes and longitudes
+     * @param Latitude This double variable contains the Latitude of the area being checked for distance from location
+     * @param Longitude This double variable contains the Longitude of the area being checked for distance from location
+     * @param LocationLatitude This double variable contains the Latitude of the location of which weather details is requested
+     * @param LocationLongitude This is contains the Longitude of the location of which weather details is requested
+     * @return Return a double containing the distance between a given area and the current location
+     */
     public double CalculateDistanceFromArea(double Latitude, double Longitude, double LocationLatitude, double LocationLongitude) {
         double r = 6371e3;
         double TaxLat = Math.toRadians(Latitude);

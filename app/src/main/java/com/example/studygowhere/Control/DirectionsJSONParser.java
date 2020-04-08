@@ -11,12 +11,32 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+/**
+ * <h1>Route Directions controller</h1>
+ * This is a class that parses directions data from a JSON Object and finds routes and details between two locations.
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class DirectionsJSONParser {
-    /** Receives a JSONObject and returns a list of lists containing latitude and longitude */
+    /**
+     * Instance variable instructions
+     * This is list of string lists containing travel details for various routes
+     */
     private ArrayList<ArrayList<String>> instructions;
+    /**
+     * Method to get route instructions
+     * @return Returns the instance variable instructions
+     * */
     public ArrayList<ArrayList<String>> getInstructions() {
         return instructions;
     }
+
+    /**
+     * Method to parse obtained JSONObject for directions
+     * @param jObject JSONObject to be parsed
+     * @return Returns a list of lists containing HashMaps with latitudes and longitudes for each step
+     * */
     public List<List<HashMap<String,String>>> parse(JSONObject jObject){
 
         List<List<HashMap<String, String>>> routes = new ArrayList<>() ;
@@ -70,6 +90,8 @@ public class DirectionsJSONParser {
     /**
      * Method to decode polyline points
      * Courtesy : jeffreysambells.com/2010/05/27/decoding-polylines-from-google-maps-direction-api-with-java
+     * @param encoded Encoded polyline
+     * @return Returns a list of LatLngs drawing out a route
      * */
     private List<LatLng> decodePoly(String encoded) {
 

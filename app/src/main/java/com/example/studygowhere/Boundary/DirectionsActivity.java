@@ -63,33 +63,117 @@ import java.util.List;
 
 import static com.example.studygowhere.Boundary.LoginActivity.getUn;
 
+/**
+        * <h1>Directions UI</h1>
+        * This is a user interface that is responsible for displaying a google map and the travel
+        * route between two locations
+        *
+        * @author ILOVESSADMORE
+        * @version 1.0
+        */
 public class DirectionsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener, NavigationView.OnNavigationItemSelectedListener
 {
+    /**
+     * Instance variable mMap.
+     */
     private GoogleMap mMap;
+    /**
+     * Instance variable googleApiClient.
+     */
     private GoogleApiClient googleApiClient;
+    /**
+     * Instance variable locationRequest.
+     */
     private LocationRequest locationRequest;
-    private Location lastLocation;
+    /**
+     * Instance variable currentUserLocationMarker.
+     * This is the marker to mark the user current location.
+     */
     private Marker currentUserLocationMarker;
+    /**
+     * Static constant containing User Location Code Request
+     */
     private static final int Request_User_Location_Code = 99;
-    Button btnDetails, btnExit;
+    /**
+     * Instance variable btnDetails
+     * Refers to the button detail in the XML Layout
+     */
+    Button btnDetails;
+    /**
+     * Instance variable btnExit
+     * Refers to the button exit in the XML Layout
+     */
+    Button btnExit;
+    /**
+     * Instance variable mOrigin
+     * Contains latitude and longitude of the origin
+     */
     private LatLng mOrigin;
+    /**
+     * Instance variable mDestination
+     * Contains latitude and longitude of the destination
+     */
     private LatLng mDestination;
+    /**
+     * Instance variable mPolyLine
+     * Refers to the polyline for the route
+     */
     private Polyline mPolyline;
+    /**
+     * Instance variable mode
+     * Refers to the mode of travel passed with the intent
+     */
     private String mode;
+    /**
+     * Instance variable drawer which will be used for displaying the navigation drawer view
+     */
     DrawerLayout drawer;
+    /**
+     * Instance variable where NavigationView navigationView in the XML file will be assigned to.
+     */
     NavigationView navigationView;
+    /**
+     * Instance variable that is used to open and close the navigation drawer.
+     */
     ActionBarDrawerToggle toggle;
+    /**
+     * Instance variable where Toolbar toolbar in the XML file will be assigned to.
+     * This is used mainly to contain the navigation drawer toggle.
+     */
     Toolbar toolbar;
+    /**
+     * Instance variable called later to parse weather data
+     */
     private WeatherManager weatherManager = new WeatherManager();
+    /**
+     * Static constant for Request Code
+     */
     private static final int REQUEST_CODE = 101;
+    /**
+     * Contains the currentLocation details
+     */
     Location currentLocation;
+    /**
+     * Instance variable intent
+     * Refers to the intent that started this activity
+     */
     Intent intent;
+    /**
+     * ArrayList containing strings of travel instructions
+     */
     ArrayList<ArrayList<String>> inst;
+    /**
+     * Instance variable fusedLocationProviderClient
+     */
     FusedLocationProviderClient fusedLocationProviderClient;
-
+    /**
+     * Override method to initialize DirectionsActivity
+     *
+     * @param savedInstanceState The last saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -153,9 +237,12 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         toggle.syncState();
 
     }
-
+    /**
+     * This method is to marker the user current location with a marker and title "user current location"
+     * This method is also used to draw route from user location to destination and update weather details.
+     * @param location user current location
+     */
     public void onLocationChanged(Location location) {
-        lastLocation = location;
         if (currentUserLocationMarker != null) {
             currentUserLocationMarker.remove();
         }
@@ -188,50 +275,34 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         updateWeather();
     }
 
+    /**
+     * Override method to call after onCreate() to connect to googleApiClient
+
+     */
     @Override
     protected void onStart() {
         super.onStart();
         // Connect the client.
         googleApiClient.connect();
     }
-
-    private void fetchLocation() {
-        if (ActivityCompat.checkSelfPermission(
-                this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
-            return;
-        }
-        Task<Location> task = fusedLocationProviderClient.getLastLocation();
-        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                if (location != null) {
-                    currentLocation = location;
-                    Toast.makeText(getApplicationContext(), currentLocation.getLatitude() + "" + currentLocation.getLongitude(), Toast.LENGTH_SHORT).show();
-                    SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-                    assert supportMapFragment != null;
-                    supportMapFragment.getMapAsync(DirectionsActivity.this);
-                }
-            }
-        });
-    }
-
     /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
+     * A method to update weather text
+     * @param originWeather Weather details of current location
+     * @param destinationWeather Weather details of destination location
+
      */
     public void updateTextView(String originWeather,String destinationWeather) {
         TextView weather = (TextView) findViewById(R.id.weather);
         String toThis="Weather:\n"+"Current Location:\n"+originWeather+"\nDestination:\n"+destinationWeather;
         weather.setText(toThis);
     }
-
+    /**
+     * Manipulates the map once available.
+     * This callback is triggered when the map is ready to be used.
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * installed Google Play services and returned to the app.
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -239,6 +310,10 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         currentLocation=LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
     }
 
+    /**
+     * This method is to check whether GPS permission is granted for the application.
+     * @return True if permission is granted.
+     */
     public boolean checkUserLocationPermission()
     {
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -258,7 +333,13 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
             return true;
         }
     }
-
+    /**
+     * This method is to check whether Google API permission is granted.
+     * The permission will only be granted with a authentic Google API key
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch(requestCode)
@@ -282,14 +363,19 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                 return;
         }
     }
-
+    /**
+     * This method is to buildGoogleApiClient.
+     */
     protected synchronized void buildGoogleApiClient()
     {
         googleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
         //googleApiClient.connect();
     }
 
-
+    /**
+     * This method is to send location request in a fixed time interval
+     * @param bundle
+     */
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         locationRequest = new LocationRequest();
@@ -311,15 +397,26 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         }
     }
 
+    /**
+     * Override method
+     * @param i
+     */
     @Override
     public void onConnectionSuspended(int i) {
 
     }
 
+    /**
+     * Override method
+     * @param connectionResult
+     */
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+    /**
+     * A method to draw route between two locations
+     */
     private void drawRoute(){
         // Getting URL to the Google Directions API
         String url = getDirectionsUrl(mOrigin, mDestination);
@@ -330,6 +427,9 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         // Start downloading json data from Google Directions API
         downloadTask.execute(url);
     }
+    /**
+     * A method to update weather details
+     */
     private void updateWeather(){
         Log.d("heree","updateWeather");
         WeatherDownloadTask downloadTask =new WeatherDownloadTask();
@@ -337,7 +437,12 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         Log.d("heree","updateWeather2");
     }
 
-
+    /**
+     * A method to obtain the URL to download data from
+     * @param origin Latitude and Longitude of current location
+     * @param dest Latitude and Longitude of destination location
+     * @return Returns string of URL to download data from
+     */
     private String getDirectionsUrl(LatLng origin,LatLng dest){
 
         // Origin of route
@@ -362,7 +467,11 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         return url;
     }
 
-    /** A method to download json data from url */
+    /**
+     *  A method to download json data from url
+     *  @param strUrl URL to download data from
+     *  @return Returns string of json data obtained
+     */
     private String downloadUrl(String strUrl) throws IOException {
         String data = "";
         InputStream iStream = null;
@@ -405,6 +514,11 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     private class DownloadTask extends AsyncTask<String, Void, String> {
 
         // Downloading data in non-ui thread
+        /**
+         * This method is to do background operation on background thread.
+         * @param url String containing the url
+         * @return JSONObject string received from URL
+         */
         @Override
         protected String doInBackground(String... url) {
 
@@ -423,6 +537,10 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
         // Executes in UI thread, after the execution of
         // doInBackground()
+        /**
+         * This method parses the JSONObject obtained
+         * @param result The result from URl in background task
+         */
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
@@ -438,6 +556,11 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     private class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<String,String>>> > {
 
         // Parsing the data in non-ui thread
+        /**
+         * This method is to do background operation on background thread.
+         * @param jsonData JSONObject to be parsed
+         * @return List of parsed direction details
+         */
         @Override
         protected List<List<HashMap<String, String>>> doInBackground(String... jsonData) {
 
@@ -458,6 +581,10 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         }
 
         // Executes in UI thread, after the parsing process
+        /**
+         * This method is to update the route with obtained route details
+         * @param result List of polyline lists parsed from JSON Object
+         */
         @Override
         protected void onPostExecute(List<List<HashMap<String, String>>> result) {
             ArrayList<LatLng> points = null;
@@ -499,10 +626,15 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                 Toast.makeText(getApplicationContext(),"No route is found", Toast.LENGTH_LONG).show();
         }
     }
-    /** A class to download data from Weather API URL */
+    /** An asynchronous class to download data from Weather API URL */
     private class WeatherDownloadTask extends AsyncTask<Void, Void, String> {
 
         // Downloading data in non-ui thread
+        /**
+         * This method is to do background operation on background thread.
+         * @param params Void in this case
+         * @return JSONObject string received from URL
+         */
         @Override
         protected String doInBackground(Void... params) {
 
@@ -522,6 +654,10 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
         // Executes in UI thread, after the execution of
         // doInBackground()
+        /**
+         * This method parses the JSONObject obtained
+         * @param result The result from URl in background task
+         */
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
@@ -532,10 +668,15 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
             parserTask.execute(result);
         }
     }
-    /** A class to parse the Weather Data in JSON format */
+    /** An asynchronous class to parse the Weather Data in JSON format */
     private class WeatherParserTask extends AsyncTask<String, Integer, HashMap<String, List<String>> > {
 
         // Parsing the data in non-ui thread
+        /**
+         * This method is to do background operation on background thread.
+         * @param jsonData JSONObject to be parsed
+         * @return HashMap of parsed weather details
+         */
         @Override
         protected HashMap<String, List<String>> doInBackground(String... jsonData) {
 
@@ -553,6 +694,10 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         }
 
         // Executes in UI thread, after the parsing process
+        /**
+         * This method is to update the TextView with current weather details
+         * @param result HashMap result parsed from JSON Object
+         */
         @Override
         protected void onPostExecute(HashMap<String, List<String>> result) {
             try {
@@ -566,6 +711,17 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         }
 
     }
+
+    /**
+     * This method is listener method of the navigation drawer.
+     * If button StudyGoWhere is clicked, SGWActivity will be started
+     * If button account is clicked, the value of Un will be checked.
+     * If Un is null, it means that the user has not logged in. LoginActivity will be started.
+     * If Um is not null, ProfileActivity will be started.
+     * The drawer will be closed after pressing the back button even the new activity is opened from the drawer.
+     * @param menuItem Refers to the menu item selected
+     * @return
+     */
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

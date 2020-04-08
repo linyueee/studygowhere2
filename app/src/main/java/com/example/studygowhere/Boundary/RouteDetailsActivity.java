@@ -9,10 +9,30 @@ import com.example.studygowhere.R;
 
 import java.util.ArrayList;
 
-public class RouteDetailsActivity extends AppCompatActivity {
+/**
+ * <h1>Route Details UI</h1>
+ * This is an user interface that allows user to view details of the public transport route selected.
+ *
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 
+public class RouteDetailsActivity extends AppCompatActivity {
+    /**
+     * Instance variable InstList.
+     * Refers to the ListView InstList in the XML Layout
+     */
     private ListView InstList;
+    /**
+     * Instance variable instAdapter
+     * ArrayAdapter containing strings from route details to put in ListView
+     */
     private ArrayAdapter<String> instAdapter;
+    /**
+     * Override method to initialize RouteDetailsActivity
+     *
+     * @param savedInstanceState The last saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
