@@ -190,13 +190,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     View mapView;
 
     /**
-     *
+     * Instance variable that controls taxi-related operations
      */
-
     private TaxiManager taxiManager = new TaxiManager();
-    static int NumOfTaxi = 8;
-    static MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
-    static Marker[] markerListRemove = new Marker[NumOfTaxi];
+    /**
+     * Instance variable of the number of taxis to be displayed on the map
+     */
+    int NumOfTaxi = 8;
+    /**
+     * Instance variable markerList
+     * List of markers to be added to the map
+     */
+    MarkerOptions[] markerList = new MarkerOptions[NumOfTaxi];
 
 
     /**
@@ -255,7 +260,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-
+    /**
+     * This method displays all the nearest taxi to user location
+     * It get the longitude and latitude from the taxi API through taxiManager class
+     * @throws Exception
+     */
 
     public  void onTaxiRun() throws Exception {
         Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
@@ -265,22 +274,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             markerList[i] = new MarkerOptions();
             markerList[i].position(new LatLng(ans[i][0], ans[i][1]));
             markerList[i].icon(BitmapDescriptorFactory.fromResource(R.drawable.taxi));
-            markerListRemove[i] = mMap.addMarker(markerList[i]);
+            mMap.addMarker(markerList[i]);
         }
     }
 
     /**
      * This method is to remove the taxi markers from the map upon clicking btnTaxiOff.
-     * The taxi markers are removed one by one so that removing taxi markers will not affect other markers.
+     * Map is cleared and reset to standard view.
      */
     public void removeTaxiFromMap(){
-        mMap.clear();
-        if(markerListRemove.length!=0) {
-            for (int i = 0; i < NumOfTaxi; i++) {
-                markerListRemove[i].remove();
-            }
-        }
-        else {
+        try {
+            mMap.clear();
+            infoWindow(studyAreaList);
+        } catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -323,8 +330,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         double inkm = distance/1000;
         double round = Math.round(inkm * 100.0)/100.0;
         mMap.addMarker(new MarkerOptions().position(latLng)
-                    .snippet(round + " km")
-                    .title(name));
+                .snippet(round + " km")
+                .title(name));
     }
 
     /**
@@ -395,11 +402,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     infoWindow(studyAreaList);
                 }
             });
-           btnLibLayer.setOnClickListener(new View.OnClickListener() {
-               /**
-                * This method is to display all Study Areas belong to the Library category upon clicking btnLibLayer.
-                * @param v
-                */
+            btnLibLayer.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to display all Study Areas belong to the Library category upon clicking btnLibLayer.
+                 * @param v
+                 */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -407,11 +414,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
 
-           btnCCLayer.setOnClickListener(new View.OnClickListener() {
-               /**
-                * This method is to display all Study Areas belong to the Community Center category upon clicking btnCCLayer.
-                * @param v
-                */
+            btnCCLayer.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * This method is to display all Study Areas belong to the Community Center category upon clicking btnCCLayer.
+                 * @param v
+                 */
                 @Override
                 public void onClick(View v) {
                     mMap.clear();
@@ -448,32 +455,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                  * This method is to call onTaxiRun() method upon clicking btnTaxi.
                  * @param v
                  */
-                   @Override
-                   public void onClick(View v) {
-                       try {
-                           onTaxiRun();
-                       } catch (Exception e) {
-                           e.printStackTrace();
-                       }
-                   }
-               });
+                @Override
+                public void onClick(View v) {
+                    try {
+                        onTaxiRun();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
 
             btnTaxiOff.setOnClickListener(new View.OnClickListener() {
                 /**
                  * This method is to call removeTaxiFromMap() method upon clicking btnTaxi.
                  * @param v
                  */
-                    @Override
-                    public void onClick(View v) {
-                        try {
-                            mMap.clear();
-                            //removeTaxiFromMap();
-                            infoWindow(studyAreaList);
-                        } catch(Exception e){
-                            e.printStackTrace();
-                        }
-                    }
-                });
+                @Override
+                public void onClick(View v) {
+                    removeTaxiFromMap();
+                }
+            });
 
             mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                 /**
@@ -510,7 +511,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(clickedLatLng,14));
                     }
                 }
-           }
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -563,26 +564,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-       switch(requestCode)
-       {
-           case Request_User_Location_Code:
-               if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-               {
-                   if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-                   {
-                       if(googleApiClient == null)
-                       {
-                           buildGoogleApiClient();
-                       }
-                       mMap.setMyLocationEnabled(true);
-                   }
-               }
-               else
-               {
-                   Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
-               }
-               return;
-       }
+        switch(requestCode)
+        {
+            case Request_User_Location_Code:
+                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                {
+                    if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+                    {
+                        if(googleApiClient == null)
+                        {
+                            buildGoogleApiClient();
+                        }
+                        mMap.setMyLocationEnabled(true);
+                    }
+                }
+                else
+                {
+                    Toast.makeText(this,"Permission Denied", Toast.LENGTH_SHORT).show();
+                }
+                return;
+        }
     }
 
     /**

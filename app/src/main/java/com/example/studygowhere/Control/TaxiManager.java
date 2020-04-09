@@ -13,15 +13,26 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+/**
+ * <h1>Taxi Information Controller</h1>
+ * This is a asynchronous class that retrieve taxi information from the taxi gov API.
+ * It parses the retrieved information and calculates the nearest taxi to user location.
+ * @author ILOVESSADMORE
+ * @version 1.0
+ */
 public class TaxiManager extends AsyncTask<Void,Void,String> {
 
-    private final String USER_AGENT = "Mozilla/5.0";
+    /**
+     * Instance variable myResponse
+     *
+     */
     private String myResponse;
 
-    public void onRunTaxi(double latitude, double longitude) throws Exception {
-        double[][] ans = NearestTaxi(8, longitude, latitude);
-    }
-
+    /**
+     * This is a background method that gets the taxi information from the taxi api
+     * @param voids
+     * @return returns a string of the response received from the taxi API.
+     */
     @Override
     protected String doInBackground(Void... voids) {
         OkHttpClient client = new OkHttpClient();
@@ -32,7 +43,6 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
 
             @Override
             public void onFailure(Call call, IOException e) {
-                //Log.i("Failure", "hello " + e.getMessage());
                 e.printStackTrace();
             }
 
@@ -41,12 +51,18 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
                 if (response.isSuccessful()) {
                     myResponse = response.body().string();
                 }
-                //Log.i("Failure", "hello2: " + response.toString());
             }
         });
 
         return myResponse;
     }
+
+    /**
+     * This method parses and filters the required taxi information from the json data retrieved from the API
+     * It filters out the coordinate list of taxis in singapore.
+     * @return returns the coordinate list of taxis in singapore
+     * @throws Exception
+     */
 
     public JSONArray GetTaxiInformation() throws Exception {
         String response = doInBackground();
@@ -62,6 +78,14 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         return CoordinateList;
     }
 
+    /**
+     * This method calculates the nearest taxi from the user location
+     * @param NumOfTaxi
+     * @param Longitude
+     * @param Latitude
+     * @return returns a 2d array consisting of the longitude and latitude of the nearest taxis to user location
+     * @throws Exception
+     */
     public double[][] NearestTaxi(int NumOfTaxi, double Longitude, double Latitude) throws Exception {
 
         JSONArray LongLatList = GetTaxiInformation();
@@ -79,7 +103,7 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
             list[i] = 0;
             for (int j = 0; j < DistList.length; j++) {
 
-                if (check(list, j, i)) {
+                if (check(list, j)) {
 
                     System.out.println(j);
                     continue;
@@ -99,7 +123,14 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         return result;
     }
 
-    public boolean check(int[] list, int j, int index) {
+    /**
+     * This method is used as part of the sorting algorithm
+     * It is used to check if the number given is already in the list
+     * @param list
+     * @param j
+     * @return returns true if the number is already in the list, false if any otherwise.
+     */
+    public boolean check(int[] list, int j) {
         for (int i = list.length - 1; i >= 0; i--) {
             if (list[i] == j)
                 return true;
@@ -107,6 +138,14 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         return false;
     }
 
+    /**
+     * This method calculates the distance between 2 points defined by their longitude and latitude.
+     * @param Longitude
+     * @param Latitude
+     * @param UserLocationLatitude
+     * @param UserLocationLongitude
+     * @return returns distance between 2 points.
+     */
     public double CalculateDistanceFromTaxi(double Longitude, double Latitude, double UserLocationLatitude, double UserLocationLongitude) {
         double r = 6371e3;
         double TaxLat = Math.toRadians(Latitude);
