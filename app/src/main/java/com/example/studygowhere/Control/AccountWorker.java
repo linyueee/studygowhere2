@@ -175,7 +175,7 @@ public class AccountWorker extends AsyncTask<String, Void, String>
                 context.startActivity(new Intent(context, ProfileActivity.class));
             }
 
-            if(result.equals("register successful"))
+            if(result.equals("Register successful"))
             {
                 Toast toast = Toast.makeText(context, "Account created", Toast.LENGTH_SHORT);
                 toast.show();
