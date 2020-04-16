@@ -25,17 +25,17 @@ public class ResetPasswordActivity extends AppCompatActivity {
     /**
      * Instance variable where EditText newpass in the XML file will be assigned to.
      */
-    EditText ednewpass;
+    EditText edNewPass;
 
     /**
      * Instance variable where EditText confirmpass in the XML file will be assigned to.
      */
-    EditText edconpass;
+    EditText edConfirmPass;
 
     /**
      * Instance variable where Button btnresetdone in the XML file will be assigned to.
      */
-    Button btnreset;
+    Button btnReset;
 
     /**
      * Static variable that store the username passed by the previous activity using intent.
@@ -53,9 +53,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reset_password);
 
         final Intent intent = getIntent();
-        ednewpass = (EditText) findViewById(R.id.newpass);
-        edconpass = (EditText) findViewById(R.id.confirmpass);
-        btnreset = (Button) findViewById(R.id.btnresetdone);
+        edNewPass = (EditText) findViewById(R.id.newPass);
+        edConfirmPass = (EditText) findViewById(R.id.confirmPass);
+        btnReset = (Button) findViewById(R.id.btnResetDone);
         username = intent.getStringExtra("username");
     }
 
@@ -71,10 +71,10 @@ public class ResetPasswordActivity extends AppCompatActivity {
      */
     public void Reset(View view)
     {
-        String newpass = ednewpass.getText().toString();
-        String confirmpass = edconpass.getText().toString();
+        String newPass = edNewPass.getText().toString();
+        String confirmPass = edConfirmPass.getText().toString();
 
-        if(!newpass.equals(confirmpass))
+        if(!newPass.equals(confirmPass))
         {
             Toast toast=Toast. makeText(this,"The 2 entries must be the same", Toast.LENGTH_LONG);
             toast.show();
@@ -82,7 +82,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         else
         {
             Worker reset = new Worker(this);
-            reset.ResetPassword(username, newpass);
+            reset.ResetPassword(username, newPass);
         }
 
     }

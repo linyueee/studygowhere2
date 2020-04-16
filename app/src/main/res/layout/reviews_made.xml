@@ -24,7 +24,7 @@
                 android:id="@+id/tvRmStudyArea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="putnamehere"
+                android:text="putNameHere"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/rmImage"
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/review"
-                android:text="putcontenthere"
+                android:text="putContentHere"
                 android:layout_toRightOf="@+id/rmImage"
                 android:layout_marginLeft="20dp"/>
 

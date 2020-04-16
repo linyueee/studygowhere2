@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -15,9 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.studygowhere.Control.CustomiseBookmarkWorker;
 import com.example.studygowhere.Control.DataHandler;
-import com.example.studygowhere.Control.ReadReviewWorker;
 import com.example.studygowhere.Control.ReviewRecyclerAdapter;
 import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.Entity.Review;
@@ -320,9 +317,9 @@ public class DetailActivity extends AppCompatActivity {
             toast.show();
         } else {
             String type = "Add";
-            Worker addbm = new Worker(this);
+            Worker addBM = new Worker(this);
             ProfileActivity.bookmarkFlag = false;
-            addbm.AddBookmark(getUn(), intent.getStringExtra("Name"), type);
+            addBM.AddBookmark(getUn(), intent.getStringExtra("Name"), type);
         }
     }
 
@@ -343,11 +340,9 @@ public class DetailActivity extends AppCompatActivity {
             toast.show();
         } else {
             String type = "Delete";
-            Worker delbm = new Worker(this);
+            Worker delBM = new Worker(this);
             ProfileActivity.bookmarkFlag = false;
-            delbm.DeleteBookmark(getUn(), intent.getStringExtra("Name"), type);
-/*            CustomiseBookmarkWorker dbm = new CustomiseBookmarkWorker(this);
-            dbm.execute(getUn(), intent.getStringExtra("Name"), type);*/
+            delBM.DeleteBookmark(getUn(), intent.getStringExtra("Name"), type);
         }
     }
 

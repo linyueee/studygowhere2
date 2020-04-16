@@ -45,8 +45,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 
 import org.json.JSONObject;
@@ -246,7 +244,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         if (currentUserLocationMarker != null) {
             currentUserLocationMarker.remove();
         }
-        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
         mOrigin=new LatLng(location.getLatitude(),location.getLongitude());
         MarkerOptions markerOption = new MarkerOptions();
         markerOption.position(mOrigin);
@@ -431,10 +428,8 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
      * A method to update weather details
      */
     private void updateWeather(){
-        Log.d("heree","updateWeather");
         WeatherDownloadTask downloadTask =new WeatherDownloadTask();
         downloadTask.execute();
-        Log.d("heree","updateWeather2");
     }
 
     /**
@@ -463,7 +458,6 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
 
         // Building the url to the web service
         String url = "https://maps.googleapis.com/maps/api/directions/"+output+"?"+parameters;
-        Log.d("URL","url"+url) ;
         return url;
     }
 
@@ -720,7 +714,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
      * If Um is not null, ProfileActivity will be started.
      * The drawer will be closed after pressing the back button even the new activity is opened from the drawer.
      * @param menuItem Refers to the menu item selected
-     * @return
+     * @return true
      */
 
     @Override

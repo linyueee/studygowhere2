@@ -2,7 +2,6 @@ package com.example.studygowhere.Entity;
 
 import com.google.android.gms.maps.model.LatLng;
 
-import java.util.Comparator;
 /**
  * <h1>StudyArea Entity</h1>
  * This is a StudyArea Entity class that specify the attributes of StudyArea object.

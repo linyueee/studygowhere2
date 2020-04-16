@@ -69,7 +69,6 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         JSONArray CoordinateList = null;
         try {
             JSONObject myResponse = new JSONObject(response);
-            //JSONObject myResponse2 = new JSONObject(myResponse.getString("features[geometry"));
             CoordinateList = (JSONArray) ((JSONObject) ((JSONObject) ((JSONArray) myResponse.get("features")).get(0)).get("geometry")).get("coordinates");
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -96,7 +95,6 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
         for (int i = 0; i < LongLatList.length(); i++) {
             JSONArray dummy = LongLatList.getJSONArray(i);
             DistList[i] = CalculateDistanceFromTaxi(dummy.getDouble(0), dummy.getDouble(1), Latitude, Longitude);
-            //System.out.println(DistList[i]);
         }
 
         for (int i = 0; i < NumOfTaxi; i++) {

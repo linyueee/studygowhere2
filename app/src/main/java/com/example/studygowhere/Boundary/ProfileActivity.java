@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import static com.example.studygowhere.Boundary.LoginActivity.getCurrentUserName;
+import static com.example.studygowhere.Boundary.LoginActivity.getCurrentUsername;
 import static com.example.studygowhere.Boundary.LoginActivity.getUn;
-import static com.example.studygowhere.Boundary.LoginActivity.setCurrentUserName;
+import static com.example.studygowhere.Boundary.LoginActivity.setCurrentUsername;
 import static com.example.studygowhere.Boundary.LoginActivity.setUn;
 
 import android.content.Context;
@@ -150,7 +150,7 @@ public class ProfileActivity extends AppCompatActivity {
         List<String> myBookmarkString;
         RecyclerView.Adapter mAdapter;
         RecyclerView.LayoutManager layoutManager;
-        if (!bookmarkFlag || !getCurrentUserName().equals(getUn())) {
+        if (!bookmarkFlag || !getCurrentUsername().equals(getUn())) {
             BookmarkList = new ArrayList<>();
             myBookmarkString = new ArrayList<>();
             try {
@@ -177,7 +177,7 @@ public class ProfileActivity extends AppCompatActivity {
                 }
             }
             ProfileActivity.bookmarkFlag = true;
-            setCurrentUserName(getUn());
+            setCurrentUsername(getUn());
         }
         rvBookmark.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(ProfileActivity.getContext());

@@ -18,7 +18,7 @@
         />
 
     <EditText
-        android:id="@+id/resetpassusername"
+        android:id="@+id/resetPassUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -34,7 +34,7 @@
         />
 
     <EditText
-        android:id="@+id/resetpassemail"
+        android:id="@+id/resetPassEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -49,7 +49,7 @@
         />
 
     <EditText
-        android:id="@+id/resetpassphone"
+        android:id="@+id/resetPassPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -59,7 +59,7 @@
 
 
     <Button
-        android:id="@+id/btnveri"
+        android:id="@+id/btnVerification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"

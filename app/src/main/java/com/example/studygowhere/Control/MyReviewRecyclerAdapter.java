@@ -27,7 +27,7 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
     /**
      * Instance variable context.
      */
-    private Context context;
+    Context context;
 
     /**
      * Instance variable that contains the Review Objects passed in
@@ -51,16 +51,16 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
     public class ItemViewHolder extends RecyclerView.ViewHolder
     {
         View mView;
-        TextView tvrmContent, tvrmStudyArea, tvrmRating;
+        TextView tvReviewContent, tvReviewStudyArea, tvReviewRating;
         ImageView imSA;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
             imSA = (ImageView) itemView.findViewById(R.id.rmImage);
-            tvrmContent = (TextView) itemView.findViewById(R.id.tvRmContent);
-            tvrmStudyArea = (TextView) itemView.findViewById(R.id.tvRmStudyArea);
-            tvrmRating = (TextView) itemView.findViewById(R.id.tvRmRating);
+            tvReviewContent = (TextView) itemView.findViewById(R.id.tvRmContent);
+            tvReviewStudyArea = (TextView) itemView.findViewById(R.id.tvRmStudyArea);
+            tvReviewRating = (TextView) itemView.findViewById(R.id.tvRmRating);
 
         }
     }
@@ -69,7 +69,7 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
      * This is a override method to inflate the recycler view with layout reviews_made.
      * @param parent
      * @param viewType
-     * @return
+     * @return Inflated View Holder
      */
     @NonNull
     @Override
@@ -88,8 +88,8 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MyReviewRecyclerAdapter.ItemViewHolder ivh = (MyReviewRecyclerAdapter.ItemViewHolder) holder;
         Review rev = ReviewList.get(position);
-        ivh.tvrmContent.setText(rev.getContent());
-        ivh.tvrmStudyArea.setText(rev.getStudyAreaName());
+        ivh.tvReviewContent.setText(rev.getContent());
+        ivh.tvReviewStudyArea.setText(rev.getStudyAreaName());
         for(int i = 0; i < DataHandler.studyAreaList.size(); i++)
         {
             if(DataHandler.studyAreaList.get(i).getName().equals(rev.getStudyAreaName()))
@@ -98,7 +98,7 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
             }
         }
         if(rev.getRating() != null) {
-            ivh.tvrmRating.setText(rev.getRating());
+            ivh.tvReviewRating.setText(rev.getRating());
         }
 
     }
@@ -106,7 +106,7 @@ public class MyReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
     /**
      * This is a override method to get the size of the instance variable ReviewList.
-     * @return
+     * @return Review list size
      */
     @Override
     public int getItemCount() {

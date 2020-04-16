@@ -165,7 +165,7 @@ public class SGWActivity extends AppCompatActivity implements AdapterView.OnItem
     /**
      * This is an override method to create the search icon and create search listener
      * @param menu
-     * @return
+     * @return boolean
      */
     @SuppressLint("ResourceType")
     @Override

@@ -1,7 +1,5 @@
 package com.example.studygowhere.Control;
 
-import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -58,10 +56,8 @@ public class WeatherManager {
         double[][] result = new double[1][];
         for (Map.Entry<String,List<String>> mapElement : weatherDetails.entrySet()) {
             String key = (String)mapElement.getKey();
-            //Log.d("Trying pls 2",key);
 
             List<String> values= mapElement.getValue();
-            //Log.d("Trying pls 3",values.get(0));
             double areaLat=Double.parseDouble(values.get(0));
             double areaLng=Double.parseDouble(values.get(1));
             String weather=values.get(2);
@@ -70,7 +66,6 @@ public class WeatherManager {
             detailsList.add(key);
             detailsList.add(distance);
             detailsList.add(weather);
-            //Log.d("Trying pls 3.8",key+" "+weather+" "+distance);
             DistList.add(detailsList);
         }
         String closestArea=DistList.get(0).get(0);
@@ -84,7 +79,6 @@ public class WeatherManager {
                 closestWeather = DistList.get(i).get(2);
             }
         }
-        //Log.d("closest",closestArea+" "+closestWeather+" "+String.valueOf(closestDist));
         return closestWeather;
     }
     /**

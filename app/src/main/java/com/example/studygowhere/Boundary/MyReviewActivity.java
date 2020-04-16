@@ -8,7 +8,6 @@ import android.content.Context;
 import android.os.Bundle;
 
 import com.example.studygowhere.Control.MyReviewRecyclerAdapter;
-import com.example.studygowhere.Control.ReadMyReviewWorker;
 import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.Entity.Review;
 import com.example.studygowhere.R;

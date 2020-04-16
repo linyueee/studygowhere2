@@ -30,7 +30,7 @@
                 android:id="@+id/tvAuthor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Authorhere"
+                android:text="AuthorHere"
                 android:layout_toRightOf="@+id/By"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvAuthor"
-                android:text="contenthere"
+                android:text="contentHere"
                 android:layout_marginLeft="20dp"/>
 
 

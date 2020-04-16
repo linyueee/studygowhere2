@@ -13,7 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.studygowhere.Control.AddReviewWorker;
 import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
 import com.squareup.picasso.Picasso;

@@ -49,7 +49,7 @@ public class ReadMyReviewWorker extends AsyncTask<String, Void, String> {
     /**
      * This method is to do background operation on background thread.
      * @param params parameters can be of any types and number
-     * @return
+     * @return Json string
      */
     @Override
     protected String doInBackground(String... params) {

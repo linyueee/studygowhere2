@@ -1,6 +1,5 @@
 package com.example.studygowhere.Control;
 import android.text.Html;
-import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
 

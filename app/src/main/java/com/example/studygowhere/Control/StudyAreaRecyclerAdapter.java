@@ -35,7 +35,7 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
     /**
      * Instance variable context.
      */
-    private Context context;
+    Context context;
 
     /**
      * Instance variable that contains the StudyArea Objects passed in
@@ -87,7 +87,7 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
      * This is a override method to inflate the recycler view with layout study_area_list.
      * @param parent
      * @param viewType
-     * @return
+     * @return Inflated view holder
      */
     @NonNull
     @Override
@@ -145,7 +145,7 @@ public class StudyAreaRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
 
     /**
      * This is an override method to get the size of the instance variable studyArea.
-     * @return
+     * @return studyArea list size
      */
     @Override
     public int getItemCount() {

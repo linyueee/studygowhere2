@@ -51,8 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
-        android:text="View On Map"
-        android:onClick="ViewOnMap"/>
+        android:text="View On Map"/>
 
     <Button
         android:id="@+id/btnDelete"

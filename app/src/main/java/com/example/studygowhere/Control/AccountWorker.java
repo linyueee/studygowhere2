@@ -18,9 +18,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import android.util.Log;
 import android.widget.Toast;
-import android.os.Bundle;
 
 import com.example.studygowhere.Boundary.LoginActivity;
 import com.example.studygowhere.Boundary.ProfileActivity;
@@ -66,7 +64,7 @@ public class AccountWorker extends AsyncTask<String, Void, String>
         /**
          * This method is to do background operation on background thread.
          * @param params parameters can be of any types and number
-         * @return
+         * @return Json string
          */
         @Override
         protected String doInBackground(String... params) {

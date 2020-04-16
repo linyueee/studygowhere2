@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.studygowhere.Control.AccountWorker;
 import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
-
-import static com.example.studygowhere.Boundary.LoginActivity.setUn;
 
 
 /**
@@ -72,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         String str_mobile = mobile.getText().toString();
 
         String type = "register";
-        Worker registerworker = new Worker(this);
-        registerworker.Register(type, str_name, str_password, str_email, str_mobile);
+        Worker registerWorker = new Worker(this);
+        registerWorker.Register(type, str_name, str_password, str_email, str_mobile);
     }
 }

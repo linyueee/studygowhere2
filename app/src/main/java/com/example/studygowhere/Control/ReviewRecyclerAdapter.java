@@ -28,7 +28,7 @@ public class ReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     /**
      * Instance variable context.
      */
-    private Context context;
+    Context context;
     /**
      * Instance variable that contains the Review Objects passed in
      */
@@ -69,7 +69,7 @@ public class ReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
      * This is a override method to inflate the recycler view with layout review_list.
      * @param parent
      * @param viewType
-     * @return
+     * @return Inflated View Holder
      */
     @NonNull
     @Override
@@ -98,7 +98,7 @@ public class ReviewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
     /**
      * This is a override method to get the size of the instance variable ReviewList.
-     * @return
+     * @return Review list size
      */
     @Override
     public int getItemCount() {

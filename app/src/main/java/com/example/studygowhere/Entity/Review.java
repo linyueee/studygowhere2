@@ -45,7 +45,7 @@ public class Review {
 
     /**
      * Getter method of instance variable Author
-     * @return
+     * @return Username of the user who made the review
      */
     public String getAuthor() {
         return author;

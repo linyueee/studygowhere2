@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.studygowhere.Control.AccountWorker;
 import com.example.studygowhere.Control.Worker;
 import com.example.studygowhere.R;
 
@@ -51,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Instance variable where Button btnresetpass in the XML file will be assigned to.
      */
-    Button btnreset;
+    Button btnReset;
 
     /**
      * Static variable that store the Username of the user.
@@ -64,9 +62,9 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Static variable that store the previous Username when the user switch account.
      * Since the list of bookmarks is only read from the Database when there is an update to the list,
-     * variable currentUserName is needed to inform the application to read the list of bookmarks from the Database due to a switch of account.
+     * variable currentUsername is needed to inform the application to read the list of bookmarks from the Database due to a switch of account.
      */
-    static private String currentUserName;
+    static private String currentUsername;
 
 
     /**
@@ -82,7 +80,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.login);
         btnRegister = (Button) findViewById(R.id.register);
         btnToMap = (Button) findViewById(R.id.btnToMap);
-        btnreset = (Button) findViewById(R.id.btnresetpass);
+        btnReset = (Button) findViewById(R.id.btnResetPass);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             /**
@@ -108,9 +106,9 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        btnreset.setOnClickListener(new View.OnClickListener() {
+        btnReset.setOnClickListener(new View.OnClickListener() {
             /**
-             * Upon clicking btnreset, AccountVerificationActivity class will be started.
+             * Upon clicking btnReset, AccountVerificationActivity class will be started.
              * @param v
              */
             @Override
@@ -139,8 +137,8 @@ public class LoginActivity extends AppCompatActivity {
         else
              setUn(username);
         String type = "login";
-        Worker loginworker = new Worker(this);
-        loginworker.Login(type, username, password);
+        Worker loginWorker = new Worker(this);
+        loginWorker.Login(type, username, password);
     }
 
     /**
@@ -163,17 +161,17 @@ public class LoginActivity extends AppCompatActivity {
 
     /**
      * Getter method of CurrentUserName.
-     * @return
+     * @return currentUsername
      */
-    public static String getCurrentUserName() {
-        return currentUserName;
+    public static String getCurrentUsername() {
+        return currentUsername;
     }
 
     /**
      * Setter method of CurrentUserName.
      * @param cun
      */
-    public static void setCurrentUserName(String cun) {
-        currentUserName = cun;
+    public static void setCurrentUsername(String cun) {
+        currentUsername = cun;
     }
 }

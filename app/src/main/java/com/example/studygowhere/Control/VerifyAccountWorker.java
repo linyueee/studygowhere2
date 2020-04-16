@@ -3,7 +3,6 @@ package com.example.studygowhere.Control;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.studygowhere.Boundary.ResetPasswordActivity;
@@ -52,7 +51,7 @@ public class VerifyAccountWorker extends AsyncTask<String, Void, String> {
     /**
      * This method is to do background operation on background thread.
      * @param params parameters can be of any types and number
-     * @return
+     * @return json string
      */
     @Override
     protected String doInBackground(String... params) {

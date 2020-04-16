@@ -17,7 +17,6 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -55,14 +54,10 @@ import com.google.android.material.navigation.NavigationView;
 
 import com.google.maps.android.geojson.GeoJsonLayer;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
@@ -250,7 +245,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("StudyGoWhere");
         toolbar.setTitleTextColor(255-255-255);
-        //getSupportActionBar().setTitle("Hello world App");
         navigationView = findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(this);
         toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.open,R.string.close);
@@ -327,8 +321,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * @param distance distance away from user current location
      */
     public void infoWindow(LatLng latLng, String name, double distance){
-        double inkm = distance/1000;
-        double round = Math.round(inkm * 100.0)/100.0;
+        double inKm = distance/1000;
+        double round = Math.round(inKm * 100.0)/100.0;
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .snippet(round + " km")
                 .title(name));
@@ -360,33 +354,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             final GeoJsonLayer librariesLayer = new GeoJsonLayer(mMap, R.raw.libraries, this);
             final GeoJsonLayer ccLayer = new GeoJsonLayer(mMap, R.raw.communityclubs, this);
             final GeoJsonLayer schoolsLayer = new GeoJsonLayer(mMap, R.raw.schools, this);
-            final GeoJsonLayer mcdonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
+            final GeoJsonLayer mcDonaldsLayer = new GeoJsonLayer(mMap, R.raw.mcdonalds, this);
             final GeoJsonLayer starbucksLayer = new GeoJsonLayer(mMap, R.raw.starbucks, this);
 
             //apply geojson layers on map
             if(!addLibObjectFlag) {
-                DataHandler ldh = new LibraryDataHandler();
-                ldh.addObject(librariesLayer);
+                DataHandler libraryDataHandler = new LibraryDataHandler();
+                libraryDataHandler.addObject(librariesLayer);
                 addLibObjectFlag = true;
             }
             if(!addCCObjectFlag) {
-                DataHandler ccdh = new CcDataHandler();
-                ccdh.addObject(ccLayer);
+                DataHandler ccDataHandler = new CcDataHandler();
+                ccDataHandler.addObject(ccLayer);
                 addCCObjectFlag = true;
             }
             if(!addSchoolObjectFlag) {
-                DataHandler sdh = new SchoolDataHandler();
-                sdh.addObject(schoolsLayer);
+                DataHandler schoolDataHandler = new SchoolDataHandler();
+                schoolDataHandler.addObject(schoolsLayer);
                 addSchoolObjectFlag = true;
             }
             if(!addMacObjectFlag) {
-                DataHandler macdh = new McDonaldsDataHandler();
-                macdh.addObject(mcdonaldsLayer);
+                DataHandler mcDonaldsDataHandler = new McDonaldsDataHandler();
+                mcDonaldsDataHandler.addObject(mcDonaldsLayer);
                 addMacObjectFlag = true;
             }
             if(!addSBObjectFlag) {
-                DataHandler sbdh = new StarbucksDataHandler();
-                sbdh.addObject(starbucksLayer);
+                DataHandler starbucksDataHandler = new StarbucksDataHandler();
+                starbucksDataHandler.addObject(starbucksLayer);
                 addSBObjectFlag = true;
             }
 
@@ -677,7 +671,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * If Um is not null, ProfileActivity will be started.
      * The drawer will be closed after pressing the back button even the new activity is opened from the drawer.
      * @param menuItem
-     * @return
+     * @return true
      */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

@@ -18,17 +18,17 @@ public class AccountVerificationActivity extends AppCompatActivity {
     /**
      * Instance variable where EditText resetpassusername in the XML file will be assigned to.
      */
-    EditText edusername;
+    EditText edUsername;
 
     /**
      * Instance variable where EditText resetpassemail in the XML file will be assigned to.
      */
-    EditText edemail;
+    EditText edEmail;
 
     /**
      * Instance variable where EditText resetpassphone in the XML file will be assigned to.
      */
-    EditText edphone;
+    EditText edPhone;
 
     /**
      * Instance variable where Button btnveri in the XML file will be assigned to.
@@ -45,10 +45,10 @@ public class AccountVerificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_verification);
 
-        edusername = (EditText) findViewById(R.id.resetpassusername);
-        edemail = (EditText) findViewById(R.id.resetpassemail);
-        edphone = (EditText) findViewById(R.id.resetpassphone);
-        btnverify = (Button) findViewById(R.id.btnveri);
+        edUsername = (EditText) findViewById(R.id.resetPassUsername);
+        edEmail = (EditText) findViewById(R.id.resetPassEmail);
+        edPhone = (EditText) findViewById(R.id.resetPassPhone);
+        btnverify = (Button) findViewById(R.id.btnVerification);
 
     }
 
@@ -61,9 +61,9 @@ public class AccountVerificationActivity extends AppCompatActivity {
 
     public void VerifyAccount(View view)
     {
-        String Username = edusername.getText().toString();
-        String Email = edemail.getText().toString();
-        String Phone = edphone.getText().toString();
+        String Username = edUsername.getText().toString();
+        String Email = edEmail.getText().toString();
+        String Phone = edPhone.getText().toString();
 
         Worker verifyAcc = new Worker(this);
         verifyAcc.VerifyAccount(Username, Email, Phone);
