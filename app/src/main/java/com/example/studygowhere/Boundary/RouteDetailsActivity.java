@@ -22,7 +22,7 @@ public class RouteDetailsActivity extends AppCompatActivity {
      * Instance variable InstList.
      * Refers to the ListView InstList in the XML Layout
      */
-    private ListView InstList;
+    private ListView instList;
     /**
      * Instance variable instAdapter
      * ArrayAdapter containing strings from route details to put in ListView
@@ -37,12 +37,12 @@ public class RouteDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_details);
-        InstList = (ListView) findViewById( R.id.InstList );
+        instList = (ListView) findViewById( R.id.InstList );
         ArrayList<String> instructions= getIntent().getStringArrayListExtra("details");
         // Create ArrayAdapter using the planet list.
         instAdapter = new ArrayAdapter<String>(this, R.layout.routedetailsrow, instructions);
 
         // Set the ArrayAdapter as the ListView's adapter.
-        InstList.setAdapter( instAdapter );
+        instList.setAdapter( instAdapter );
     }
 }
