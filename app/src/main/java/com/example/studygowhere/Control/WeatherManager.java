@@ -52,7 +52,7 @@ public class WeatherManager {
     public String getNearestAreaWeather(HashMap<String,List<String>> weatherDetails,double Latitude, double Longitude) throws Exception {
         double closestDist=0.0;
         String closestWeather="";
-        List<List<String>> DistList = new ArrayList<List<String>>();
+        List<List<String>> distList = new ArrayList<List<String>>();
         double[][] result = new double[1][];
         for (Map.Entry<String,List<String>> mapElement : weatherDetails.entrySet()) {
             String key = (String)mapElement.getKey();
@@ -66,38 +66,38 @@ public class WeatherManager {
             detailsList.add(key);
             detailsList.add(distance);
             detailsList.add(weather);
-            DistList.add(detailsList);
+            distList.add(detailsList);
         }
-        String closestArea=DistList.get(0).get(0);
-        closestDist=Double.parseDouble(DistList.get(0).get(1));
-        closestWeather=DistList.get(0).get(2);
-        for (int i = 0; i < DistList.size(); i++) {
-            double dist = Double.parseDouble(DistList.get(i).get(1));
+        String closestArea=distList.get(0).get(0);
+        closestDist=Double.parseDouble(distList.get(0).get(1));
+        closestWeather=distList.get(0).get(2);
+        for (int i = 0; i < distList.size(); i++) {
+            double dist = Double.parseDouble(distList.get(i).get(1));
             if (dist <= closestDist) {
                 closestDist = dist;
-                closestArea = DistList.get(i).get(0);
-                closestWeather = DistList.get(i).get(2);
+                closestArea = distList.get(i).get(0);
+                closestWeather = distList.get(i).get(2);
             }
         }
         return closestWeather;
     }
     /**
      * This method calculates the distance between two locations given their latitudes and longitudes
-     * @param Latitude This double variable contains the Latitude of the area being checked for distance from location
-     * @param Longitude This double variable contains the Longitude of the area being checked for distance from location
-     * @param LocationLatitude This double variable contains the Latitude of the location of which weather details is requested
-     * @param LocationLongitude This is contains the Longitude of the location of which weather details is requested
+     * @param latitude This double variable contains the Latitude of the area being checked for distance from location
+     * @param longitude This double variable contains the Longitude of the area being checked for distance from location
+     * @param locationLatitude This double variable contains the Latitude of the location of which weather details is requested
+     * @param locationLongitude This is contains the Longitude of the location of which weather details is requested
      * @return Return a double containing the distance between a given area and the current location
      */
-    public double calculateDistanceFromArea(double Latitude, double Longitude, double LocationLatitude, double LocationLongitude) {
+    public double calculateDistanceFromArea(double latitude, double longitude, double locationLatitude, double locationLongitude) {
         double r = 6371e3;
-        double TaxLat = Math.toRadians(Latitude);
-        double UserLat = Math.toRadians(LocationLatitude);
+        double areaLat = Math.toRadians(latitude);
+        double userLat = Math.toRadians(locationLatitude);
 
-        double alpha = Math.toRadians(Latitude - LocationLatitude);
-        double lamda = Math.toRadians(Longitude - LocationLongitude);
+        double alpha = Math.toRadians(latitude - locationLatitude);
+        double lamda = Math.toRadians(longitude - locationLongitude);
 
-        double a = Math.sin(alpha / 2) * Math.sin(alpha / 2) + Math.cos(UserLat) * Math.cos(TaxLat) * Math.sin(lamda / 2) * Math.sin(lamda / 2);
+        double a = Math.sin(alpha / 2) * Math.sin(alpha / 2) + Math.cos(userLat) * Math.cos(areaLat) * Math.sin(lamda / 2) * Math.sin(lamda / 2);
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
         return r * c;

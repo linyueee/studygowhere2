@@ -94,7 +94,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     /**
      * Static constant containing User Location Code Request
      */
-    private static final int Request_User_Location_Code = 99;
+    private static final int REQUEST_USER_LOCATION_CODE = 99;
     /**
      * Instance variable btnDetails
      * Refers to the button detail in the XML Layout
@@ -317,11 +317,11 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         {
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION))
             {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Request_User_Location_Code);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_USER_LOCATION_CODE);
             }
             else
             {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Request_User_Location_Code);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_USER_LOCATION_CODE);
             }
             return false;
         }
@@ -341,7 +341,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch(requestCode)
         {
-            case Request_User_Location_Code:
+            case REQUEST_USER_LOCATION_CODE:
                 if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
                     if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
