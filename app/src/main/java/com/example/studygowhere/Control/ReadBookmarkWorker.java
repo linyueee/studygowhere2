@@ -92,12 +92,12 @@ public class ReadBookmarkWorker extends AsyncTask<String, Void, String> {
 
 
     /**
-     * This method is to pass the JSon string returned from the php file in to method DisplayBookmark as parameter.
+     * This method is to pass the JSon string returned from the php file in to method displayBookmark as parameter.
      * @param result string result returned from the php file
      */
     @Override
     protected void onPostExecute(String result) {
-        ProfileActivity.DisplayBookmark(result);
+        ProfileActivity.displayBookmark(result);
     }
 
 

@@ -91,11 +91,11 @@ public class ReadMyReviewWorker extends AsyncTask<String, Void, String> {
 
 
     /**
-     * This method is to pass the JSon string returned from the php file in to method DisplayReview as parameter.
+     * This method is to pass the JSon string returned from the php file in to method displayReview as parameter.
      * @param s string result returned from the php file
      */
     @Override
     protected void onPostExecute(String s) {
-        MyReviewActivity.DisplayReview(s);
+        MyReviewActivity.displayReview(s);
     }
 }

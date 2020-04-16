@@ -22,7 +22,7 @@ import java.net.URLEncoder;
 
 
 /**
- * <h1>Reset Password controller</h1>
+ * <h1>reset Password controller</h1>
  * This is a asynchronous class that passes values into php files and the php files return
  * a string value after communicating with the Database.
  * The method stores the parameters into local variables and passes them into the php file.

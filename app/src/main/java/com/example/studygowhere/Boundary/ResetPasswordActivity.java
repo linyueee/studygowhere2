@@ -14,7 +14,7 @@ import com.example.studygowhere.R;
 
 
 /**
- * <h1>Reset Password UI</h1>
+ * <h1>reset Password UI</h1>
  * This is an user interface that allows user to input a new password twice to ensure it is correct.
  * The password entered will then be updated in the Database.
  *
@@ -62,14 +62,14 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
 
     /**
-     * This method is a listener method of button Reset
+     * This method is a listener method of button reset
      * This method passed the input values into local variables newpass and confirmpass.
      * If the 2 entries are different, a toast message will be displayed.
-     * If the 2 entries are the same, local variable newpass will be pass to method ResetPassword together will username
+     * If the 2 entries are the same, local variable newpass will be pass to method resetPassword together will username
      * which is obtained from intent of the previous activity.
      * @param view
      */
-    public void Reset(View view)
+    public void reset(View view)
     {
         String newPass = edNewPass.getText().toString();
         String confirmPass = edConfirmPass.getText().toString();
@@ -82,7 +82,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         else
         {
             Worker reset = new Worker(this);
-            reset.ResetPassword(username, newPass);
+            reset.resetPassword(username, newPass);
         }
 
     }

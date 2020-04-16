@@ -12,7 +12,7 @@ import com.example.studygowhere.R;
 
 
 /**
- * <h1>Login UI</h1>
+ * <h1>login UI</h1>
  * This user interface allows user to input his Username and Password
  * If the Username exists in the Database and the Password is correct, login successful.
  *
@@ -125,11 +125,11 @@ public class LoginActivity extends AppCompatActivity {
      * This method passed the input values into local variables username and password
      * If either the username or the password is left empty, Un will be set to null instead of left as an empty string.
      * If niether the username nor the password is empty, Un will be set to the username entered.
-     * The type will be set to "login" and is passed to the Login method together with the username and password entered.
+     * The type will be set to "login" and is passed to the login method together with the username and password entered.
      * @param view
      * @throws InterruptedException
      */
-    public void OnLogin(View view) throws InterruptedException {
+    public void onLogin(View view) throws InterruptedException {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
         if(username.equals("") || password.equals(""))
@@ -138,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
              setUn(username);
         String type = "login";
         Worker loginWorker = new Worker(this);
-        loginWorker.Login(type, username, password);
+        loginWorker.login(type, username, password);
     }
 
     /**

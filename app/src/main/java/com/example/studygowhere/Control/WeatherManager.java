@@ -61,7 +61,7 @@ public class WeatherManager {
             double areaLat=Double.parseDouble(values.get(0));
             double areaLng=Double.parseDouble(values.get(1));
             String weather=values.get(2);
-            String distance=String.valueOf(CalculateDistanceFromArea(areaLat,areaLng,Latitude,Longitude));
+            String distance=String.valueOf(calculateDistanceFromArea(areaLat,areaLng,Latitude,Longitude));
             List<String> detailsList=new ArrayList<String>();
             detailsList.add(key);
             detailsList.add(distance);
@@ -89,7 +89,7 @@ public class WeatherManager {
      * @param LocationLongitude This is contains the Longitude of the location of which weather details is requested
      * @return Return a double containing the distance between a given area and the current location
      */
-    public double CalculateDistanceFromArea(double Latitude, double Longitude, double LocationLatitude, double LocationLongitude) {
+    public double calculateDistanceFromArea(double Latitude, double Longitude, double LocationLatitude, double LocationLongitude) {
         double r = 6371e3;
         double TaxLat = Math.toRadians(Latitude);
         double UserLat = Math.toRadians(LocationLatitude);

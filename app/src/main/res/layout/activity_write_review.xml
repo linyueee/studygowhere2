@@ -79,6 +79,6 @@
         android:layout_height="wrap_content"
         android:text="Add Review"
         android:layout_marginLeft="30dp"
-        android:onClick="AddReview"
+        android:onClick="addReview"
         />
 </LinearLayout>

@@ -30,7 +30,7 @@ public class Worker {
      * @param Username Username input
      * @param Password Password input
      */
-    public void Login(String type, String Username, String Password)
+    public void login(String type, String Username, String Password)
     {
         AccountWorker bgw = new AccountWorker(context);
         bgw.execute(type, Username, Password);
@@ -44,7 +44,7 @@ public class Worker {
      * @param str_email Email input
      * @param str_mobile Phone number input
      */
-    public void Register(String type, String str_name, String str_password, String str_email, String str_mobile)
+    public void register(String type, String str_name, String str_password, String str_email, String str_mobile)
     {
         AccountWorker bgw = new AccountWorker(context);
         bgw.execute(type, str_name, str_password, str_email, str_mobile);
@@ -55,7 +55,7 @@ public class Worker {
      * This is a method to instantiate ReadReviewWorker and execute it.
      * @param studyAreaName name of Study Area
      */
-    public void ReadReview(String studyAreaName)
+    public void readReview(String studyAreaName)
     {
         ReadReviewWorker rrw = new ReadReviewWorker(context);
         rrw.execute(studyAreaName);
@@ -66,7 +66,7 @@ public class Worker {
      * This is a method to instantiate ReadMyReviewWorker and execute it.
      * @param username Username
      */
-    public void ReadMyReview(String username)
+    public void readMyReview(String username)
     {
         ReadMyReviewWorker rmRW = new ReadMyReviewWorker(context);
         rmRW.execute(username);
@@ -80,7 +80,7 @@ public class Worker {
      * @param studyAreaName Name of the Study Area that is being reviewed on.
      * @param rating Rating given by the user
      */
-    public void AddReview(String username, String review, String studyAreaName, String rating)
+    public void addReview(String username, String review, String studyAreaName, String rating)
     {
         AddReviewWorker arw = new AddReviewWorker(context);
         arw.execute(username, review, studyAreaName, rating);
@@ -91,7 +91,7 @@ public class Worker {
      * This is a method to instantiate ReadBookmarkWorker and execute it.
      * @param username Username of the bookmark owner
      */
-    public void ReadBookmark(String username)
+    public void readBookmark(String username)
     {
         ReadBookmarkWorker rbw = new ReadBookmarkWorker(context);
         rbw.execute(username);
@@ -104,7 +104,7 @@ public class Worker {
      * @param studyAreaName The name of the Study Area that is bookmarked.
      * @param type Type of the operation.
      */
-    public void AddBookmark(String username, String studyAreaName, String type)
+    public void addBookmark(String username, String studyAreaName, String type)
     {
         CustomiseBookmarkWorker bmw = new CustomiseBookmarkWorker(context);
         bmw.execute(username, studyAreaName, type);
@@ -117,7 +117,7 @@ public class Worker {
      * @param studyAreaName The name of the Study Area to be deleted from bookmark.
      * @param type Type of the operation.
      */
-    public void DeleteBookmark(String username, String studyAreaName, String type)
+    public void deleteBookmark(String username, String studyAreaName, String type)
     {
         CustomiseBookmarkWorker dbm = new CustomiseBookmarkWorker(context);
         dbm.execute(username, studyAreaName, type);
@@ -130,7 +130,7 @@ public class Worker {
      * @param email Email
      * @param phone Phone
      */
-    public void VerifyAccount(String username, String email, String phone)
+    public void verifyAccount(String username, String email, String phone)
     {
         VerifyAccountWorker vaw = new VerifyAccountWorker(context);
         vaw.execute(username, email, phone);
@@ -141,7 +141,7 @@ public class Worker {
      * @param username Username
      * @param password New password to be reset.
      */
-    public void ResetPassword(String username, String password)
+    public void resetPassword(String username, String password)
     {
         ResetPasswordWorker rpw = new ResetPasswordWorker(context);
         rpw.execute(username, password);

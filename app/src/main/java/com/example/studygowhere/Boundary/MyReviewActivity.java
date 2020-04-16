@@ -43,7 +43,7 @@ public class MyReviewActivity extends AppCompatActivity {
 
     /**
      * Override method to assign value to instance variables.
-     * It also calls the ReadMyReview method by passing in Un as parameter.
+     * It also calls the readMyReview method by passing in Un as parameter.
      * @param savedInstanceState
      */
     @Override
@@ -53,7 +53,7 @@ public class MyReviewActivity extends AppCompatActivity {
 
         rvMyReview = (RecyclerView) findViewById(R.id.my_recycler_view);
         Worker readMyReview = new Worker(this);
-        readMyReview.ReadMyReview(getUn());
+        readMyReview.readMyReview(getUn());
     }
 
 
@@ -65,7 +65,7 @@ public class MyReviewActivity extends AppCompatActivity {
      * @param result JSon string returned from the Database containing the name of Study Area that the user has
      *               reviewed on, the content of the review and the rating that the user gave.
      */
-    static public void DisplayReview(String result)
+    static public void displayReview(String result)
     {
         RecyclerView.Adapter mAdapter;
         RecyclerView.LayoutManager layoutManager;

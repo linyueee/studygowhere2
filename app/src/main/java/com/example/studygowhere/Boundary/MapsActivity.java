@@ -262,7 +262,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public  void onTaxiRun() throws Exception {
         Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-        double[][] ans = taxiManager.NearestTaxi(NumOfTaxi,currentLocation.getLongitude(),currentLocation.getLatitude());
+        double[][] ans = taxiManager.nearestTaxi(NumOfTaxi,currentLocation.getLongitude(),currentLocation.getLatitude());
         for (int i = 0; i < NumOfTaxi; i++){
 
             markerList[i] = new MarkerOptions();

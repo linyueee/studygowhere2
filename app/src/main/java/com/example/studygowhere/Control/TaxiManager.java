@@ -64,7 +64,7 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
      * @throws Exception
      */
 
-    public JSONArray GetTaxiInformation() throws Exception {
+    public JSONArray getTaxiInformation() throws Exception {
         String response = doInBackground();
         JSONArray CoordinateList = null;
         try {
@@ -85,16 +85,16 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
      * @return returns a 2d array consisting of the longitude and latitude of the nearest taxis to user location
      * @throws Exception
      */
-    public double[][] NearestTaxi(int NumOfTaxi, double Longitude, double Latitude) throws Exception {
+    public double[][] nearestTaxi(int NumOfTaxi, double Longitude, double Latitude) throws Exception {
 
-        JSONArray LongLatList = GetTaxiInformation();
+        JSONArray LongLatList = getTaxiInformation();
         int[] list = new int[NumOfTaxi];
         double[] DistList = new double[LongLatList.length()];
         double[][] result = new double[NumOfTaxi][];
 
         for (int i = 0; i < LongLatList.length(); i++) {
             JSONArray dummy = LongLatList.getJSONArray(i);
-            DistList[i] = CalculateDistanceFromTaxi(dummy.getDouble(0), dummy.getDouble(1), Latitude, Longitude);
+            DistList[i] = calculateDistanceFromTaxi(dummy.getDouble(0), dummy.getDouble(1), Latitude, Longitude);
         }
 
         for (int i = 0; i < NumOfTaxi; i++) {
@@ -144,7 +144,7 @@ public class TaxiManager extends AsyncTask<Void,Void,String> {
      * @param UserLocationLongitude
      * @return returns distance between 2 points.
      */
-    public double CalculateDistanceFromTaxi(double Longitude, double Latitude, double UserLocationLatitude, double UserLocationLongitude) {
+    public double calculateDistanceFromTaxi(double Longitude, double Latitude, double UserLocationLatitude, double UserLocationLongitude) {
         double r = 6371e3;
         double TaxLat = Math.toRadians(Latitude);
         double UserLat = Math.toRadians(UserLocationLatitude);

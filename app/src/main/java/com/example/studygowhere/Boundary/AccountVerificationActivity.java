@@ -33,7 +33,7 @@ public class AccountVerificationActivity extends AppCompatActivity {
     /**
      * Instance variable where Button btnveri in the XML file will be assigned to.
      */
-    Button btnverify;
+    Button btnVerify;
 
     /**
      * This is a override method that set XML file activity_account_verification to be the
@@ -48,25 +48,25 @@ public class AccountVerificationActivity extends AppCompatActivity {
         edUsername = (EditText) findViewById(R.id.resetPassUsername);
         edEmail = (EditText) findViewById(R.id.resetPassEmail);
         edPhone = (EditText) findViewById(R.id.resetPassPhone);
-        btnverify = (Button) findViewById(R.id.btnVerification);
+        btnVerify = (Button) findViewById(R.id.btnVerification);
 
     }
 
     /**
-     * This method is called upon clicking Button btnverify.
+     * This method is called upon clicking Button btnVerify.
      * This method passes the input value into local variables Username, Email and Phone
-     * Those local variables are later passed to VerifyAccount method as parameters.
+     * Those local variables are later passed to verifyAccount method as parameters.
      * @param view
      */
 
-    public void VerifyAccount(View view)
+    public void verifyAccount(View view)
     {
         String Username = edUsername.getText().toString();
         String Email = edEmail.getText().toString();
         String Phone = edPhone.getText().toString();
 
         Worker verifyAcc = new Worker(this);
-        verifyAcc.VerifyAccount(Username, Email, Phone);
+        verifyAcc.verifyAccount(Username, Email, Phone);
 
     }
 }

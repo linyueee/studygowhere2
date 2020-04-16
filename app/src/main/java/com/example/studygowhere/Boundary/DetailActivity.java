@@ -124,7 +124,7 @@ public class DetailActivity extends AppCompatActivity {
 
 
     /**
-     * Override method to assign value to instance variables and call method ReadReview with parameter
+     * Override method to assign value to instance variables and call method readReview with parameter
      * saName to retrieve reviews on saName from the Database.
      *
      * @param savedInstanceState
@@ -168,7 +168,7 @@ public class DetailActivity extends AppCompatActivity {
         final LatLng latlng= intent.getParcelableExtra("LatLng");
 
         Worker readReview = new Worker(this);
-        readReview.ReadReview(saName);
+        readReview.readReview(saName);
 
         btnViewOnMap.setOnClickListener(new View.OnClickListener() {
             /**
@@ -304,13 +304,13 @@ public class DetailActivity extends AppCompatActivity {
     /**
      * This is a listener method of btnAddBookmark.
      * A toast message will be shown if the static variable Un is null, which indicates that the user has not login with an account.
-     * If the static variable Un is not null, the type of operation will be set to "Add" and AddBookmark method in Worker class will be called.
+     * If the static variable Un is not null, the type of operation will be set to "Add" and addBookmark method in Worker class will be called.
      * The static boolean variable bookmarkFlag in ProfileActivity class is also set to false, which signals updates to
      * the list of bookmark. This is done so that ProfileActivity does not need to repeatedly read bookmarks from the Database and
      * only performs the operation when there is an update.
      * @param view
      */
-    public void AddBM(View view) {
+    public void addBM(View view) {
         Intent intent = getIntent();
         if (getUn() == null) {
             Toast toast = Toast.makeText(getApplicationContext(), "Please log in first", Toast.LENGTH_LONG);
@@ -319,7 +319,7 @@ public class DetailActivity extends AppCompatActivity {
             String type = "Add";
             Worker addBM = new Worker(this);
             ProfileActivity.bookmarkFlag = false;
-            addBM.AddBookmark(getUn(), intent.getStringExtra("Name"), type);
+            addBM.addBookmark(getUn(), intent.getStringExtra("Name"), type);
         }
     }
 
@@ -327,13 +327,13 @@ public class DetailActivity extends AppCompatActivity {
     /**
      * This is a listener method of btnDeleteBookmark.
      * A toast message will be shown if the static variable Un is null, which indicates that the user has not login with an account.
-     * If the static variable Un is not null, the type of operation will be set to "Delete" and DeleteBookmark method in Worker class will be called.
+     * If the static variable Un is not null, the type of operation will be set to "Delete" and deleteBookmark method in Worker class will be called.
      * The static boolean variable bookmarkFlag in ProfileActivity class is also set to false, which signals updates to
      * the list of bookmark. This is done so that ProfileActivity does not need to repeatedly read bookmarks from the Database and
      * only performs the operation when there is an update.
      * @param view
      */
-    public void DeleteBM(View view) {
+    public void deleteBM(View view) {
         Intent intent = getIntent();
         if (getUn() == null) {
             Toast toast = Toast.makeText(getApplicationContext(), "Please log in first", Toast.LENGTH_LONG);
@@ -342,7 +342,7 @@ public class DetailActivity extends AppCompatActivity {
             String type = "Delete";
             Worker delBM = new Worker(this);
             ProfileActivity.bookmarkFlag = false;
-            delBM.DeleteBookmark(getUn(), intent.getStringExtra("Name"), type);
+            delBM.deleteBookmark(getUn(), intent.getStringExtra("Name"), type);
         }
     }
 
@@ -356,7 +356,7 @@ public class DetailActivity extends AppCompatActivity {
      * The Objects are added to reviewListForDisplay so that they can be passed to the adapter and displayed in recycler view
      * @param result JSon string that is returned by the Database
      */
-    static public void DisplayReview(String result)
+    static public void displayReview(String result)
     {
         RecyclerView.Adapter mAdapter;
         RecyclerView.LayoutManager layoutManager;

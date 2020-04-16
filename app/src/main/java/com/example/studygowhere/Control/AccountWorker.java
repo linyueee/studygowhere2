@@ -25,7 +25,7 @@ import com.example.studygowhere.Boundary.ProfileActivity;
 
 
 /**
- * <h1>Login and register controller</h1>
+ * <h1>login and register controller</h1>
  * This is a asynchronous class that passes values into php files and the php files return
  * a string value after communicating with the Database.
  * If the type passed in is "login", the username and the password values will be stored into
@@ -175,7 +175,7 @@ public class AccountWorker extends AsyncTask<String, Void, String>
                 context.startActivity(new Intent(context, ProfileActivity.class));
             }
 
-            if(result.equals("Register successful"))
+            if(result.equals("register successful"))
             {
                 Toast toast = Toast.makeText(context, "Account created", Toast.LENGTH_SHORT);
                 toast.show();

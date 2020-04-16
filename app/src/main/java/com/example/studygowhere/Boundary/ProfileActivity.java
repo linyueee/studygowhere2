@@ -79,7 +79,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     /**
      * Override method to assign value to instance variables.
-     * It also calls the ReadBookmark method by passing in Un as parameter.
+     * It also calls the readBookmark method by passing in Un as parameter.
      * @param savedInstanceState
      */
     @Override
@@ -134,7 +134,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
         Worker readBm = new Worker(this);
-        readBm.ReadBookmark(getUn());
+        readBm.readBookmark(getUn());
     }
 
 
@@ -146,7 +146,7 @@ public class ProfileActivity extends AppCompatActivity {
      * This arraylist is then passed into an adapter to be displayed in recycler view.
      * @param result JSon string returned from the Database containing the name of Study Area.
      */
-    static public void DisplayBookmark(String result) {
+    static public void displayBookmark(String result) {
         List<String> myBookmarkString;
         RecyclerView.Adapter mAdapter;
         RecyclerView.LayoutManager layoutManager;

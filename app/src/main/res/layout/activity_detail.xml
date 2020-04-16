@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:text="Add to My Bookmark"
-        android:onClick="AddBM"/>
+        android:onClick="addBM"/>
 
     <Button
         android:id="@+id/viewOnMap"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:text="DELETE FROM MY BOOKMARK"
-        android:onClick="DeleteBM"/>
+        android:onClick="deleteBM"/>
 
     <LinearLayout
         android:id="@+id/directionsOptions"

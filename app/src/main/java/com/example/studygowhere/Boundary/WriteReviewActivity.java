@@ -91,12 +91,12 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
     /**
      * This method is a listener method of button Add review
      * A toast message will be shown if static variable Un is null, which indicates the user has yet to login.
-     * If Un is not null, the input review will be stored to local String review and passed to method AddReview
+     * If Un is not null, the input review will be stored to local String review and passed to method addReview
      * together with Un, the name of the Study Area and the rating.
-     * It will then start DetailActivity while AddReview is running in the thread.
+     * It will then start DetailActivity while addReview is running in the thread.
      * @param view
      */
-    public void AddReview(View view)
+    public void addReview(View view)
     {
         if(getUn() == null)
         {
@@ -108,7 +108,7 @@ public class WriteReviewActivity extends AppCompatActivity implements AdapterVie
             if(review == null)
                 review = "No comment";
             Worker addreview = new Worker(this);
-            addreview.AddReview(getUn(), review, StudyAreaName, getRating());
+            addreview.addReview(getUn(), review, StudyAreaName, getRating());
             Intent intent = new Intent(this, DetailActivity.class);
             intent.putExtra("Name", StudyAreaName);
             startActivity(intent);
