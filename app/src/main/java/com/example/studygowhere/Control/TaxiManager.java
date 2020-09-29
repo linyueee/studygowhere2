@@ -21,7 +21,6 @@ import okhttp3.Response;
  * @version 1.0
  */
 public class TaxiManager extends AsyncTask<Void,Void,String> {
-
     /**
      * Instance variable myResponse
      *
