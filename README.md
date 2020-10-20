@@ -7,3 +7,5 @@ The competition requires us to make use of at least one government API. Hence, w
 The study areas in StudyGoWhere are Singapore libraries, community clubs, cafes and post-secondary educational institutions and universities. StudyGoWhere retrieves libraries and community clubs GeoJSON data from data.gov. While other study areas are obtained from other ways such as Kaggle.com. 
 
 Google Maps API is also implemented to obtain an interactive map for the application and directions for navigation features of the application. 
+
+The application also has a MySQL database to store user's information such as username, password, email, phone number, rating of a location, review of a location etc. The android application will access the required infomation via API request from the database.
